@@ -1,0 +1,28 @@
+{
+  "name": "polestar-icons",
+  "version": "0.0.1",
+  "description": "Polestar UI Icons",
+  "main": "./lib/index.js",
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkiateam/polestar-icons.git"
+  },
+  "keywords": [
+    "React",
+    "Icon",
+    "Polestar"
+  ],
+  "author": "NKIA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nkiateam/polestar-icons/issues"
+  },
+  "homepage": "https://github.com/nkiateam/polestar-icons#readme"
+}
