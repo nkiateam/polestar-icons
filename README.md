@@ -21,7 +21,7 @@ import ReactDOM from 'react-dom';
 import Icon from 'polestar-icons';
 
 const App = () => (
-    <Icon />
+    <Icon name="icon-name" />
 );
 
 ReactDOM.render(
