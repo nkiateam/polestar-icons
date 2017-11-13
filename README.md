@@ -32,7 +32,12 @@ ReactDOM.render(
 
 ## Examples
 
-https://nkiateam.github.io/polestar-icons/examples
+To run and development examples:
+
+1. Clone this repo
+2. Run `npm install`
+3. Start the development server with `npm start`
+4. Point your browser to http://localhost:3000
 
 ## Documentation
 
