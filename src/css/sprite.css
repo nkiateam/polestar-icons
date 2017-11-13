@@ -1,0 +1,22 @@
+.k-sprite {
+    background-image: url("../images/coloricons-sprite.png");
+}
+.title-sprite {
+    background-image: url("../images/coloricons-sprite.png");
+}
+
+.title-icon {
+    background-image: url("../images/coloricons-sprite.png");
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    margin-right: 3px;
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+    vertical-align: top;
+    -ms-high-contrast-adjust: none;
+    background-position: -16px -120px;
+}

@@ -1,28 +1,62 @@
 {
   "name": "polestar-icons",
+  "author": "NKIA",
   "version": "0.0.1",
   "description": "Polestar UI Icons",
   "main": "./lib/index.js",
-  "directories": {
-    "doc": "docs",
-    "example": "examples"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nkiateam/polestar-icons.git"
-  },
   "keywords": [
     "React",
-    "Icon",
+    "Icons",
     "Polestar"
   ],
-  "author": "NKIA",
+  "repository": "nkiateam/polestar-icons",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nkiateam/polestar-icons/issues"
   },
-  "homepage": "https://github.com/nkiateam/polestar-icons#readme"
+  "homepage": "https://github.com/nkiateam/polestar-icons#readme",
+  "scripts": {
+    "prepublish": "rimraf lib && babel src --out-dir lib --copy-files",
+    "start": "webpack-dev-server --open"
+  },
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "peerDependencies": {
+    "react": "^16.1.0",
+    "react-dom": "^16.1.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "prop-types": "^15.6.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "file-loader": "^1.1.5",
+    "postcss-flexbugs-fixes": "^3.2.0",
+    "postcss-loader": "^2.0.8",
+    "rimraf": "^2.6.2",
+    "style-loader": "^0.19.0",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  }
 }
