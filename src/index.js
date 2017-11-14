@@ -19,8 +19,14 @@ const Icon = ({ type, name, size }) => {
 };
 
 Icon.propTypes = {
+	/** 
+	 * font icon 인지 image icon 인지 설정 
+	 * @default font
+	 */
 	type: PropTypes.oneOf(['font','image']).isRequired,
+	/** The name of Icon */
 	name: PropTypes.string.isRequired,
+	/** The size of Icon */
 	size: PropTypes.oneOf(['sm', 'md', 'lg']).isRequired,
 };
   

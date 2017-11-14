@@ -1,7 +1,7 @@
 {
   "name": "polestar-icons",
   "author": "NKIA",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Polestar UI Icons",
   "main": "./lib/index.js",
   "keywords": [
@@ -16,6 +16,8 @@
   },
   "homepage": "https://github.com/nkiateam/polestar-icons#readme",
   "scripts": {
+    "doc": "styleguidist server",
+    "doc:build": "rimraf docs && styleguidist build && git add docs",
     "prepublish": "rimraf lib && babel src --out-dir lib --copy-files",
     "start": "webpack-dev-server --open"
   },
@@ -53,6 +55,7 @@
     "file-loader": "^1.1.5",
     "postcss-flexbugs-fixes": "^3.2.0",
     "postcss-loader": "^2.0.8",
+    "react-styleguidist": "^6.0.33",
     "rimraf": "^2.6.2",
     "style-loader": "^0.19.0",
     "url-loader": "^0.6.2",

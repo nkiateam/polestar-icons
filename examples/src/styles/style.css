@@ -1,0 +1,13 @@
+.icon-title {
+    font-size: 20px;
+    margin: 40px 0 20px;
+}
+
+.icon-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon-item {
+    width: 400px;
+}
