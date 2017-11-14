@@ -1,4 +1,4 @@
-Icon Component Example:
+Icon List:
 ```js
 <Icons />
 ```
