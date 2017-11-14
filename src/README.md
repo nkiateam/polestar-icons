@@ -1,4 +1,4 @@
-Icon Component Example:
+Icon Component Example: [![GitHub stars](https://img.shields.io/github/stars/nkiateam/polestar-icons.svg?style=social&label=Stars)](https://github.com/nkiateam/polestar-icons)
 ```jsx static
 import React from 'react';
 import Icon from 'polestar-icons';

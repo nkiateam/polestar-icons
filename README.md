@@ -41,7 +41,7 @@ To run and development examples:
 
 ## Documentation
 
-https://nkiateam.github.io/polestar-icons/docs
+https://nkiateam.github.io/polestar-icons/
 
 ## License
 
