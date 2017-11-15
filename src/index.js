@@ -8,6 +8,7 @@ import classNames from 'classnames';
 3. 아이콘 클래스 명 규칙 정하기(icon font/sprite)
 예) <i class="fa fa-bar-chart fa-2x">
 4. icon font 와 sprite 간에 서로 중복되는 아이콘 허용?
+5. 아이콘 사이즈 정의해야 한다.
 */
 
 const Icon = ({ type, name, size }) => {
