@@ -12,8 +12,10 @@ import classNames from 'classnames';
 */
 
 const Icon = ({ type, name, size }) => {
-	const _type = type === 'font' ? 'fa' : '';
-	const _className = classNames(_type, name);
+	const _type = type === 'font' ? 'fa' : 'ps-img';
+	const _className = classNames(_type, {
+		[`${_type}-${name}`]: true
+	});
 	return (
 		<i className={_className}></i>
 	);
