@@ -2,22 +2,22 @@ const webpack = require('webpack');
 const path = require('path');
 const autoprefixer = require('autoprefixer');
 
-let port = 3000;
+const port = 3000;
 
 module.exports = {
-	entry: {
-		app: path.resolve(__dirname, 'examples/src/index.js')
+    entry: {
+        app: path.resolve(__dirname, 'examples/src/index.js')
     },
-    
-	output: {
+
+    output: {
         filename: '[name].js',
-		path: path.resolve(__dirname, 'examples/build'),
+        path: path.resolve(__dirname, 'examples/build'),
         publicPath: '/examples/'
     },
 
     devtool: 'inline-source-map',
 
-	module: {
+    module: {
         rules: [
             {
                 test: /\.(js|jsx)$/,
@@ -91,7 +91,7 @@ module.exports = {
             'styles': path.resolve(__dirname, 'src/css')
         }
     },
-    
+
     devServer: {
         inline: true,
         host: 'localhost',

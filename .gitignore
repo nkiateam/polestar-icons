@@ -5,6 +5,7 @@
 .idea
 .vscode
 .jshintrc
+.eslintcache
 npm-debug.log
 /node_modules/
 /META-INF/

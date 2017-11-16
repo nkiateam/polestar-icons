@@ -16,9 +16,10 @@
   },
   "homepage": "https://github.com/nkiateam/polestar-icons#readme",
   "scripts": {
-    "doc": "styleguidist server",
-    "doc:build": "rimraf docs && styleguidist build && git add docs",
+    "docs": "styleguidist server",
+    "docs:build": "rimraf docs && styleguidist build && git add docs",
     "prepublish": "rimraf lib && babel src --out-dir lib --copy-files",
+    "lint": "eslint . --cache && echo \"eslint: no lint errors\"",
     "start": "webpack-dev-server --open"
   },
   "directories": {
