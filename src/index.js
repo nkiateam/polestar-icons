@@ -12,30 +12,31 @@ import classNames from 'classnames';
 */
 
 const Icon = ({ type, name, size }) => {
-	const _type = type === 'font' ? 'fa' : 'ps-img';
-	const _className = classNames(_type, {
-		[`${_type}-${name}`]: true
-	});
-	return (
-		<i className={_className}></i>
-	);
+    const prefix = type === 'font' ? 'fa' : 'ps-img';
+    const classString = classNames(prefix, {
+        [`${prefix}-${name}`]: true,
+        [`fa-${size}`]: type === 'font' && size !== '',
+    });
+    return (
+        <i className={classString} />
+    );
 };
 
 Icon.propTypes = {
-	/** 
-	 * font icon 인지 image icon 인지 설정 
-	 * @default font
-	 */
-	type: PropTypes.oneOf(['font','image']).isRequired,
-	/** The name of Icon */
-	name: PropTypes.string.isRequired,
-	/** The size of Icon */
-	size: PropTypes.oneOf(['sm', 'md', 'lg']).isRequired,
+    /**
+     * font icon 인지 image icon 인지 설정
+     * @default font
+     */
+    type: PropTypes.oneOf(['font', 'image']).isRequired,
+    /** The name of Icon */
+    name: PropTypes.string.isRequired,
+    /** The size of Icon */
+    size: PropTypes.oneOf(['', 'sm', 'md', 'lg']).isRequired,
 };
-  
+
 Icon.defaultProps = {
-	type: 'font',
-	size: 'md'
+    type: 'font',
+    size: '',
 };
 
 export default Icon;
