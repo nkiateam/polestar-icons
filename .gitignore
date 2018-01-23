@@ -11,3 +11,5 @@ npm-debug.log
 /META-INF/
 /WEB-INF/
 /lib/
+generator/input/**
+generator/output/**

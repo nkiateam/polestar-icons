@@ -1,5 +1,3 @@
 {
-    "presets": ["react", "env", ["minify", {
-        "mangle": true
-    }]]
+    "presets": ["react", "env"]
 }

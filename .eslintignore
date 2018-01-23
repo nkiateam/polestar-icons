@@ -2,5 +2,6 @@ node_modules
 /docs
 /examples
 /lib
+/generator
 /src/README.md
 *.config.js
