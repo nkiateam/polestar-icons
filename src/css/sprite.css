@@ -1,11 +1,11 @@
 .k-sprite {
     background-image: url("../images/coloricons-sprite.png");
 }
-.ps-img-title-sprite {
+.ps-image-icon-title-sprite {
     background-image: url("../images/coloricons-sprite.png");
 }
 
-.ps-img-title-icon {
+.ps-image-icon-title-icon {
     background-image: url("../images/coloricons-sprite.png");
     display: inline-block;
     width: 24px;
