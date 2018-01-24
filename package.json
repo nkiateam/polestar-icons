@@ -1,7 +1,7 @@
 {
   "name": "polestar-icons",
   "author": "NKIA",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Polestar UI Icons",
   "main": "./lib/index.js",
   "keywords": [
@@ -39,15 +39,7 @@
   "dependencies": {
     "chalk": "^2.3.0",
     "classnames": "^2.2.5",
-    "cli-clear": "^1.0.4",
-    "figlet": "^1.2.0",
-    "inquirer": "^5.0.1",
-    "jsdom": "^11.6.0",
-    "prop-types": "^15.6.0",
-    "svg2ttf": "^4.1.0",
-    "ttf2eot": "^2.0.0",
-    "ttf2woff": "^2.0.1",
-    "ttf2woff2": "^2.0.3"
+    "prop-types": "^15.6.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.6",
@@ -75,6 +67,14 @@
     "style-loader": "^0.19.0",
     "url-loader": "^0.6.2",
     "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.4"
+    "webpack-dev-server": "^2.9.4",
+    "jsdom": "^11.6.0",
+    "cli-clear": "^1.0.4",
+    "figlet": "^1.2.0",
+    "inquirer": "^5.0.1",
+    "svg2ttf": "^4.1.0",
+    "ttf2eot": "^2.0.0",
+    "ttf2woff": "^2.0.1",
+    "ttf2woff2": "^2.0.3"
   }
 }
