@@ -82,6 +82,9 @@ export default (svgPath, pathsOfBasedSvgFile, prefix = 'icon') => new Promise((r
     const outputDirFullPath = path.resolve(`./generator/output/${outputDirName}`);
     const cssPath = path.join(outputDirFullPath, 'css');
     const fontPath = path.join(outputDirFullPath, 'fonts');
+    const srcPath = path.resolve('./src');
+    const distCssPath = path.join(srcPath, 'css');
+    const distFontPath = path.join(srcPath, 'fonts');
     fs.existsSync(outputDirPath) || fs.mkdirSync(outputDirPath);
     fs.mkdirSync(outputDirFullPath);
     fs.mkdirSync(cssPath);
@@ -93,12 +96,15 @@ export default (svgPath, pathsOfBasedSvgFile, prefix = 'icon') => new Promise((r
 
 
     fs.writeFileSync(newSvgPath, newSvgFile, 'utf-8');
+    fs.writeFileSync(path.join(distFontPath, `${fontFamily}.svg`), newSvgFile, 'utf-8');
     console.log(chalk.greenBright(`${fontFamily}.svg 파일이 이동되었습니다`));
     const newSvg = fs.readFileSync(newSvgPath, 'utf-8');
+    const examples = htmlTemplate(fontFamily, iconList);
 
+    fs.writeFileSync(path.join(srcPath, `${fontFamily}.html`), examples, 'utf-8');
     fs.writeFile(
         path.join(outputDirFullPath, `${fontFamily}.html`),
-        htmlTemplate(fontFamily, iconList), 'utf-8', (err) => {
+        examples, 'utf-8', (err) => {
             if (err) {
                 return console.log(err);
             }
@@ -106,12 +112,12 @@ export default (svgPath, pathsOfBasedSvgFile, prefix = 'icon') => new Promise((r
         },
     );
 
-
     /**
      * SVG -> CSS
      */
     const transformSVGtoCSS = new Promise((resolve, reject) => {
         console.log('Start to generate css file...');
+        fs.writeFileSync(path.join(distCssPath, `${fontFamily}.css`), buffer, 'utf-8');
         fs.writeFile(path.join(cssPath, `${fontFamily}.css`), buffer, 'utf-8', (err) => {
             if (err) {
                 return reject(err);
@@ -127,7 +133,8 @@ export default (svgPath, pathsOfBasedSvgFile, prefix = 'icon') => new Promise((r
     const transformSVGtoTTF = () => new Promise((resolve, reject) => {
         console.log('Start to generate ttf file...');
         const ttf = svg2ttf(newSvg, {});
-        fs.writeFile(path.join(fontPath, `${fontFamily}.ttf`), new Buffer(ttf.buffer), 'utf-8', (err) => {
+        fs.writeFileSync(path.join(distFontPath, `${fontFamily}.ttf`), Buffer.from(ttf.buffer), 'utf-8');
+        fs.writeFile(path.join(fontPath, `${fontFamily}.ttf`), Buffer.from(ttf.buffer), 'utf-8', (err) => {
             if (err) {
                 return reject(err);
             }
@@ -146,6 +153,7 @@ export default (svgPath, pathsOfBasedSvgFile, prefix = 'icon') => new Promise((r
     const transformTTFtoEOT = ttfOutput => new Promise((resolve, reject) => {
         console.log('Start to generate eot file...');
         const eot = ttf2eot(ttfOutput);
+        fs.writeFileSync(path.join(distFontPath, `${fontFamily}.eot`), Buffer.from(eot.buffer), 'utf-8');
         fs.writeFile(path.join(fontPath, `${fontFamily}.eot`), Buffer.from(eot.buffer), 'utf-8', (err) => {
             if (err) {
                 return reject(err);
@@ -161,6 +169,7 @@ export default (svgPath, pathsOfBasedSvgFile, prefix = 'icon') => new Promise((r
     const transformTTFtoWOFF = ttfOutput => new Promise((resolve, reject) => {
         console.log('Start to generate woff file...');
         const woff = ttf2woff(ttfOutput);
+        fs.writeFileSync(path.join(distFontPath, `${fontFamily}.woff`), Buffer.from(woff.buffer), 'utf-8');
         fs.writeFile(path.join(fontPath, `${fontFamily}.woff`), Buffer.from(woff.buffer), 'utf-8', (err) => {
             if (err) {
                 return reject(err);
@@ -176,6 +185,7 @@ export default (svgPath, pathsOfBasedSvgFile, prefix = 'icon') => new Promise((r
     const transformTTFtoWOFF2 = ttfOutput => new Promise((resolve, reject) => {
         console.log('Start to generate woff2 file...');
         const woff2 = ttf2woff2(ttfOutput);
+        fs.writeFileSync(path.join(distFontPath, `${fontFamily}.woff2`), woff2, 'utf-8');
         fs.writeFile(path.join(fontPath, `${fontFamily}.woff2`), woff2, 'utf-8', (err) => {
             if (err) {
                 return reject(err);
