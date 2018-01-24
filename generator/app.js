@@ -37,13 +37,7 @@ const questions = [
         name: 'svgFile',
         message: 'CSS 파일로 변환할 SVG 폰트 파일을 선택하세요:)',
         choices: svgFiles,
-    },
-    // {
-    //     type: 'input',
-    //     name: 'prefix',
-    //     message: '폰트 클래스에 붙을 접두사를 지정하세요. 기본값은 icon 입니다:) ',
-    //     default: 'icon',
-    // },
+    }
 ];
 
 if (svgFiles.length === 0) {

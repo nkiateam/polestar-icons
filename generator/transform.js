@@ -17,7 +17,7 @@ import htmlTemplate from './templates/htmlTemplate';
  * @param pathsOfBasedSvgFile
  * @param prefix
  */
-export default (svgPath, pathsOfBasedSvgFile, prefix = 'icon') => new Promise((resolve, reject) => {
+export default (svgPath, pathsOfBasedSvgFile, prefix = 'ps-font-icon') => new Promise((resolve, reject) => {
     console.time('transform');
     // Input SVG file
     const svg = fs.readFileSync(svgPath, 'utf-8');
@@ -57,7 +57,8 @@ export default (svgPath, pathsOfBasedSvgFile, prefix = 'icon') => new Promise((r
 
     const glyphsLength = $mergedGlyphs.length;
     let iconList = '';
-    let counter = 63488;
+    const iconObjectList = [];
+    let counter = 57344;
     for (let i = 0; i < glyphsLength; i += 1) {
         const glyphName = $mergedGlyphs[i].getAttribute('glyph-name');
         const hexCounter = counter.toString(16);
@@ -65,7 +66,12 @@ export default (svgPath, pathsOfBasedSvgFile, prefix = 'icon') => new Promise((r
         $mergedGlyphs[i].setAttribute('unicode', '');
         $mergedGlyphs[i].setAttribute('unicode', `{{amp}}#x${hexCounter};`);
         counter += 1;
-        iconList += `<span class="${prefix}-${glyphName}">.${prefix}-${glyphName}</span>`;
+        iconList += `<span class="${prefix}-${glyphName}">${glyphName}</span>`;
+        iconObjectList.push({
+            name: glyphName,
+            code: counter,
+            unicode: hexCounter,
+        })
     }
 
     const now = new Date();
@@ -93,8 +99,6 @@ export default (svgPath, pathsOfBasedSvgFile, prefix = 'icon') => new Promise((r
     const newSvgPath = path.join(fontPath, `${fontFamily}.svg`);
     const newSvgFile = svgTemplate(dom.window.document.body.innerHTML.replace(/{{amp}}/gi, '&'));
 
-
-
     fs.writeFileSync(newSvgPath, newSvgFile, 'utf-8');
     fs.writeFileSync(path.join(distFontPath, `${fontFamily}.svg`), newSvgFile, 'utf-8');
     console.log(chalk.greenBright(`${fontFamily}.svg 파일이 이동되었습니다`));
@@ -102,6 +106,7 @@ export default (svgPath, pathsOfBasedSvgFile, prefix = 'icon') => new Promise((r
     const examples = htmlTemplate(fontFamily, iconList);
 
     fs.writeFileSync(path.join(srcPath, `${fontFamily}.html`), examples, 'utf-8');
+    fs.writeFileSync(path.resolve(`./examples/src/${fontFamily}.json`), `{"icons":${JSON.stringify(iconObjectList)}}`, 'utf-8');
     fs.writeFile(
         path.join(outputDirFullPath, `${fontFamily}.html`),
         examples, 'utf-8', (err) => {
