@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './css/polestar.css';
 import './css/sprite.css';
+import './css/animate.css';
 
 const propTypes = {
     /** 아이콘 이름 */
@@ -10,11 +11,15 @@ const propTypes = {
     type: PropTypes.oneOf(['font', 'image']),
     /** 아이콘 사이즈(px) 폰트 아이콘에만 적용 */
     size: PropTypes.number,
+    color: PropTypes.string,
+    spin: PropTypes.bool,
 };
 
 const defaultProps = {
     type: 'font',
     size: 16,
+    color: 'inherit',
+    spin: false,
 };
 
 class Icon extends React.Component {
@@ -25,6 +30,8 @@ class Icon extends React.Component {
                 className={`${prefix}-${this.props.name}`}
                 style={{
                     fontSize: this.props.size,
+                    color: this.props.color,
+                    animation: this.props.spin ? 'spin 1s linear infinite' : null,
                 }}
             />
         );

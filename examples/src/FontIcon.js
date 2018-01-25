@@ -23,10 +23,19 @@ const FontIcon = () => (
                             alignItems: 'center',
                             flexBasis: 250,
                             height: 50,
+                            paddingLeft: 10,
                         }}
                     >
-                        <Icon name={icon.name} size={24} />
-                        <span>{icon.name}</span>
+                        <Icon
+                            name={icon.name}
+                            size={24}
+                            color="rgba(0,0,0,0.8)"
+                        />
+                        <span style={{
+                            color: 'grey',
+                            fontSize: '0.8rem',
+                            marginLeft: 5,
+                        }}>{icon.name}</span>
                     </span>
                 );
             })}
