@@ -34,7 +34,7 @@ const FontIcon = () => (
                         <span style={{
                             color: 'grey',
                             fontSize: '0.8rem',
-                            marginLeft: 5,
+                            marginLeft: 15,
                         }}>{icon.name}</span>
                     </span>
                 );

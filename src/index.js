@@ -29,7 +29,7 @@ class Icon extends React.Component {
             <i
                 className={`${prefix}-${this.props.name}`}
                 style={{
-                    display: 'inline-block',
+                    display: 'inline-flex',
                     fontSize: this.props.size,
                     color: this.props.color,
                     animation: this.props.spin ? 'spin 1s linear infinite' : null,
