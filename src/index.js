@@ -17,7 +17,7 @@ const propTypes = {
 
 const defaultProps = {
     type: 'font',
-    size: 16,
+    size: 'inherit',
     color: 'inherit',
     spin: false,
 };
