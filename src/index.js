@@ -10,7 +10,10 @@ const propTypes = {
     /** 폰트 아이콘 / 이미지 스프라이트 아이콘 */
     type: PropTypes.oneOf(['font', 'image']),
     /** 아이콘 사이즈(px) 폰트 아이콘에만 적용 */
-    size: PropTypes.number,
+    size: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number,
+    ]),
     color: PropTypes.string,
     spin: PropTypes.bool,
 };
