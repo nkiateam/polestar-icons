@@ -13,3 +13,4 @@ npm-debug.log
 /lib/
 generator/input/**
 generator/output/**
+examples/build/**
