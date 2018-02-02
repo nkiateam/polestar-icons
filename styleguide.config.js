@@ -7,28 +7,28 @@ module.exports = {
     serverPort: 4001,
 
     // 문서화 할 컴포넌트 스코프
-    // components: './src/index.js',
-    sections: [
-        {
-            name: 'PROPS & METHODS',
-            components: './src/index.js',
-        },
-        {
-            name: 'The Icons',
-            components: './examples/src/App.js',
-        },
-        // {
-        //   name: 'The Icons',
-        //   content: 'docs/ui.md',
-        //   components: 'lib/components/ui/*.js'
-        // }
-    ],
+    components: './src/index.js',
+    // sections: [
+    //     {
+    //         name: 'PROPS & METHODS',
+    //         components: './src/index.js',
+    //     },
+    //     {
+    //         name: 'The Icons',
+    //         components: './examples/src/App.js',
+    //     },
+    //     // {
+    //     //   name: 'The Icons',
+    //     //   content: 'docs/ui.md',
+    //     //   components: 'lib/components/ui/*.js'
+    //     // }
+    // ],
 
     // 문서화 할때 같이 번들링 할 의존성들
     require: [
-        './src/css/font-awesome.css',
-        './src/css/sprite.css',
-        './examples/src/styles/style.css',
+        // './src/css/font-awesome.css',
+        // './src/css/sprite.css',
+        // './examples/src/styles/style.css',
     ],
 
     webpackConfig: require('./webpack.config.js'),
