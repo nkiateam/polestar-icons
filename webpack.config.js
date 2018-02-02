@@ -4,6 +4,12 @@ const autoprefixer = require('autoprefixer');
 
 const port = 3000;
 
+let publicPath = '/build/';
+
+if(process.env.NODE_ENV === 'production') {
+    publicPath = './build/';
+}
+
 module.exports = {
     entry: {
         app: path.resolve(__dirname, 'examples/src/index.js')
@@ -12,7 +18,7 @@ module.exports = {
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, 'examples/build'),
-        publicPath: '/build/'
+        publicPath: publicPath
     },
 
     devtool: 'inline-source-map',
