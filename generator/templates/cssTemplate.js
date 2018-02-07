@@ -22,6 +22,8 @@ export default ({
   font-weight: normal;
   speak: none;
  
+  vertical-align: 5%;
+ 
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
