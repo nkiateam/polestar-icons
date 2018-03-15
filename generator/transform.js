@@ -106,7 +106,7 @@ export default (svgPath, pathsOfBasedSvgFile, prefix = 'ps-font-icon') => new Pr
     const examples = htmlTemplate(fontFamily, iconList);
 
     fs.writeFileSync(path.join(srcPath, `${fontFamily}.html`), examples, 'utf-8');
-    fs.writeFileSync(path.resolve(`./examples/src/${fontFamily}.json`), `{"icons":${JSON.stringify(iconObjectList)}}`, 'utf-8');
+    fs.writeFileSync(path.resolve(`./src/example/${fontFamily}.json`), `{"icons":${JSON.stringify(iconObjectList)}}`, 'utf-8');
     fs.writeFile(
         path.join(outputDirFullPath, `${fontFamily}.html`),
         examples, 'utf-8', (err) => {
