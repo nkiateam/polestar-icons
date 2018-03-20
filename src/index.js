@@ -3,16 +3,9 @@ import PropTypes from 'prop-types';
 import './css/polestar.css';
 import './css/sprite.css';
 import './css/animate.css';
+import './style.css';
 
 class Icon extends React.Component {
-    static defaultProps = {
-        type: 'font',
-        size: 'inherit',
-        color: 'inherit',
-        spin: false,
-        onClick: () => {},
-    };
-
     static propTypes = {
         /** 아이콘 이름 */
         name: PropTypes.string.isRequired,
@@ -32,17 +25,22 @@ class Icon extends React.Component {
          */
         onClick: PropTypes.func,
     };
+    static defaultProps = {
+        type: 'font',
+        spin: false,
+        onClick: () => {},
+    };
 
     render() {
         const prefix = this.props.type === 'font' ? 'ps-font-icon' : 'ps-image-icon';
         return (
             <i
-                className={`${prefix}-${this.props.name}`}
+                className={`polestar-icons ${prefix}-${this.props.name} ${this.props.className}`}
                 style={{
-                    display: 'inline-block',
                     fontSize: this.props.size,
                     color: this.props.color,
                     animation: this.props.spin ? 'spin 1s linear infinite' : null,
+                    ...this.props.style,
                 }}
                 onClick={this.props.onClick}
             />
