@@ -1,50 +1,149 @@
 @font-face {
-  font-family: 'polestar';
-  src: url('../fonts/polestar.eot?1521096142');
-  src: url('../fonts/polestar.eot?1521096142#iefix') format('embedded-opentype'),
-       url('../fonts/polestar.woff2?1521096142') format('woff2'),
-       url('../fonts/polestar.woff?1521096142') format('woff'),
-       url('../fonts/polestar.ttf?1521096142') format('truetype'),
-       url('../fonts/polestar.svg?1521096142#fontello') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'polestar';
+    src: url('../fonts/polestar.eot?1521096142');
+    src: url('../fonts/polestar.eot?1521096142#iefix') format('embedded-opentype'),
+    url('../fonts/polestar.woff2?1521096142') format('woff2'),
+    url('../fonts/polestar.woff?1521096142') format('woff'),
+    url('../fonts/polestar.ttf?1521096142') format('truetype'),
+    url('../fonts/polestar.svg?1521096142#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-[class^="ps-font-icon-"]:before, [class*=" ps-font-icon-"]:before {
-  font-family: "polestar";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
- 
-  vertical-align: 5%;
- 
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  /* margin-right: .2em; */
-  text-align: center;
-  /* opacity: .8; */
- 
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
- 
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
- 
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  /* margin-left: .2em; */
- 
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
- 
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
- 
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+.polestar-icon {
+    display: inline-block;
+    font: normal normal normal 14px/1 polestar;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* makes the font 33% larger relative to the icon container */
+.icon-lg {
+    font-size: 1.33333333em;
+    line-height: 0.75em;
+    vertical-align: -15%;
+}
+.icon-2x {
+    font-size: 2em;
+}
+.icon-3x {
+    font-size: 3em;
+}
+.icon-4x {
+    font-size: 4em;
+}
+.icon-5x {
+    font-size: 5em;
+}
+.icon-fw {
+    width: 1.28571429em;
+    text-align: center;
+}
+.icon-ul {
+    padding-left: 0;
+    margin-left: 2.14285714em;
+    list-style-type: none;
+}
+.icon-ul > li {
+    position: relative;
+}
+.icon-li {
+    position: absolute;
+    left: -2.14285714em;
+    width: 2.14285714em;
+    top: 0.14285714em;
+    text-align: center;
+}
+.icon-li.icon-lg {
+    left: -1.85714286em;
+}
+.icon-border {
+    padding: .2em .25em .15em;
+    border: solid 0.08em #eeeeee;
+    border-radius: .1em;
+}
+.icon-pull-left {
+    float: left;
+}
+.icon-pull-right {
+    float: right;
+}
+[class^="ps-font-icon-"].icon-pull-left, [class*=" ps-font-icon-"].icon-pull-left {
+    margin-right: .3em;
+}
+[class^="ps-font-icon-"].icon-pull-right, [class*=" ps-font-icon-"].icon-pull-right {
+    margin-left: .3em;
+}
+/* Deprecated as of 4.4.0 */
+[class^="ps-font-icon-"].pull-left, [class*=" ps-font-icon-"].pull-left {
+    margin-right: .3em;
+}
+[class^="ps-font-icon-"].pull-right, [class*=" ps-font-icon-"].pull-right {
+    margin-left: .3em;
+}
+
+.icon-rotate-90 {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.icon-rotate-180 {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.icon-rotate-270 {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+.icon-flip-horizontal {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+    -webkit-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+.icon-flip-vertical {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+    -webkit-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
+    transform: scale(1, -1);
+}
+:root .icon-rotate-90,
+:root .icon-rotate-180,
+:root .icon-rotate-270,
+:root .icon-flip-horizontal,
+:root .icon-flip-vertical {
+    filter: none;
+}
+.icon-stack {
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+}
+.icon-stack-1x,
+.icon-stack-2x {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.icon-stack-1x {
+    line-height: inherit;
+}
+.icon-stack-2x {
+    font-size: 2em;
+}
+.icon-inverse {
+    color: #ffffff;
 }
 
 .ps-font-icon-glass:before { content: '\E000' } 

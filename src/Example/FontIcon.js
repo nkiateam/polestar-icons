@@ -27,12 +27,10 @@ const FontIcon = () => (
                 >
                     <Icon
                         name={icon.name}
-                        size={24}
                         color="rgba(0,0,0,0.8)"
                     />
                     <span style={{
                         color: 'grey',
-                        fontSize: '0.8rem',
                         marginLeft: 15,
                     }}
                     >{icon.name}
