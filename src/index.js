@@ -17,7 +17,7 @@ class Icon extends React.Component {
         /** 아이콘 className */
         className: PropTypes.string,
         /** 아이콘 사용자 정의 CSS 스타일 */
-        style: PropTypes.string,
+        style: PropTypes.object,
         /** 아이콘 애니메이션 */
         annimation: PropTypes.oneOf(
             ['spin', 'spin-pulse', 'wrench', 'ring', 'vertical', 'horizontal', 'flash', 'bounce', 
@@ -36,7 +36,7 @@ class Icon extends React.Component {
         /** 중첩 아이콘 className */
         innerClassName: PropTypes.string,
         /** 중첩 아이콘 사용자 정의 CSS 스타일 */
-        innerStyle: PropTypes.string,
+        innerStyle: PropTypes.object,
         /** 아이콘 애니메이션 */
         innerAnimation: PropTypes.oneOf(
             ['spin', 'spin-pulse', 'wrench', 'ring', 'vertical', 'horizontal', 'flash', 'bounce', 
