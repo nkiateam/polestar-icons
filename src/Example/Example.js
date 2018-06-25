@@ -86,7 +86,7 @@ class Example extends React.Component {
         `;
         const icons = animations.map((animation) => {
             return (
-                <div key={animation} style={{ margin: '10px 0' }}>
+                <div key={animation} style={{ minWidth: '250px', margin: '20px 0px' }}>
                     <Icon
                         name="spinner"
                         color="blue"
@@ -114,10 +114,11 @@ class Example extends React.Component {
         });
         return (
             <div>
-                <h1>Stacked Icon</h1>
-                <pre>Animation Type</pre>
+                <h1>Animation Icon</h1>
                 <pre>{usage}</pre>
-                {icons}
+                <div style={{ display: 'flex', justifyContent: 'space-evenly', flexWrap: 'wrap', margin: '10px 30px' }}>
+                    {icons}
+                </div>
             </div>
         )
     }
