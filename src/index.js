@@ -60,20 +60,22 @@ class Icon extends React.Component {
         size: 1,
         innerSize: 1,
         stackRatio: [1, 1],
-        animationType: "always",
+        animationType: 'always',
         animationDuration: 15,
-        innerAnimationType: "always",
+        innerAnimationType: 'always',
         innerAnimationDuration: 15,
         onClick: () => {},
     };
-    
-    getIcon = (name, className, size, color, style, animation, animationType, animationDuration, 
-        type, onClick, isStack, stackRatio) => {
+
+    getIcon = (
+        name, className, size, color, style, animation, animationType, animationDuration,
+        type, onClick, isStack, stackRatio,
+    ) => {
         const prefix = this.props.type === 'font' ? 'ps-font-icon' : 'ps-image-icon';
         const stackRatioClass = isStack ? `icon-stack-${stackRatio}x` : '';
-        const iconSize = isNaN(Number(size)) ? `icon-${size}` : `icon-${size}x`
+        const iconSize = isNaN(Number(size)) ? `icon-${size}` : `icon-${size}x`;
         const animationClassName = this.getAnimationClassName(animation, animationType);
-        const iconClassName 
+        const iconClassName
             = `polestar-icon ${prefix}-${name} ${iconSize} ${className || ''} ${stackRatioClass} ${animationClassName}`;
         const iconStyle = Object.assign({}, this.props.style, {
             color,
@@ -86,10 +88,10 @@ class Icon extends React.Component {
                 this.icon.classList.toggle(`faa-${animation}`);
             }, animationDuration * 1000);
         }
-        
+
         return (
             <i
-                ref={(c) => { this.icon = c }}
+                ref={(ref) => { this.icon = ref; }}
                 className={iconClassName}
                 style={iconStyle}
                 onClick={onClick}
@@ -105,46 +107,49 @@ class Icon extends React.Component {
         }
         return `faa-${animation} animated`
     }
-    
+
     render() {
-        const { 
-            name, 
-            type, 
-            size, 
-            color, 
-            className, 
-            style, 
+        const {
+            name,
+            type,
+            size,
+            color,
+            className,
+            style,
             animation,
             animationType,
             animationDuration,
-            stackSize,
-            innerName, 
-            innerSize, 
-            innerColor, 
-            innerClassName, 
+            innerName,
+            innerSize,
+            innerColor,
+            innerClassName,
             innerStyle,
             innerAnimation,
             innerAnimationType,
             innerAnimationDuration,
-            innerStackSize,
             stackRatio,
-            onClick 
+            onClick,
         } = this.props;
-        
-        const icon = this.getIcon(name, className, size, color, style, 
+
+        const icon = this.getIcon(
+            name, className, size, color, style,
             animation, animationType, animationDuration,
-            type, onClick, Boolean(innerName), stackRatio[0]);
+            type, onClick, Boolean(innerName), stackRatio[0],
+        );
+
         if (innerName) {
-            const innerIcon = this.getIcon(innerName, innerClassName, innerSize || size, innerColor, innerStyle, 
-                innerAnimation, innerAnimationType, innerAnimationDuration, 
-                type, null, Boolean(innerName), stackRatio[1]);
+            const innerIcon = this.getIcon(
+                innerName, innerClassName, innerSize || size, innerColor, innerStyle,
+                innerAnimation, innerAnimationType, innerAnimationDuration,
+                type, null, Boolean(innerName), stackRatio[1],
+            );
             return (
                 <span className="icon-stack">
                     {icon}
                     {innerIcon}
                 </span>
-            )
-        } 
+            );
+        }
         return icon;
     }
 }
