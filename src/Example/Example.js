@@ -86,12 +86,27 @@ class Example extends React.Component {
         `;
         const icons = animations.map((animation) => {
             return (
-                <div key={animation} style={{ margin: '10px 0px' }}>
+                <div key={animation} style={{ margin: '10px 0' }}>
                     <Icon
-                        name="bell"
+                        name="spinner"
                         color="blue"
                         size={2}
                         animation={animation}
+                        style={{ margin: '0 10px' }}
+                    />
+                    <Icon
+                        name="spinner1"
+                        color="blue"
+                        size={2}
+                        animation={animation}
+                        style={{ margin: '0 10px' }}
+                    />
+                    <Icon
+                        name="spinner2"
+                        color="blue"
+                        size={2}
+                        animation={animation}
+                        style={{ margin: '0 10px' }}
                     />
                     {animation}
                 </div>
