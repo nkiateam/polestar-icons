@@ -27,7 +27,7 @@ class Example extends React.Component {
                         target="_blank"
                         style={{ textDecoration: 'none' }}
                     >
-                        <Icon name="github-circled-alt2" />
+                        <Icon name="github" />
                     </a>&nbsp;
                     <a
                         href="http://192.168.232.211/polestar-icons/docs"
@@ -35,7 +35,7 @@ class Example extends React.Component {
                         target="_blank"
                         style={{ textDecoration: 'none' }}
                     >
-                        <Icon name="doc-text" />
+                        <Icon name="file-text-o" />
                     </a>
                 </h1>
                 <pre>{usage}</pre>
