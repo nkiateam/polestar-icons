@@ -20,7 +20,7 @@ class Icon extends React.Component {
         style: PropTypes.object,
         /** 아이콘 애니메이션 */
         annimation: PropTypes.oneOf(
-            ['spin', 'spin-pulse', 'wrench', 'ring', 'vertical', 'horizontal', 'flash', 'bounce', 
+            ['spin', 'spin-pulse', 'wrench', 'ring', 'vertical', 'horizontal', 'flash', 'bounce',
             'float', 'pulse', 'tada', 'passing', 'passing-reverse', 'burst', 'falling']
         ),
         /** 아이콘 애니메이션 표시 방법(항상, 일정시간, 호버, 부모노드 호버) */
@@ -39,7 +39,7 @@ class Icon extends React.Component {
         innerStyle: PropTypes.object,
         /** 아이콘 애니메이션 */
         innerAnimation: PropTypes.oneOf(
-            ['spin', 'spin-pulse', 'wrench', 'ring', 'vertical', 'horizontal', 'flash', 'bounce', 
+            ['spin', 'spin-pulse', 'wrench', 'ring', 'vertical', 'horizontal', 'flash', 'bounce',
             'float', 'pulse', 'tada', 'passing', 'passing-reverse', 'burst', 'falling']
         ),
         /** 아이콘 애니메이션 표시 방법(항상, 일정시간, 호버, 부모노드 호버) */
@@ -101,11 +101,11 @@ class Icon extends React.Component {
 
     getAnimationClassName = (animation, animationType) => {
         if (animationType === 'hover') {
-            return `faa-${animation} animated-hover`
+            return `faa-${animation} animated-hover`;
         } else if (animationType === 'parent-hover') {
-            return `faa-${animation}`; 
+            return `faa-${animation}`;
         }
-        return `faa-${animation} animated`
+        return `faa-${animation} animated`;
     }
 
     render() {
