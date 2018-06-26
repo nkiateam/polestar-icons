@@ -40,11 +40,12 @@ const questions = [
     }
 ];
 
-// if (svgFiles.length === 0) {
-//     throw new Error('input 폴더에 변환할 svg 파일을 넣어주세요');
-// }
+if (svgFiles.length === 0) {
+    throw new Error('input 폴더에 변환할 svg 파일을 넣어주세요');
+}
 
 inquirer.prompt(questions).then((answer) => {
     const { svgFile, prefix } = answer;
+    console.log('prefix', prefix);
     transform(path.join(inputPath, svgFile), pathsOfBasedSvgFile, prefix);
 });
