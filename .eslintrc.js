@@ -20,12 +20,13 @@ module.exports = {
     "import/no-unresolved": "off",
     "import/extensions": "off",
     "no-underscore-dangle": "off",
-    "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["gridProps", "column"] }]
+    "no-param-reassign": ["error", { "props": false }],
+    "no-plusplus": "off"
   },
   "settings" : {
 	  "import/resolver": {
 		  "webpack": {
-			"config": "./webpack.prod.config.js"
+			"config": "./webpack.config.js"
 	    }
 	  }
   },

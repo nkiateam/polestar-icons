@@ -69,14 +69,14 @@ class Example extends React.Component {
                         name="cloud"
                         color="grey"
                         size={2}
-                        innerName="moon"
+                        innerName="moon-o"
                         innerColor="blue"
                         innerSize={1}
                     />
                     <Icon
                         name="cloud"
                         color="grey"
-                        innerName="moon"
+                        innerName="moon-o"
                         innerColor="blue"
                         stackRatio={[2, 1]}
                     />
@@ -112,14 +112,14 @@ class Example extends React.Component {
                     style={{ margin: '0 10px' }}
                 />
                 <Icon
-                    name="spinner1"
+                    name="square-o"
                     color="blue"
                     size={2}
                     animation={animation}
                     style={{ margin: '0 10px' }}
                 />
                 <Icon
-                    name="spinner2"
+                    name="star-o"
                     color="blue"
                     size={2}
                     animation={animation}
