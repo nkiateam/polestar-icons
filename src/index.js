@@ -4,6 +4,7 @@ import './css/polestar.css';
 import './css/sprite.css';
 import './css/animate.css';
 import './css/size.css';
+import './css/stacked.css';
 
 class Icon extends React.Component {
     static defaultProps = {
@@ -102,7 +103,7 @@ class Icon extends React.Component {
         if (animationType === 'duration') {
             setTimeout(() => {
                 this.icon.classList.toggle('animated');
-                this.icon.classList.toggle(`faa-${animation}`);
+                this.icon.classList.toggle(`ps-${animation}`);
             }, animationDuration * 1000);
         }
 
@@ -118,13 +119,13 @@ class Icon extends React.Component {
 
     getAnimationClassName = (animation, animationType) => {
         if (animationType === 'hover') {
-            return `faa-${animation} animated-hover`;
+            return `ps-${animation} animated-hover`;
         } else if (animationType === 'parent-hover') {
-            return `faa-${animation}`;
+            return `ps-${animation}`;
         } else if (!animation) {
             return '';
         }
-        return `faa-${animation} animated`;
+        return `ps-${animation} animated`;
     }
 
     render() {

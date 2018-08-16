@@ -87,7 +87,7 @@ class Example extends React.Component {
 
     renderAnimationIcon = () => {
         const animations = ['spin', 'spin-pulse', 'wrench', 'ring', 'vertical', 'horizontal', 'flash', 'bounce',
-            'float', 'pulse', 'tada', 'passing', 'passing-reverse', 'burst', 'falling'];
+            'float', 'pulse', 'tada', 'passing', 'passing-reverse', 'burst', 'falling', 'shake'];
         const usage = `
             import Icon from 'polestar-icons';
 
@@ -107,21 +107,21 @@ class Example extends React.Component {
                 <Icon
                     name="spinner"
                     color="blue"
-                    size={2}
+                    size={1}
                     animation={animation}
                     style={{ margin: '0 10px' }}
                 />
                 <Icon
                     name="square-o"
                     color="blue"
-                    size={2}
+                    size={1}
                     animation={animation}
                     style={{ margin: '0 10px' }}
                 />
                 <Icon
                     name="star-o"
                     color="blue"
-                    size={2}
+                    size={1}
                     animation={animation}
                     style={{ margin: '0 10px' }}
                 />
@@ -143,6 +143,75 @@ class Example extends React.Component {
         );
     }
 
+    renderIconSize = () => {
+        const usage = `
+            import Icon from 'polestar-icons';
+
+            render() {
+                return (
+                    <Icon
+                        name="bell"
+                        color="black"
+                        size={1}
+                    />
+                    <Icon
+                        name="bell"
+                        color="black"
+                        size={2}
+                    />
+                    <Icon
+                        name="bell"
+                        color="black"
+                        size={3}
+                    />
+                    <Icon
+                        name="bell"
+                        color="black"
+                        size={4}
+                    />
+                    <Icon
+                        name="bell"
+                        color="black"
+                        size={5}
+                    />
+                )
+            }
+        `;
+        return (
+            <div>
+                <h1>Icon Size</h1>
+                <pre>{usage}</pre>
+                <div>
+                    <Icon
+                        name="bell"
+                        color="black"
+                        size={1}
+                    />
+                    <Icon
+                        name="bell"
+                        color="black"
+                        size={2}
+                    />
+                    <Icon
+                        name="bell"
+                        color="black"
+                        size={3}
+                    />
+                    <Icon
+                        name="bell"
+                        color="black"
+                        size={4}
+                    />
+                    <Icon
+                        name="bell"
+                        color="black"
+                        size={5}
+                    />
+                </div>
+            </div>
+        );
+    }
+
     renderFontIcons = () => <FontIcon />;
 
     renderImageIcons = () => <ImageIcon />;
@@ -153,6 +222,7 @@ class Example extends React.Component {
                 {this.renderUsage()}
                 {this.renderStackedIcon()}
                 {this.renderAnimationIcon()}
+                {this.renderIconSize()}
                 {this.renderFontIcons()}
                 {this.renderImageIcons()}
             </div>
