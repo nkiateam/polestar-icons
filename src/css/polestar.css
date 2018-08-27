@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'polestar';
-  src: url('../fonts/polestar.eot?1535344578');
-  src: url('../fonts/polestar.eot?1535344578#iefix') format('embedded-opentype'),
-       url('../fonts/polestar.woff2?1535344578') format('woff2'),
-       url('../fonts/polestar.woff?1535344578') format('woff'),
-       url('../fonts/polestar.ttf?1535344578') format('truetype'),
-       url('../fonts/polestar.svg?1535344578#fontello') format('svg');
+  src: url('../fonts/polestar.eot?1535356345');
+  src: url('../fonts/polestar.eot?1535356345#iefix') format('embedded-opentype'),
+       url('../fonts/polestar.woff2?1535356345') format('woff2'),
+       url('../fonts/polestar.woff?1535356345') format('woff'),
+       url('../fonts/polestar.ttf?1535356345') format('truetype'),
+       url('../fonts/polestar.svg?1535356345#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -830,45 +830,49 @@
 .ps-font-icon-yelp:before { content: '\E30C' } 
 .ps-font-icon-youtube-square:before { content: '\E30D' } 
 .ps-font-icon-youtube:before { content: '\E30E' } 
-.ps-font-icon-unit-stack-group:before { content: '\E30F' } 
-.ps-font-icon-unit-stack:before { content: '\E310' } 
-.ps-font-icon-pir-sensor:before { content: '\E311' } 
-.ps-font-icon-humi-sensor:before { content: '\E312' } 
-.ps-font-icon-lux-sensor:before { content: '\E313' } 
-.ps-font-icon-weather-forecast:before { content: '\E314' } 
-.ps-font-icon-main-transformer:before { content: '\E315' } 
-.ps-font-icon-gis:before { content: '\E316' } 
-.ps-font-icon-weather-sunny:before { content: '\E317' } 
-.ps-font-icon-weather-partly-cloudy:before { content: '\E318' } 
-.ps-font-icon-thingstar:before { content: '\E319' } 
-.ps-font-icon-thingstar-ap:before { content: '\E31A' } 
-.ps-font-icon-kafka:before { content: '\E31B' } 
-.ps-font-icon-kafka-broker:before { content: '\E31C' } 
-.ps-font-icon-cassandra:before { content: '\E31D' } 
-.ps-font-icon-cassandra-node:before { content: '\E31E' } 
-.ps-font-icon-iot-gateway:before { content: '\E31F' } 
-.ps-font-icon-sensor-group:before { content: '\E320' } 
-.ps-font-icon-env-sensor:before { content: '\E321' } 
-.ps-font-icon-vib-sensor:before { content: '\E322' } 
-.ps-font-icon-electric-sensor:before { content: '\E323' } 
-.ps-font-icon-mfl:before { content: '\E324' } 
-.ps-font-icon-facilities:before { content: '\E325' } 
-.ps-font-icon-factory:before { content: '\E326' } 
-.ps-font-icon-facility:before { content: '\E327' } 
-.ps-font-icon-crane:before { content: '\E328' } 
-.ps-font-icon-hoist:before { content: '\E329' } 
-.ps-font-icon-wirerope:before { content: '\E32A' } 
-.ps-font-icon-sheave:before { content: '\E32B' } 
-.ps-font-icon-hospital:before { content: '\E32C' } 
-.ps-font-icon-hospital-room:before { content: '\E32D' } 
-.ps-font-icon-thermoelectric:before { content: '\E32E' } 
-.ps-font-icon-cold-pipe-line:before { content: '\E32F' } 
-.ps-font-icon-heat-pipe-line:before { content: '\E330' } 
-.ps-font-icon-weather-mainly-cloudy:before { content: '\E331' } 
-.ps-font-icon-weather-cloudy:before { content: '\E332' } 
-.ps-font-icon-temperature:before { content: '\E333' } 
-.ps-font-icon-humidity:before { content: '\E334' } 
-.ps-font-icon-wind-dir:before { content: '\E335' } 
-.ps-font-icon-rain:before { content: '\E336' } 
-.ps-font-icon-sleet:before { content: '\E337' } 
-.ps-font-icon-snow:before { content: '\E338' } 
+.ps-font-icon-thingstar:before { content: '\E30F' } 
+.ps-font-icon-thingstar-ap:before { content: '\E310' } 
+.ps-font-icon-kafka:before { content: '\E311' } 
+.ps-font-icon-kafka-broker:before { content: '\E312' } 
+.ps-font-icon-cassandra:before { content: '\E313' } 
+.ps-font-icon-cassandra-node:before { content: '\E314' } 
+.ps-font-icon-iot-gateway:before { content: '\E315' } 
+.ps-font-icon-sensor-group:before { content: '\E316' } 
+.ps-font-icon-env-sensor:before { content: '\E317' } 
+.ps-font-icon-vib-sensor:before { content: '\E318' } 
+.ps-font-icon-electric-sensor:before { content: '\E319' } 
+.ps-font-icon-mfl:before { content: '\E31A' } 
+.ps-font-icon-facilities:before { content: '\E31B' } 
+.ps-font-icon-factory:before { content: '\E31C' } 
+.ps-font-icon-facility:before { content: '\E31D' } 
+.ps-font-icon-crane:before { content: '\E31E' } 
+.ps-font-icon-hoist:before { content: '\E31F' } 
+.ps-font-icon-wirerope:before { content: '\E320' } 
+.ps-font-icon-sheave:before { content: '\E321' } 
+.ps-font-icon-hospital:before { content: '\E322' } 
+.ps-font-icon-hospital-room:before { content: '\E323' } 
+.ps-font-icon-thermoelectric:before { content: '\E324' } 
+.ps-font-icon-cold-pipe-line:before { content: '\E325' } 
+.ps-font-icon-heat-pipe-line:before { content: '\E326' } 
+.ps-font-icon-weather-partly-cloudy:before { content: '\E327' } 
+.ps-font-icon-weather-mainly-cloudy:before { content: '\E328' } 
+.ps-font-icon-weather-cloudy:before { content: '\E329' } 
+.ps-font-icon-temperature:before { content: '\E32A' } 
+.ps-font-icon-humidity:before { content: '\E32B' } 
+.ps-font-icon-wind-dir:before { content: '\E32C' } 
+.ps-font-icon-rain:before { content: '\E32D' } 
+.ps-font-icon-sleet:before { content: '\E32E' } 
+.ps-font-icon-unit-stack-group:before { content: '\E32F' } 
+.ps-font-icon-unit-stack:before { content: '\E330' } 
+.ps-font-icon-pir-sensor:before { content: '\E331' } 
+.ps-font-icon-temp-sensor:before { content: '\E332' } 
+.ps-font-icon-humi-sensor:before { content: '\E333' } 
+.ps-font-icon-lux-sensor:before { content: '\E334' } 
+.ps-font-icon-weather-forecast:before { content: '\E335' } 
+.ps-font-icon-main-transformer:before { content: '\E336' } 
+.ps-font-icon-gis:before { content: '\E337' } 
+.ps-font-icon-weather-sunny:before { content: '\E338' } 
+.ps-font-icon-snow:before { content: '\E339' } 
+.ps-font-icon-add-document:before { content: '\E33A' } 
+.ps-font-icon-add-creation:before { content: '\E33B' } 
+.ps-font-icon-add-next:before { content: '\E33C' } 
