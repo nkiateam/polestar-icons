@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'polestar';
-  src: url('../fonts/polestar.eot?1537424394');
-  src: url('../fonts/polestar.eot?1537424394#iefix') format('embedded-opentype'),
-       url('../fonts/polestar.woff2?1537424394') format('woff2'),
-       url('../fonts/polestar.woff?1537424394') format('woff'),
-       url('../fonts/polestar.ttf?1537424394') format('truetype'),
-       url('../fonts/polestar.svg?1537424394#fontello') format('svg');
+  src: url('../fonts/polestar.eot?1540194079');
+  src: url('../fonts/polestar.eot?1540194079#iefix') format('embedded-opentype'),
+       url('../fonts/polestar.woff2?1540194079') format('woff2'),
+       url('../fonts/polestar.woff?1540194079') format('woff'),
+       url('../fonts/polestar.ttf?1540194079') format('truetype'),
+       url('../fonts/polestar.svg?1540194079#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -889,3 +889,7 @@
 .ps-font-icon-columns-1:before { content: '\E347' } 
 .ps-font-icon-columns-2:before { content: '\E348' } 
 .ps-font-icon-columns-3:before { content: '\E349' } 
+.ps-font-icon-co2:before { content: '\E34A' } 
+.ps-font-icon-electirc-power:before { content: '\E34B' } 
+.ps-font-icon-voltage:before { content: '\E34C' } 
+.ps-font-icon-electirc-current:before { content: '\E34D' } 
