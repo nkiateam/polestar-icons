@@ -1,7 +1,7 @@
 {
   "name": "polestar-icons",
   "author": "NKIA",
-  "version": "0.9.24",
+  "version": "0.9.25",
   "description": "Polestar UI Icons",
   "main": "./lib/index.js",
   "keywords": [
