@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const autoprefixer = require('autoprefixer');
 
-const port = 3000;
+const port = 5000;
 
 let publicPath = '/build/';
 
