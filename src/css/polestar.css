@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'polestar';
-  src: url('../fonts/polestar.eot?1552895924');
-  src: url('../fonts/polestar.eot?1552895924#iefix') format('embedded-opentype'),
-       url('../fonts/polestar.woff2?1552895924') format('woff2'),
-       url('../fonts/polestar.woff?1552895924') format('woff'),
-       url('../fonts/polestar.ttf?1552895924') format('truetype'),
-       url('../fonts/polestar.svg?1552895924#fontello') format('svg');
+  src: url('../fonts/polestar.eot?1553169287');
+  src: url('../fonts/polestar.eot?1553169287#iefix') format('embedded-opentype'),
+       url('../fonts/polestar.woff2?1553169287') format('woff2'),
+       url('../fonts/polestar.woff?1553169287') format('woff'),
+       url('../fonts/polestar.ttf?1553169287') format('truetype'),
+       url('../fonts/polestar.svg?1553169287#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -930,3 +930,5 @@
 .ps-font-icon-resource:before { content: '\E370' } 
 .ps-font-icon-integration-1:before { content: '\E371' } 
 .ps-font-icon-integration-2:before { content: '\E372' } 
+.ps-font-icon-plus-square-edge:before { content: '\E373' } 
+.ps-font-icon-minus-square-edge:before { content: '\E374' } 
