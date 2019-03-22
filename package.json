@@ -17,8 +17,8 @@
   "homepage": "https://github.com/nkiateam/polestar-icons#readme",
   "scripts": {
     "docs": "styleguidist server",
-    "docs:build": "rimraf docs && styleguidist build && git add docs",
-    "examples:build": "rimraf examples/build && cross-env NODE_ENV=production webpack",
+    "build:docs": "rimraf docs && styleguidist build && git add docs",
+    "build:examples": "rimraf examples/build && cross-env NODE_ENV=production webpack",
     "prepublish": "rimraf lib && babel src --out-dir lib --copy-files",
     "generate": "node_modules/.bin/cross-env NODE_ENV=production babel-node --presets=env --plugins=transform-async-to-generator ./generator/app.js",
     "gen": "node_modules/.bin/cross-env NODE_ENV=production babel-node --presets=env --plugins=transform-async-to-generator ./generator/app.js",
