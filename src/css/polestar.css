@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'polestar';
-  src: url('../fonts/polestar.eot?1553169287');
-  src: url('../fonts/polestar.eot?1553169287#iefix') format('embedded-opentype'),
-       url('../fonts/polestar.woff2?1553169287') format('woff2'),
-       url('../fonts/polestar.woff?1553169287') format('woff'),
-       url('../fonts/polestar.ttf?1553169287') format('truetype'),
-       url('../fonts/polestar.svg?1553169287#fontello') format('svg');
+  src: url('../fonts/polestar.eot?1553217386');
+  src: url('../fonts/polestar.eot?1553217386#iefix') format('embedded-opentype'),
+       url('../fonts/polestar.woff2?1553217386') format('woff2'),
+       url('../fonts/polestar.woff?1553217386') format('woff'),
+       url('../fonts/polestar.ttf?1553217386') format('truetype'),
+       url('../fonts/polestar.svg?1553217386#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -902,12 +902,12 @@
 .ps-font-icon-purification-plant:before { content: '\E354' } 
 .ps-font-icon-gas-lel:before { content: '\E355' } 
 .ps-font-icon-gas:before { content: '\E356' } 
-.ps-font-icon-volumetricFlow:before { content: '\E357' } 
-.ps-font-icon-massFlow:before { content: '\E358' } 
-.ps-font-icon-windSpeed:before { content: '\E359' } 
-.ps-font-icon-soilMoisture:before { content: '\E35A' } 
+.ps-font-icon-volumetric-flow:before { content: '\E357' } 
+.ps-font-icon-mass-flow:before { content: '\E358' } 
+.ps-font-icon-wind-speed:before { content: '\E359' } 
+.ps-font-icon-soil-moisture:before { content: '\E35A' } 
 .ps-font-icon-acidity:before { content: '\E35B' } 
-.ps-font-icon-rainFall:before { content: '\E35C' } 
+.ps-font-icon-rain-fall:before { content: '\E35C' } 
 .ps-font-icon-skull:before { content: '\E35D' } 
 .ps-font-icon-rulechain:before { content: '\E35E' } 
 .ps-font-icon-udp-trigger:before { content: '\E35F' } 
@@ -930,5 +930,3 @@
 .ps-font-icon-resource:before { content: '\E370' } 
 .ps-font-icon-integration-1:before { content: '\E371' } 
 .ps-font-icon-integration-2:before { content: '\E372' } 
-.ps-font-icon-plus-square-edge:before { content: '\E373' } 
-.ps-font-icon-minus-square-edge:before { content: '\E374' } 
