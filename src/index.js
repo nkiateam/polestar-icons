@@ -40,7 +40,7 @@ class Icon extends React.Component {
         /** 아이콘 애니메이션 */
         animation: PropTypes.oneOf([
             'spin', 'spin-pulse', 'wrench', 'ring', 'vertical', 'horizontal', 'flash', 'bounce',
-            'float', 'pulse', 'tada', 'passing', 'passing-reverse', 'burst', 'falling',
+            'float', 'pulse', 'tada', 'passing', 'passing-reverse', 'burst', 'falling', 'shake',
         ]),
         /** 아이콘 애니메이션 표시 방법(항상, 일정시간, 호버, 부모노드 호버) */
         animationType: PropTypes.oneOf([
@@ -66,7 +66,7 @@ class Icon extends React.Component {
         /** 아이콘 애니메이션 */
         innerAnimation: PropTypes.oneOf([
             'spin', 'spin-pulse', 'wrench', 'ring', 'vertical', 'horizontal', 'flash', 'bounce',
-            'float', 'pulse', 'tada', 'passing', 'passing-reverse', 'burst', 'falling',
+            'float', 'pulse', 'tada', 'passing', 'passing-reverse', 'burst', 'falling', 'shake',
         ]),
         /** 아이콘 애니메이션 표시 방법(항상, 일정시간, 호버, 부모노드 호버) */
         innerAnimationType: PropTypes.oneOf([

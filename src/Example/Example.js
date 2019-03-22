@@ -3,6 +3,8 @@ import FontIcon from './FontIcon';
 import ImageIcon from './ImageIcon';
 import Icon from '../index';
 
+import packageJson from '../../package.json';
+
 class Example extends React.Component {
     renderUsage = () => {
         const usage = `
@@ -19,25 +21,28 @@ class Example extends React.Component {
         `;
         return (
             <div>
-                <h1>
-                    Usage&nbsp;
-                    <a
-                        href="https://github.com/nkiateam/polestar-icons"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        style={{ textDecoration: 'none' }}
-                    >
-                        <Icon name="github" />
-                    </a>&nbsp;
-                    <a
-                        href="http://192.168.232.211/polestar-icons/docs"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        style={{ textDecoration: 'none' }}
-                    >
-                        <Icon name="file-text-o" />
-                    </a>
-                </h1>
+                <div style={{ display: 'flex' }}>
+                    <h1>
+                        Usage&nbsp;
+                        <a
+                            href="https://github.com/nkiateam/polestar-icons"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            style={{ textDecoration: 'none' }}
+                        >
+                            <Icon name="github" />
+                        </a>&nbsp;
+                        <a
+                            href="http://192.168.232.211/polestar-icons/docs"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            style={{ textDecoration: 'none' }}
+                        >
+                            <Icon name="file-text-o" />
+                        </a>
+                    </h1>
+                    <span style={{ marginLeft: '10px', marginTop: '34px' }}>v{packageJson.version}</span>
+                </div>
                 <pre>{usage}</pre>
             </div>
         );
