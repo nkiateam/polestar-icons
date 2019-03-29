@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'polestar';
-  src: url('../fonts/polestar.eot?1553757803');
-  src: url('../fonts/polestar.eot?1553757803#iefix') format('embedded-opentype'),
-       url('../fonts/polestar.woff2?1553757803') format('woff2'),
-       url('../fonts/polestar.woff?1553757803') format('woff'),
-       url('../fonts/polestar.ttf?1553757803') format('truetype'),
-       url('../fonts/polestar.svg?1553757803#fontello') format('svg');
+  src: url('../fonts/polestar.eot?1553824946');
+  src: url('../fonts/polestar.eot?1553824946#iefix') format('embedded-opentype'),
+       url('../fonts/polestar.woff2?1553824946') format('woff2'),
+       url('../fonts/polestar.woff?1553824946') format('woff'),
+       url('../fonts/polestar.ttf?1553824946') format('truetype'),
+       url('../fonts/polestar.svg?1553824946#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -855,87 +855,87 @@
 .ps-font-icon-cold-pipe-line:before { content: '\E325' } 
 .ps-font-icon-heat-pipe-line:before { content: '\E326' } 
 .ps-font-icon-weather-partly-cloudy:before { content: '\E327' } 
-.ps-font-icon-weather-cloudy:before { content: '\E328' } 
-.ps-font-icon-temperature:before { content: '\E329' } 
-.ps-font-icon-humidity:before { content: '\E32A' } 
-.ps-font-icon-wind-dir:before { content: '\E32B' } 
-.ps-font-icon-rain:before { content: '\E32C' } 
-.ps-font-icon-sleet:before { content: '\E32D' } 
-.ps-font-icon-unit-stack-group:before { content: '\E32E' } 
-.ps-font-icon-unit-stack:before { content: '\E32F' } 
-.ps-font-icon-pir-sensor:before { content: '\E330' } 
-.ps-font-icon-temp-sensor:before { content: '\E331' } 
-.ps-font-icon-humi-sensor:before { content: '\E332' } 
-.ps-font-icon-lux-sensor:before { content: '\E333' } 
-.ps-font-icon-weather-forecast:before { content: '\E334' } 
-.ps-font-icon-main-transformer:before { content: '\E335' } 
-.ps-font-icon-gis:before { content: '\E336' } 
-.ps-font-icon-weather-sunny:before { content: '\E337' } 
-.ps-font-icon-snow:before { content: '\E338' } 
-.ps-font-icon-add-document:before { content: '\E339' } 
-.ps-font-icon-add-creation:before { content: '\E33A' } 
-.ps-font-icon-add-next:before { content: '\E33B' } 
-.ps-font-icon-file-excel:before { content: '\E33C' } 
-.ps-font-icon-file-powerpoint:before { content: '\E33D' } 
-.ps-font-icon-file-word:before { content: '\E33E' } 
-.ps-font-icon-file-pdf:before { content: '\E33F' } 
-.ps-font-icon-file-jpg:before { content: '\E340' } 
-.ps-font-icon-file-svg:before { content: '\E341' } 
-.ps-font-icon-file-psd:before { content: '\E342' } 
-.ps-font-icon-file-ai:before { content: '\E343' } 
-.ps-font-icon-file-xml:before { content: '\E344' } 
-.ps-font-icon-file-json:before { content: '\E345' } 
-.ps-font-icon-columns-1:before { content: '\E346' } 
-.ps-font-icon-columns-2:before { content: '\E347' } 
-.ps-font-icon-columns-3:before { content: '\E348' } 
-.ps-font-icon-co2:before { content: '\E349' } 
-.ps-font-icon-electirc-power:before { content: '\E34A' } 
-.ps-font-icon-voltage:before { content: '\E34B' } 
-.ps-font-icon-electirc-current:before { content: '\E34C' } 
-.ps-font-icon-fullscreen:before { content: '\E34D' } 
-.ps-font-icon-fullscreen-exit:before { content: '\E34E' } 
-.ps-font-icon-polygon:before { content: '\E34F' } 
-.ps-font-icon-rectangle:before { content: '\E350' } 
-.ps-font-icon-triangle:before { content: '\E351' } 
-.ps-font-icon-draw-line:before { content: '\E352' } 
-.ps-font-icon-purification-plant:before { content: '\E353' } 
-.ps-font-icon-gas-lel:before { content: '\E354' } 
-.ps-font-icon-gas:before { content: '\E355' } 
-.ps-font-icon-volumetric-flow:before { content: '\E356' } 
-.ps-font-icon-mass-flow:before { content: '\E357' } 
-.ps-font-icon-wind-speed:before { content: '\E358' } 
-.ps-font-icon-soil-moisture:before { content: '\E359' } 
-.ps-font-icon-acidity:before { content: '\E35A' } 
-.ps-font-icon-rain-fall:before { content: '\E35B' } 
-.ps-font-icon-skull:before { content: '\E35C' } 
-.ps-font-icon-rulechain:before { content: '\E35D' } 
-.ps-font-icon-udp-trigger:before { content: '\E35E' } 
-.ps-font-icon-udp-send:before { content: '\E35F' } 
-.ps-font-icon-http:before { content: '\E360' } 
-.ps-font-icon-mqtt:before { content: '\E361' } 
-.ps-font-icon-modbus-read:before { content: '\E362' } 
-.ps-font-icon-modbus-write:before { content: '\E363' } 
-.ps-font-icon-monitoring:before { content: '\E364' } 
-.ps-font-icon-ai:before { content: '\E365' } 
-.ps-font-icon-ai-model:before { content: '\E366' } 
-.ps-font-icon-anomaly-detection:before { content: '\E367' } 
-.ps-font-icon-counter-get:before { content: '\E368' } 
-.ps-font-icon-counter-set:before { content: '\E369' } 
-.ps-font-icon-threshold:before { content: '\E36A' } 
-.ps-font-icon-fine-dust:before { content: '\E36B' } 
-.ps-font-icon-exit:before { content: '\E36C' } 
-.ps-font-icon-aws-iot:before { content: '\E36D' } 
-.ps-font-icon-aws:before { content: '\E36E' } 
-.ps-font-icon-resource:before { content: '\E36F' } 
-.ps-font-icon-integration-1:before { content: '\E370' } 
-.ps-font-icon-integration-2:before { content: '\E371' } 
-.ps-font-icon-plus-square-edge:before { content: '\E372' } 
-.ps-font-icon-minus-square-edge:before { content: '\E373' } 
-.ps-font-icon-scatter-chart:before { content: '\E374' } 
-.ps-font-icon-heat-map:before { content: '\E375' } 
-.ps-font-icon-tree-map:before { content: '\E376' } 
-.ps-font-icon-device-create:before { content: '\E377' } 
-.ps-font-icon-device-update:before { content: '\E378' } 
-.ps-font-icon-device-delete:before { content: '\E379' } 
-.ps-font-icon-weather-mainly-cloudy:before { content: '\E37A' } 
+.ps-font-icon-weather-mainly-cloudy:before { content: '\E328' } 
+.ps-font-icon-weather-cloudy:before { content: '\E329' } 
+.ps-font-icon-temperature:before { content: '\E32A' } 
+.ps-font-icon-humidity:before { content: '\E32B' } 
+.ps-font-icon-wind-dir:before { content: '\E32C' } 
+.ps-font-icon-rain:before { content: '\E32D' } 
+.ps-font-icon-sleet:before { content: '\E32E' } 
+.ps-font-icon-unit-stack-group:before { content: '\E32F' } 
+.ps-font-icon-unit-stack:before { content: '\E330' } 
+.ps-font-icon-pir-sensor:before { content: '\E331' } 
+.ps-font-icon-temp-sensor:before { content: '\E332' } 
+.ps-font-icon-humi-sensor:before { content: '\E333' } 
+.ps-font-icon-lux-sensor:before { content: '\E334' } 
+.ps-font-icon-weather-forecast:before { content: '\E335' } 
+.ps-font-icon-main-transformer:before { content: '\E336' } 
+.ps-font-icon-gis:before { content: '\E337' } 
+.ps-font-icon-weather-sunny:before { content: '\E338' } 
+.ps-font-icon-snow:before { content: '\E339' } 
+.ps-font-icon-add-document:before { content: '\E33A' } 
+.ps-font-icon-add-creation:before { content: '\E33B' } 
+.ps-font-icon-add-next:before { content: '\E33C' } 
+.ps-font-icon-file-excel:before { content: '\E33D' } 
+.ps-font-icon-file-powerpoint:before { content: '\E33E' } 
+.ps-font-icon-file-word:before { content: '\E33F' } 
+.ps-font-icon-file-pdf:before { content: '\E340' } 
+.ps-font-icon-file-jpg:before { content: '\E341' } 
+.ps-font-icon-file-svg:before { content: '\E342' } 
+.ps-font-icon-file-psd:before { content: '\E343' } 
+.ps-font-icon-file-ai:before { content: '\E344' } 
+.ps-font-icon-file-xml:before { content: '\E345' } 
+.ps-font-icon-file-json:before { content: '\E346' } 
+.ps-font-icon-columns-1:before { content: '\E347' } 
+.ps-font-icon-columns-2:before { content: '\E348' } 
+.ps-font-icon-NameMe.842:before { content: '\E349' } 
+.ps-font-icon-co2:before { content: '\E34A' } 
+.ps-font-icon-electirc-power:before { content: '\E34B' } 
+.ps-font-icon-voltage:before { content: '\E34C' } 
+.ps-font-icon-electirc-current:before { content: '\E34D' } 
+.ps-font-icon-fullscreen:before { content: '\E34E' } 
+.ps-font-icon-fullscreen-exit:before { content: '\E34F' } 
+.ps-font-icon-polygon:before { content: '\E350' } 
+.ps-font-icon-rectangle:before { content: '\E351' } 
+.ps-font-icon-triangle:before { content: '\E352' } 
+.ps-font-icon-draw-line:before { content: '\E353' } 
+.ps-font-icon-purification-plant:before { content: '\E354' } 
+.ps-font-icon-gas-lel:before { content: '\E355' } 
+.ps-font-icon-gas:before { content: '\E356' } 
+.ps-font-icon-volumetric-flow:before { content: '\E357' } 
+.ps-font-icon-mass-flow:before { content: '\E358' } 
+.ps-font-icon-wind-speed:before { content: '\E359' } 
+.ps-font-icon-soil-moisture:before { content: '\E35A' } 
+.ps-font-icon-acidity:before { content: '\E35B' } 
+.ps-font-icon-rain-fall:before { content: '\E35C' } 
+.ps-font-icon-skull:before { content: '\E35D' } 
+.ps-font-icon-rulechain:before { content: '\E35E' } 
+.ps-font-icon-udp-trigger:before { content: '\E35F' } 
+.ps-font-icon-udp-send:before { content: '\E360' } 
+.ps-font-icon-http:before { content: '\E361' } 
+.ps-font-icon-mqtt:before { content: '\E362' } 
+.ps-font-icon-modbus-read:before { content: '\E363' } 
+.ps-font-icon-modbus-write:before { content: '\E364' } 
+.ps-font-icon-monitoring:before { content: '\E365' } 
+.ps-font-icon-ai:before { content: '\E366' } 
+.ps-font-icon-ai-model:before { content: '\E367' } 
+.ps-font-icon-anomaly-detection:before { content: '\E368' } 
+.ps-font-icon-counter-get:before { content: '\E369' } 
+.ps-font-icon-counter-set:before { content: '\E36A' } 
+.ps-font-icon-threshold:before { content: '\E36B' } 
+.ps-font-icon-fine-dust:before { content: '\E36C' } 
+.ps-font-icon-exit:before { content: '\E36D' } 
+.ps-font-icon-aws-iot:before { content: '\E36E' } 
+.ps-font-icon-aws:before { content: '\E36F' } 
+.ps-font-icon-resource:before { content: '\E370' } 
+.ps-font-icon-integration-1:before { content: '\E371' } 
+.ps-font-icon-integration-2:before { content: '\E372' } 
+.ps-font-icon-plus-square-edge:before { content: '\E373' } 
+.ps-font-icon-minus-square-edge:before { content: '\E374' } 
+.ps-font-icon-scatter-chart:before { content: '\E375' } 
+.ps-font-icon-heat-map:before { content: '\E376' } 
+.ps-font-icon-tree-map:before { content: '\E377' } 
+.ps-font-icon-device-create:before { content: '\E378' } 
+.ps-font-icon-device-update:before { content: '\E379' } 
+.ps-font-icon-device-delete:before { content: '\E37A' } 
 .ps-font-icon-device-query:before { content: '\E37B' } 
