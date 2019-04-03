@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'polestar';
-  src: url('../fonts/polestar.eot?1554079006');
-  src: url('../fonts/polestar.eot?1554079006#iefix') format('embedded-opentype'),
-       url('../fonts/polestar.woff2?1554079006') format('woff2'),
-       url('../fonts/polestar.woff?1554079006') format('woff'),
-       url('../fonts/polestar.ttf?1554079006') format('truetype'),
-       url('../fonts/polestar.svg?1554079006#fontello') format('svg');
+  src: url('../fonts/polestar.eot?1554282034');
+  src: url('../fonts/polestar.eot?1554282034#iefix') format('embedded-opentype'),
+       url('../fonts/polestar.woff2?1554282034') format('woff2'),
+       url('../fonts/polestar.woff?1554282034') format('woff'),
+       url('../fonts/polestar.ttf?1554282034') format('truetype'),
+       url('../fonts/polestar.svg?1554282034#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -888,7 +888,7 @@
 .ps-font-icon-file-json:before { content: '\E346' } 
 .ps-font-icon-columns-1:before { content: '\E347' } 
 .ps-font-icon-columns-2:before { content: '\E348' } 
-.ps-font-icon-NameMe.842:before { content: '\E349' } 
+.ps-font-icon-columns-3:before { content: '\E349' } 
 .ps-font-icon-co2:before { content: '\E34A' } 
 .ps-font-icon-electirc-power:before { content: '\E34B' } 
 .ps-font-icon-voltage:before { content: '\E34C' } 
