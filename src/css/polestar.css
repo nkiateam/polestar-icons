@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'polestar';
-  src: url('../fonts/polestar.eot?1562914027');
-  src: url('../fonts/polestar.eot?1562914027#iefix') format('embedded-opentype'),
-       url('../fonts/polestar.woff2?1562914027') format('woff2'),
-       url('../fonts/polestar.woff?1562914027') format('woff'),
-       url('../fonts/polestar.ttf?1562914027') format('truetype'),
-       url('../fonts/polestar.svg?1562914027#fontello') format('svg');
+  src: url('../fonts/polestar.eot?1563446448');
+  src: url('../fonts/polestar.eot?1563446448#iefix') format('embedded-opentype'),
+       url('../fonts/polestar.woff2?1563446448') format('woff2'),
+       url('../fonts/polestar.woff?1563446448') format('woff'),
+       url('../fonts/polestar.ttf?1563446448') format('truetype'),
+       url('../fonts/polestar.svg?1563446448#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -960,43 +960,62 @@
 .ps-font-icon-boat-2:before { content: '\E38E' } 
 .ps-font-icon-boat-o:before { content: '\E38F' } 
 .ps-font-icon-hp:before { content: '\E390' } 
-.ps-font-icon-system-object:before { content: '\E391' } 
-.ps-font-icon-business-object:before { content: '\E392' } 
-.ps-font-icon-device:before { content: '\E393' } 
-.ps-font-icon-network-device:before { content: '\E394' } 
-.ps-font-icon-server-device:before { content: '\E395' } 
-.ps-font-icon-job:before { content: '\E396' } 
-.ps-font-icon-audit-job:before { content: '\E397' } 
-.ps-font-icon-batch-job:before { content: '\E398' } 
-.ps-font-icon-compliance-job:before { content: '\E399' } 
-.ps-font-icon-file-collect-job:before { content: '\E39A' } 
-.ps-font-icon-file-deploy-job:before { content: '\E39B' } 
-.ps-font-icon-windows-update-job:before { content: '\E39C' } 
-.ps-font-icon-network-script-job:before { content: '\E39D' } 
-.ps-font-icon-script-job:before { content: '\E39E' } 
-.ps-font-icon-library:before { content: '\E39F' } 
-.ps-font-icon-file-library:before { content: '\E3A0' } 
-.ps-font-icon-script-library:before { content: '\E3A1' } 
-.ps-font-icon-agent:before { content: '\E3A2' } 
-.ps-font-icon-configuration-files:before { content: '\E3A3' } 
-.ps-font-icon-connected-switches:before { content: '\E3A4' } 
-.ps-font-icon-cpu:before { content: '\E3A5' } 
-.ps-font-icon-disk:before { content: '\E3A6' } 
-.ps-font-icon-file-system:before { content: '\E3A7' } 
-.ps-font-icon-installed-software:before { content: '\E3A8' } 
+.ps-font-icon-agent-1:before { content: '\E391' } 
+.ps-font-icon-agent-device:before { content: '\E392' } 
+.ps-font-icon-agentless-device:before { content: '\E393' } 
+.ps-font-icon-audit-job:before { content: '\E394' } 
+.ps-font-icon-audit-job-o:before { content: '\E395' } 
+.ps-font-icon-batch-job:before { content: '\E396' } 
+.ps-font-icon-batch-job-o:before { content: '\E397' } 
+.ps-font-icon-compliance-job:before { content: '\E398' } 
+.ps-font-icon-compliance-job-o:before { content: '\E399' } 
+.ps-font-icon-business-object:before { content: '\E39A' } 
+.ps-font-icon-compliance:before { content: '\E39B' } 
+.ps-font-icon-comfiguration-file:before { content: '\E39C' } 
+.ps-font-icon-connected-switch:before { content: '\E39D' } 
+.ps-font-icon-cpu-1:before { content: '\E39E' } 
+.ps-font-icon-cpu-2:before { content: '\E39F' } 
+.ps-font-icon-device:before { content: '\E3A0' } 
+.ps-font-icon-disk:before { content: '\E3A1' } 
+.ps-font-icon-file-collect:before { content: '\E3A2' } 
+.ps-font-icon-file-deploy-job:before { content: '\E3A3' } 
+.ps-font-icon-file-library:before { content: '\E3A4' } 
+.ps-font-icon-file-system:before { content: '\E3A5' } 
+.ps-font-icon-installed-software:before { content: '\E3A6' } 
+.ps-font-icon-job:before { content: '\E3A7' } 
+.ps-font-icon-library:before { content: '\E3A8' } 
 .ps-font-icon-memory:before { content: '\E3A9' } 
 .ps-font-icon-network-card:before { content: '\E3AA' } 
-.ps-font-icon-network-interface:before { content: '\E3AB' } 
-.ps-font-icon-network-system-information:before { content: '\E3AC' } 
-.ps-font-icon-network-custom-object:before { content: '\E3AD' } 
-.ps-font-icon-network-custom-objects:before { content: '\E3AE' } 
-.ps-font-icon-network-custom-cli-object:before { content: '\E3AF' } 
-.ps-font-icon-network-custom-cli-objects:before { content: '\E3B0' } 
-.ps-font-icon-operating-system:before { content: '\E3B1' } 
-.ps-font-icon-server-packages:before { content: '\E3B2' } 
-.ps-font-icon-system-information:before { content: '\E3B3' } 
-.ps-font-icon-windows-application:before { content: '\E3B4' } 
-.ps-font-icon-windows-service:before { content: '\E3B5' } 
-.ps-font-icon-windows-update:before { content: '\E3B6' } 
-.ps-font-icon-server-down:before { content: '\E3B7' } 
-.ps-font-icon-server-up:before { content: '\E3B8' } 
+.ps-font-icon-network-custom-object:before { content: '\E3AB' } 
+.ps-font-icon-network-custom-objects:before { content: '\E3AC' } 
+.ps-font-icon-network-custom-cli-object:before { content: '\E3AD' } 
+.ps-font-icon-network-custom-cli-objects:before { content: '\E3AE' } 
+.ps-font-icon-network-device:before { content: '\E3AF' } 
+.ps-font-icon-network-interface:before { content: '\E3B0' } 
+.ps-font-icon-network-script-job:before { content: '\E3B1' } 
+.ps-font-icon-network-system-information:before { content: '\E3B2' } 
+.ps-font-icon-operating-system:before { content: '\E3B3' } 
+.ps-font-icon-script-job:before { content: '\E3B4' } 
+.ps-font-icon-script-library:before { content: '\E3B5' } 
+.ps-font-icon-server-device:before { content: '\E3B6' } 
+.ps-font-icon-software-packages:before { content: '\E3B7' } 
+.ps-font-icon-server-device-o:before { content: '\E3B8' } 
+.ps-font-icon-software-pakage-deploy-job:before { content: '\E3B9' } 
+.ps-font-icon-system-information:before { content: '\E3BA' } 
+.ps-font-icon-system-object:before { content: '\E3BB' } 
+.ps-font-icon-windows-application:before { content: '\E3BC' } 
+.ps-font-icon-windows-service:before { content: '\E3BD' } 
+.ps-font-icon-windows-update:before { content: '\E3BE' } 
+.ps-font-icon-windows-update-job:before { content: '\E3BF' } 
+.ps-font-icon-wheel:before { content: '\E3C0' } 
+.ps-font-icon-view-dashboard:before { content: '\E3C1' } 
+.ps-font-icon-touch:before { content: '\E3C2' } 
+.ps-font-icon-custom-object:before { content: '\E3C3' } 
+.ps-font-icon-custom-objects:before { content: '\E3C4' } 
+.ps-font-icon-check-circle-exclamation-mark:before { content: '\E3C5' } 
+.ps-font-icon-light-bulb-on:before { content: '\E3C6' } 
+.ps-font-icon-light-bulb-off:before { content: '\E3C7' } 
+.ps-font-icon-group-1:before { content: '\E3C8' } 
+.ps-font-icon-fire-3:before { content: '\E3C9' } 
+.ps-font-icon-fire-4:before { content: '\E3CA' } 
+.ps-font-icon-fire-5:before { content: '\E3CB' } 
