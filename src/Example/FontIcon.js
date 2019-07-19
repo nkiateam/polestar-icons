@@ -27,7 +27,7 @@ const FontIcon = () => (
                 >
                     <Icon
                         name={icon.name}
-                        color="rgba(0,0,0,0.8)"
+                        color="rgba(0,0,0,1)"
                     />
                     <span style={{
                         color: 'grey',
