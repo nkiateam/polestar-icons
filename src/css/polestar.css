@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'polestar';
-  src: url('../fonts/polestar.eot?1563519862');
-  src: url('../fonts/polestar.eot?1563519862#iefix') format('embedded-opentype'),
-       url('../fonts/polestar.woff2?1563519862') format('woff2'),
-       url('../fonts/polestar.woff?1563519862') format('woff'),
-       url('../fonts/polestar.ttf?1563519862') format('truetype'),
-       url('../fonts/polestar.svg?1563519862#fontello') format('svg');
+  src: url('../fonts/polestar.eot?1563776531');
+  src: url('../fonts/polestar.eot?1563776531#iefix') format('embedded-opentype'),
+       url('../fonts/polestar.woff2?1563776531') format('woff2'),
+       url('../fonts/polestar.woff?1563776531') format('woff'),
+       url('../fonts/polestar.ttf?1563776531') format('truetype'),
+       url('../fonts/polestar.svg?1563776531#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1020,3 +1020,28 @@
 .ps-font-icon-fire-4:before { content: '\E3CA' } 
 .ps-font-icon-fire-5:before { content: '\E3CB' } 
 .ps-font-icon-smart-group-1:before { content: '\E3CC' } 
+.ps-font-icon-link-1:before { content: '\E3CD' } 
+.ps-font-icon-networkrealservers:before { content: '\E3CE' } 
+.ps-font-icon-filestack:before { content: '\E3CF' } 
+.ps-font-icon-polestarlogo:before { content: '\E3D0' } 
+.ps-font-icon-apmwebpage:before { content: '\E3D1' } 
+.ps-font-icon-win-ok:before { content: '\E3D2' } 
+.ps-font-icon-ami:before { content: '\E3D3' } 
+.ps-font-icon-amis:before { content: '\E3D4' } 
+.ps-font-icon-storageraidgroup:before { content: '\E3D5' } 
+.ps-font-icon-transferdata:before { content: '\E3D6' } 
+.ps-font-icon-filechange:before { content: '\E3D7' } 
+.ps-font-icon-autoscalling:before { content: '\E3D8' } 
+.ps-font-icon-youtube-1:before { content: '\E3D9' } 
+.ps-font-icon-youtube-sign:before { content: '\E3DA' } 
+.ps-font-icon-configuration-check:before { content: '\E3DB' } 
+.ps-font-icon-aws-1:before { content: '\E3DC' } 
+.ps-font-icon-shufflearrow:before { content: '\E3DD' } 
+.ps-font-icon-file-log:before { content: '\E3DE' } 
+.ps-font-icon-ec2:before { content: '\E3DF' } 
+.ps-font-icon-elasticbs:before { content: '\E3E0' } 
+.ps-font-icon-elasticip:before { content: '\E3E1' } 
+.ps-font-icon-elasticips:before { content: '\E3E2' } 
+.ps-font-icon-awsimages:before { content: '\E3E3' } 
+.ps-font-icon-instanceobj:before { content: '\E3E4' } 
+.ps-font-icon-instancelist:before { content: '\E3E5' } 
