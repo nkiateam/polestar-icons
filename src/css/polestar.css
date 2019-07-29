@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'polestar';
-  src: url('../fonts/polestar.eot?1564361164');
-  src: url('../fonts/polestar.eot?1564361164#iefix') format('embedded-opentype'),
-       url('../fonts/polestar.woff2?1564361164') format('woff2'),
-       url('../fonts/polestar.woff?1564361164') format('woff'),
-       url('../fonts/polestar.ttf?1564361164') format('truetype'),
-       url('../fonts/polestar.svg?1564361164#fontello') format('svg');
+  src: url('../fonts/polestar.eot?1564383684');
+  src: url('../fonts/polestar.eot?1564383684#iefix') format('embedded-opentype'),
+       url('../fonts/polestar.woff2?1564383684') format('woff2'),
+       url('../fonts/polestar.woff?1564383684') format('woff'),
+       url('../fonts/polestar.ttf?1564383684') format('truetype'),
+       url('../fonts/polestar.svg?1564383684#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -973,8 +973,8 @@
 .ps-font-icon-compliance:before { content: '\E39B' } 
 .ps-font-icon-configuration-file:before { content: '\E39C' } 
 .ps-font-icon-connected-switch:before { content: '\E39D' } 
-.ps-font-icon-cpu-1:before { content: '\E39E' } 
-.ps-font-icon-cpu-2:before { content: '\E39F' } 
+.ps-font-icon-cpu:before { content: '\E39E' } 
+.ps-font-icon-cpu-1:before { content: '\E39F' } 
 .ps-font-icon-device:before { content: '\E3A0' } 
 .ps-font-icon-disk:before { content: '\E3A1' } 
 .ps-font-icon-file-collect:before { content: '\E3A2' } 
@@ -1049,7 +1049,7 @@
 .ps-font-icon-awsnetworkinterface:before { content: '\E3E7' } 
 .ps-font-icon-awsnetworkinterfaces:before { content: '\E3E8' } 
 .ps-font-icon-networksecurity:before { content: '\E3E9' } 
-.ps-font-icon-firewall-1:before { content: '\E3EA' } 
+.ps-font-icon-firewall-01:before { content: '\E3EA' } 
 .ps-font-icon-securityapproved:before { content: '\E3EB' } 
 .ps-font-icon-awssnapshot:before { content: '\E3EC' } 
 .ps-font-icon-awssnapshots:before { content: '\E3ED' } 
@@ -1067,9 +1067,9 @@
 .ps-font-icon-win-warning:before { content: '\E3F9' } 
 .ps-font-icon-networkgroupsessions:before { content: '\E3FA' } 
 .ps-font-icon-folder-cir:before { content: '\E3FB' } 
-.ps-font-icon-network-1:before { content: '\E3FC' } 
+.ps-font-icon-network-01:before { content: '\E3FC' } 
 .ps-font-icon-udbdirectrw:before { content: '\E3FD' } 
-.ps-font-icon-micropartitioning-1:before { content: '\E3FE' } 
+.ps-font-icon-micropartitioning01:before { content: '\E3FE' } 
 .ps-font-icon-memorygroup:before { content: '\E3FF' } 
 .ps-font-icon-wave:before { content: '\E400' } 
 .ps-font-icon-filegroup:before { content: '\E401' } 
@@ -1079,14 +1079,14 @@
 .ps-font-icon-fms2ups:before { content: '\E405' } 
 .ps-font-icon-fms6ups:before { content: '\E406' } 
 .ps-font-icon-domain:before { content: '\E407' } 
-.ps-font-icon-server-1:before { content: '\E408' } 
-.ps-font-icon-server-2:before { content: '\E409' } 
-.ps-font-icon-server-3:before { content: '\E40A' } 
-.ps-font-icon-server-4:before { content: '\E40B' } 
-.ps-font-icon-server-5:before { content: '\E40C' } 
-.ps-font-icon-laptop-1:before { content: '\E40D' } 
+.ps-font-icon-server-01:before { content: '\E408' } 
+.ps-font-icon-server-02:before { content: '\E409' } 
+.ps-font-icon-server-03:before { content: '\E40A' } 
+.ps-font-icon-server-04:before { content: '\E40B' } 
+.ps-font-icon-server-05:before { content: '\E40C' } 
+.ps-font-icon-laptop06:before { content: '\E40D' } 
 .ps-font-icon-modulesinfo:before { content: '\E40E' } 
-.ps-font-icon-fan:before { content: '\E40F' } 
+.ps-font-icon-fan-02:before { content: '\E40F' } 
 .ps-font-icon-fwsession:before { content: '\E410' } 
 .ps-font-icon-networkslb:before { content: '\E411' } 
 .ps-font-icon-networkslbs:before { content: '\E412' } 
@@ -1096,20 +1096,20 @@
 .ps-font-icon-network-16:before { content: '\E416' } 
 .ps-font-icon-tcpsession:before { content: '\E417' } 
 .ps-font-icon-networknode:before { content: '\E418' } 
-.ps-font-icon-networknode-1:before { content: '\E419' } 
+.ps-font-icon-networknode01:before { content: '\E419' } 
 .ps-font-icon-jobjob:before { content: '\E41A' } 
 .ps-font-icon-jobgroup:before { content: '\E41B' } 
 .ps-font-icon-mssqlbuffercache:before { content: '\E41C' } 
 .ps-font-icon-voicegateway:before { content: '\E41D' } 
-.ps-font-icon-network-4:before { content: '\E41E' } 
+.ps-font-icon-network-04:before { content: '\E41E' } 
 .ps-font-icon-serverswap:before { content: '\E41F' } 
-.ps-font-icon-flowchart-2:before { content: '\E420' } 
+.ps-font-icon-flowchart-02:before { content: '\E420' } 
 .ps-font-icon-bufferpool:before { content: '\E421' } 
-.ps-font-icon-logfile-2:before { content: '\E422' } 
+.ps-font-icon-logfile02:before { content: '\E422' } 
 .ps-font-icon-cpugroup:before { content: '\E423' } 
 .ps-font-icon-network-memory:before { content: '\E424' } 
-.ps-font-icon-netstatmonitor-1:before { content: '\E425' } 
-.ps-font-icon-netstat-2:before { content: '\E426' } 
+.ps-font-icon-netstatmonitor01:before { content: '\E425' } 
+.ps-font-icon-netstat02:before { content: '\E426' } 
 .ps-font-icon-pingmonitor:before { content: '\E427' } 
 .ps-font-icon-win-monitoring:before { content: '\E428' } 
 .ps-font-icon-mailgroup:before { content: '\E429' } 
@@ -1120,13 +1120,19 @@
 .ps-font-icon-piechart-10:before { content: '\E42E' } 
 .ps-font-icon-network-share:before { content: '\E42F' } 
 .ps-font-icon-income:before { content: '\E430' } 
-.ps-font-icon-server-8:before { content: '\E431' } 
+.ps-font-icon-server-08:before { content: '\E431' } 
 .ps-font-icon-storage-workflow:before { content: '\E432' } 
-.ps-font-icon-disk-1:before { content: '\E433' } 
-.ps-font-icon-disk-2:before { content: '\E434' } 
-.ps-font-icon-building-3:before { content: '\E435' } 
+.ps-font-icon-disk-01:before { content: '\E433' } 
+.ps-font-icon-disk-02:before { content: '\E434' } 
+.ps-font-icon-building-03:before { content: '\E435' } 
 .ps-font-icon-networkgroup:before { content: '\E436' } 
 .ps-font-icon-cloud-alt-glyph:before { content: '\E437' } 
 .ps-font-icon-vmware:before { content: '\E438' } 
 .ps-font-icon-webspherewebspheresystem:before { content: '\E439' } 
 .ps-font-icon-waswassystem:before { content: '\E43A' } 
+.ps-font-icon-shufflearrow:before { content: '\E43B' } 
+.ps-font-icon-circle-blank:before { content: '\E43C' } 
+.ps-font-icon-time:before { content: '\E43D' } 
+.ps-font-icon-hdd:before { content: '\E43E' } 
+.ps-font-icon-cpu01:before { content: '\E43F' } 
+.ps-font-icon-location:before { content: '\E440' } 
