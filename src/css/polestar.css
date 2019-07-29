@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'polestar';
-  src: url('../fonts/polestar.eot?1563776531');
-  src: url('../fonts/polestar.eot?1563776531#iefix') format('embedded-opentype'),
-       url('../fonts/polestar.woff2?1563776531') format('woff2'),
-       url('../fonts/polestar.woff?1563776531') format('woff'),
-       url('../fonts/polestar.ttf?1563776531') format('truetype'),
-       url('../fonts/polestar.svg?1563776531#fontello') format('svg');
+  src: url('../fonts/polestar.eot?1564361164');
+  src: url('../fonts/polestar.eot?1564361164#iefix') format('embedded-opentype'),
+       url('../fonts/polestar.woff2?1564361164') format('woff2'),
+       url('../fonts/polestar.woff?1564361164') format('woff'),
+       url('../fonts/polestar.ttf?1564361164') format('truetype'),
+       url('../fonts/polestar.svg?1564361164#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -971,7 +971,7 @@
 .ps-font-icon-compliance-job-o:before { content: '\E399' } 
 .ps-font-icon-business-object:before { content: '\E39A' } 
 .ps-font-icon-compliance:before { content: '\E39B' } 
-.ps-font-icon-comfiguration-file:before { content: '\E39C' } 
+.ps-font-icon-configuration-file:before { content: '\E39C' } 
 .ps-font-icon-connected-switch:before { content: '\E39D' } 
 .ps-font-icon-cpu-1:before { content: '\E39E' } 
 .ps-font-icon-cpu-2:before { content: '\E39F' } 
@@ -1000,7 +1000,7 @@
 .ps-font-icon-server-device:before { content: '\E3B6' } 
 .ps-font-icon-software-packages:before { content: '\E3B7' } 
 .ps-font-icon-server-device-o:before { content: '\E3B8' } 
-.ps-font-icon-software-pakage-deploy-job:before { content: '\E3B9' } 
+.ps-font-icon-software-package-deploy-job:before { content: '\E3B9' } 
 .ps-font-icon-system-information:before { content: '\E3BA' } 
 .ps-font-icon-system-object:before { content: '\E3BB' } 
 .ps-font-icon-windows-application:before { content: '\E3BC' } 
@@ -1036,7 +1036,7 @@
 .ps-font-icon-youtube-sign:before { content: '\E3DA' } 
 .ps-font-icon-configuration-check:before { content: '\E3DB' } 
 .ps-font-icon-aws-1:before { content: '\E3DC' } 
-.ps-font-icon-shufflearrow:before { content: '\E3DD' } 
+.ps-font-icon-region:before { content: '\E3DD' } 
 .ps-font-icon-file-log:before { content: '\E3DE' } 
 .ps-font-icon-ec2:before { content: '\E3DF' } 
 .ps-font-icon-elasticbs:before { content: '\E3E0' } 
@@ -1045,3 +1045,88 @@
 .ps-font-icon-awsimages:before { content: '\E3E3' } 
 .ps-font-icon-instanceobj:before { content: '\E3E4' } 
 .ps-font-icon-instancelist:before { content: '\E3E5' } 
+.ps-font-icon-key-1:before { content: '\E3E6' } 
+.ps-font-icon-awsnetworkinterface:before { content: '\E3E7' } 
+.ps-font-icon-awsnetworkinterfaces:before { content: '\E3E8' } 
+.ps-font-icon-networksecurity:before { content: '\E3E9' } 
+.ps-font-icon-firewall-1:before { content: '\E3EA' } 
+.ps-font-icon-securityapproved:before { content: '\E3EB' } 
+.ps-font-icon-awssnapshot:before { content: '\E3EC' } 
+.ps-font-icon-awssnapshots:before { content: '\E3ED' } 
+.ps-font-icon-awsvolumes:before { content: '\E3EE' } 
+.ps-font-icon-udbcache:before { content: '\E3EF' } 
+.ps-font-icon-cache:before { content: '\E3F0' } 
+.ps-font-icon-redolog:before { content: '\E3F1' } 
+.ps-font-icon-sybaseprocesses:before { content: '\E3F2' } 
+.ps-font-icon-unisqlvolume:before { content: '\E3F3' } 
+.ps-font-icon-unisqlvolumes:before { content: '\E3F4' } 
+.ps-font-icon-hrstorages:before { content: '\E3F5' } 
+.ps-font-icon-oracletablespace:before { content: '\E3F6' } 
+.ps-font-icon-oracletablespaces:before { content: '\E3F7' } 
+.ps-font-icon-udblock:before { content: '\E3F8' } 
+.ps-font-icon-win-warning:before { content: '\E3F9' } 
+.ps-font-icon-networkgroupsessions:before { content: '\E3FA' } 
+.ps-font-icon-folder-cir:before { content: '\E3FB' } 
+.ps-font-icon-network-1:before { content: '\E3FC' } 
+.ps-font-icon-udbdirectrw:before { content: '\E3FD' } 
+.ps-font-icon-micropartitioning-1:before { content: '\E3FE' } 
+.ps-font-icon-memorygroup:before { content: '\E3FF' } 
+.ps-font-icon-wave:before { content: '\E400' } 
+.ps-font-icon-filegroup:before { content: '\E401' } 
+.ps-font-icon-fms8leak:before { content: '\E402' } 
+.ps-font-icon-fms15voltage:before { content: '\E403' } 
+.ps-font-icon-fms25thermometer:before { content: '\E404' } 
+.ps-font-icon-fms2ups:before { content: '\E405' } 
+.ps-font-icon-fms6ups:before { content: '\E406' } 
+.ps-font-icon-domain:before { content: '\E407' } 
+.ps-font-icon-server-1:before { content: '\E408' } 
+.ps-font-icon-server-2:before { content: '\E409' } 
+.ps-font-icon-server-3:before { content: '\E40A' } 
+.ps-font-icon-server-4:before { content: '\E40B' } 
+.ps-font-icon-server-5:before { content: '\E40C' } 
+.ps-font-icon-laptop-1:before { content: '\E40D' } 
+.ps-font-icon-modulesinfo:before { content: '\E40E' } 
+.ps-font-icon-fan:before { content: '\E40F' } 
+.ps-font-icon-fwsession:before { content: '\E410' } 
+.ps-font-icon-networkslb:before { content: '\E411' } 
+.ps-font-icon-networkslbs:before { content: '\E412' } 
+.ps-font-icon-temperature-1:before { content: '\E413' } 
+.ps-font-icon-temperaturegroup:before { content: '\E414' } 
+.ps-font-icon-port:before { content: '\E415' } 
+.ps-font-icon-network-16:before { content: '\E416' } 
+.ps-font-icon-tcpsession:before { content: '\E417' } 
+.ps-font-icon-networknode:before { content: '\E418' } 
+.ps-font-icon-networknode-1:before { content: '\E419' } 
+.ps-font-icon-jobjob:before { content: '\E41A' } 
+.ps-font-icon-jobgroup:before { content: '\E41B' } 
+.ps-font-icon-mssqlbuffercache:before { content: '\E41C' } 
+.ps-font-icon-voicegateway:before { content: '\E41D' } 
+.ps-font-icon-network-4:before { content: '\E41E' } 
+.ps-font-icon-serverswap:before { content: '\E41F' } 
+.ps-font-icon-flowchart-2:before { content: '\E420' } 
+.ps-font-icon-bufferpool:before { content: '\E421' } 
+.ps-font-icon-logfile-2:before { content: '\E422' } 
+.ps-font-icon-cpugroup:before { content: '\E423' } 
+.ps-font-icon-network-memory:before { content: '\E424' } 
+.ps-font-icon-netstatmonitor-1:before { content: '\E425' } 
+.ps-font-icon-netstat-2:before { content: '\E426' } 
+.ps-font-icon-pingmonitor:before { content: '\E427' } 
+.ps-font-icon-win-monitoring:before { content: '\E428' } 
+.ps-font-icon-mailgroup:before { content: '\E429' } 
+.ps-font-icon-http-1:before { content: '\E42A' } 
+.ps-font-icon-windowservicemonitor:before { content: '\E42B' } 
+.ps-font-icon-performancecounters:before { content: '\E42C' } 
+.ps-font-icon-storagegroup:before { content: '\E42D' } 
+.ps-font-icon-piechart-10:before { content: '\E42E' } 
+.ps-font-icon-network-share:before { content: '\E42F' } 
+.ps-font-icon-income:before { content: '\E430' } 
+.ps-font-icon-server-8:before { content: '\E431' } 
+.ps-font-icon-storage-workflow:before { content: '\E432' } 
+.ps-font-icon-disk-1:before { content: '\E433' } 
+.ps-font-icon-disk-2:before { content: '\E434' } 
+.ps-font-icon-building-3:before { content: '\E435' } 
+.ps-font-icon-networkgroup:before { content: '\E436' } 
+.ps-font-icon-cloud-alt-glyph:before { content: '\E437' } 
+.ps-font-icon-vmware:before { content: '\E438' } 
+.ps-font-icon-webspherewebspheresystem:before { content: '\E439' } 
+.ps-font-icon-waswassystem:before { content: '\E43A' } 
