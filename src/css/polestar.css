@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'polestar';
-  src: url('../fonts/polestar.eot?1564983097');
-  src: url('../fonts/polestar.eot?1564983097#iefix') format('embedded-opentype'),
-       url('../fonts/polestar.woff2?1564983097') format('woff2'),
-       url('../fonts/polestar.woff?1564983097') format('woff'),
-       url('../fonts/polestar.ttf?1564983097') format('truetype'),
-       url('../fonts/polestar.svg?1564983097#fontello') format('svg');
+  src: url('../fonts/polestar.eot?1565058709');
+  src: url('../fonts/polestar.eot?1565058709#iefix') format('embedded-opentype'),
+       url('../fonts/polestar.woff2?1565058709') format('woff2'),
+       url('../fonts/polestar.woff?1565058709') format('woff'),
+       url('../fonts/polestar.ttf?1565058709') format('truetype'),
+       url('../fonts/polestar.svg?1565058709#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
