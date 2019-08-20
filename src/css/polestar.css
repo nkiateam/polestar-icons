@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'polestar';
-  src: url('../fonts/polestar.eot?1565058709');
-  src: url('../fonts/polestar.eot?1565058709#iefix') format('embedded-opentype'),
-       url('../fonts/polestar.woff2?1565058709') format('woff2'),
-       url('../fonts/polestar.woff?1565058709') format('woff'),
-       url('../fonts/polestar.ttf?1565058709') format('truetype'),
-       url('../fonts/polestar.svg?1565058709#fontello') format('svg');
+  src: url('../fonts/polestar.eot?1566286200');
+  src: url('../fonts/polestar.eot?1566286200#iefix') format('embedded-opentype'),
+       url('../fonts/polestar.woff2?1566286200') format('woff2'),
+       url('../fonts/polestar.woff?1566286200') format('woff'),
+       url('../fonts/polestar.ttf?1566286200') format('truetype'),
+       url('../fonts/polestar.svg?1566286200#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1138,4 +1138,13 @@
 .ps-font-icon-location:before { content: '\E440' } 
 .ps-font-icon-ar:before { content: '\E441' } 
 .ps-font-icon-gltf:before { content: '\E442' } 
-.ps-font-icon-tangerine:before { content: '\E443' } 
+.ps-font-icon-file-read:before { content: '\E443' } 
+.ps-font-icon-file-write:before { content: '\E444' } 
+.ps-font-icon-file-csv:before { content: '\E445' } 
+.ps-font-icon-storage-read:before { content: '\E446' } 
+.ps-font-icon-storage-write:before { content: '\E447' } 
+.ps-font-icon-sql:before { content: '\E448' } 
+.ps-font-icon-sigma:before { content: '\E449' } 
+.ps-font-icon-license:before { content: '\E44A' } 
+.ps-font-icon-windowslogo:before { content: '\E44B' } 
+.ps-font-icon-linux-circle:before { content: '\E44C' } 
