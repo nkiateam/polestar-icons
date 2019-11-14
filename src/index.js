@@ -1,29 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+// import loadable from '@loadable/component';
+
+import AsyncSvg from './AsyncSvg';
 import './css/polestar.css';
 import './css/sprite.css';
 import './css/animate.css';
 import './css/size.css';
 import './css/stacked.css';
 
-class Icon extends React.Component {
-    static defaultProps = {
-        type: 'font',
-        size: 1,
-        innerSize: 1,
-        stackRatio: [1, 1],
-        animationType: 'always',
-        animationDuration: 15,
-        innerAnimationType: 'always',
-        innerAnimationDuration: 15,
-        onClick: () => {},
-    };
+// const SvgComponent = loadable(props => import(`./svgComponents/${props.name}`));
+// const SvgComponent = loadable(() => import('./svgComponents/WindowServiceMonitor'));
 
+class Icon extends React.Component {
     static propTypes = {
         /** 아이콘 이름 */
         name: PropTypes.string.isRequired,
         /** 폰트 아이콘 / 이미지 스프라이트 아이콘 */
-        type: PropTypes.oneOf(['font', 'image']),
+        type: PropTypes.oneOf(['font', 'svg', 'image']),
         /** 아이콘 사이즈(em, lg, fw) - 폰트 아이콘에만 적용 */
         size: PropTypes.oneOfType([
             PropTypes.number,
@@ -84,20 +78,45 @@ class Icon extends React.Component {
         onClick: PropTypes.func,
     };
 
+    static defaultProps = {
+        type: 'font',
+        size: 1,
+        innerSize: 1,
+        stackRatio: [1, 1],
+        animationType: 'always',
+        animationDuration: 15,
+        innerAnimationType: 'always',
+        innerAnimationDuration: 15,
+        onClick: () => {},
+    };
+
+    // constructor(props) {
+    //     super(props);
+
+    //     this.state = {
+    //         SvgComponent: null,
+    //     };
+
+    //     if (props.type === 'svg') {
+    //         this.loadComponent('./svgComponents/WindowServiceMonitor');
+    //     }
+    // }
+
     getIcon = (
         name, className, size, color, hidden, style, animation, animationType, animationDuration,
         type, onClick, isStack, stackRatio,
     ) => {
-        const prefix = this.props.type === 'font' ? 'ps-font-icon' : 'ps-image-icon';
+        // const prefix = this.props.type === 'font' ? 'ps-font-icon' : 'ps-image-icon';
+        const prefix = `ps-${type}-icon`;
         const stackRatioClass = isStack ? `icon-stack-${stackRatio}x` : '';
         const iconSize = Number.isNaN(Number(size)) ? `icon-${size}` : `icon-${size}x`;
         const animationClassName = this.getAnimationClassName(animation, animationType);
-        const iconClassName
-            = `polestar-icon ${prefix}-${name} ${iconSize} ${className || ''} ${stackRatioClass} ${animationClassName}`;
-        const iconStyle = Object.assign({}, this.props.style, {
+        const iconClassName = `polestar-icon ${prefix}-${name} ${iconSize} ${className || ''} ${stackRatioClass} ${animationClassName}`;
+        const iconStyle = {
+            ...style,
             color,
             visibility: hidden ? 'hidden' : 'visible',
-        });
+        };
 
         // 애니메이션 타이머 설정
         if (animationType === 'duration') {
@@ -111,6 +130,7 @@ class Icon extends React.Component {
             <i
                 ref={(ref) => { this.icon = ref; }}
                 className={iconClassName}
+                role="presentation"
                 style={iconStyle}
                 onClick={onClick}
             />
@@ -120,13 +140,22 @@ class Icon extends React.Component {
     getAnimationClassName = (animation, animationType) => {
         if (animationType === 'hover') {
             return `ps-${animation} animated-hover`;
-        } else if (animationType === 'parent-hover') {
+        } if (animationType === 'parent-hover') {
             return `ps-${animation}`;
-        } else if (!animation) {
+        } if (!animation) {
             return '';
         }
         return `ps-${animation} animated`;
     }
+
+    // loadComponent = (path) => {
+    //     const OtherComponent = loadable(() => import(path));
+    //     this.setState({ SvgComponent: OtherComponent });
+
+    //     // import(`_root/${path}`).then((module) => {
+    //     //     this.setState({ SvgComponent: module.default });
+    //     // });
+    // }
 
     render() {
         const {
@@ -151,7 +180,11 @@ class Icon extends React.Component {
             innerAnimationDuration,
             stackRatio,
             onClick,
+            ...rest
         } = this.props;
+        // const { SvgComponent } = this.state;
+
+        if (type === 'svg') return <AsyncSvg name={name} {...rest} />;
 
         const icon = this.getIcon(
             name, className, size, color, hidden, style,

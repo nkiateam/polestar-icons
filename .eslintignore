@@ -4,4 +4,5 @@ node_modules
 /lib
 /generator
 /src/README.md
+/src/svgComponents
 *.config.js

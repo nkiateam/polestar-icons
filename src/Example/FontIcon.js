@@ -1,5 +1,6 @@
 import React from 'react';
 import Icon from 'polestar-icons';
+
 import iconList from './polestar.json';
 
 const FontIcon = () => (

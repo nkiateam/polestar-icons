@@ -1,5 +1,7 @@
 import React from 'react';
+
 import FontIcon from './FontIcon';
+import SvgIcon from './SvgIcon';
 import ImageIcon from './ImageIcon';
 import Icon from '../index';
 
@@ -219,6 +221,8 @@ class Example extends React.Component {
 
     renderFontIcons = () => <FontIcon />;
 
+    renderSvgIcons = () => <SvgIcon />;
+
     renderImageIcons = () => <ImageIcon />;
 
     render() {
@@ -229,6 +233,7 @@ class Example extends React.Component {
                 {this.renderAnimationIcon()}
                 {this.renderIconSize()}
                 {this.renderFontIcons()}
+                {this.renderSvgIcons()}
                 {this.renderImageIcons()}
             </div>
         );

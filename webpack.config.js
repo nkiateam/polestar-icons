@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const autoprefixer = require('autoprefixer');
 
-const port = 5000;
+const port = 4100;
 
 let publicPath = '/build/';
 
@@ -94,7 +94,7 @@ module.exports = {
     resolve: {
         alias: {
             'polestar-icons': path.resolve(__dirname, 'src/index.js'),
-            'styles': path.resolve(__dirname, 'src/css')
+            'styles': path.resolve(__dirname, 'src/css'),
         }
     },
 
