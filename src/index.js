@@ -1,16 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import loadable from '@loadable/component';
 
 import AsyncSvg from './AsyncSvg';
+
 import './css/polestar.css';
 import './css/sprite.css';
 import './css/animate.css';
 import './css/size.css';
 import './css/stacked.css';
-
-// const SvgComponent = loadable(props => import(`./svgComponents/${props.name}`));
-// const SvgComponent = loadable(() => import('./svgComponents/WindowServiceMonitor'));
+import './css/svg.css';
 
 class Icon extends React.Component {
     static propTypes = {
@@ -94,12 +92,7 @@ class Icon extends React.Component {
     //     super(props);
 
     //     this.state = {
-    //         SvgComponent: null,
     //     };
-
-    //     if (props.type === 'svg') {
-    //         this.loadComponent('./svgComponents/WindowServiceMonitor');
-    //     }
     // }
 
     getIcon = (
@@ -148,15 +141,6 @@ class Icon extends React.Component {
         return `ps-${animation} animated`;
     }
 
-    // loadComponent = (path) => {
-    //     const OtherComponent = loadable(() => import(path));
-    //     this.setState({ SvgComponent: OtherComponent });
-
-    //     // import(`_root/${path}`).then((module) => {
-    //     //     this.setState({ SvgComponent: module.default });
-    //     // });
-    // }
-
     render() {
         const {
             name,
@@ -182,9 +166,16 @@ class Icon extends React.Component {
             onClick,
             ...rest
         } = this.props;
-        // const { SvgComponent } = this.state;
 
-        if (type === 'svg') return <AsyncSvg name={name} {...rest} />;
+        if (type === 'svg') {
+            return (
+                <AsyncSvg
+                    name={name}
+                    className={className}
+                    {...rest}
+                />
+            );
+        }
 
         const icon = this.getIcon(
             name, className, size, color, hidden, style,

@@ -13,6 +13,17 @@ polestar-icons
 npm install polestar-icons --save
 ```
 
+Then add it to your babel configuration like so:
+(.babelrc or babel.config.js)
+
+```js
+{
+  "plugins": [
+        "syntax-dynamic-import"
+    ]
+}
+```
+
 ### Usage
 
 ```jsx
@@ -42,6 +53,11 @@ To run and development examples:
 ## Documentation
 
 https://nkiateam.github.io/polestar-icons/
+
+## svg 생성 가이드
+
+1. 사이즈 조절 가능
+2. css(className 설정) 로 제어 가능
 
 ## License
 

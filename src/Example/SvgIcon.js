@@ -11,9 +11,30 @@ class SvgIcon extends Component {
 
         this.state = {
             icons: [
-                { name: 'Server' },
-                { name: 'ServerDevice' },
-                { name: 'WindowServiceMonitor' },
+                {
+                    name: 'server',
+                    className: 'svg-test-server',
+                    width: 50,
+                    height: 50,
+                },
+                {
+                    name: 'server-device',
+                    className: 'svg-test-server-device',
+                    width: 150,
+                    height: 150,
+                },
+                {
+                    name: 'network-switch',
+                    className: 'svg-test-network-switch',
+                    width: 50,
+                    height: 50,
+                },
+                {
+                    name: 'window-service-monitor',
+                    className: 'svg-test-window-service-monitor',
+                    width: 150,
+                    height: 150,
+                },
             ],
         };
     }
@@ -49,8 +70,9 @@ class SvgIcon extends Component {
                             <Icon
                                 type="svg"
                                 name={icon.name}
-                                width={50}
-                                height={50}
+                                className={icon.className}
+                                width={icon.width}
+                                height={icon.height}
                                 // color="rgba(0,0,0,1)"
                             />
                             <span style={{

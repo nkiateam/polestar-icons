@@ -1,0 +1,11 @@
+.svg-test-server path {
+    fill: #e4ae19;
+}
+
+.svg-test-server-device path:nth-of-type(5) {
+    fill: #6123c5;
+}
+
+.svg-test-window-service-monitor {
+    fill: #4abe6d;
+}
