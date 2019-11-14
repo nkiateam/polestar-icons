@@ -33,7 +33,8 @@ module.exports = {
     },
 
     output: {
-        filename: '[name].js',
+        filename: devMode ? '[name].js' : '[name].[contenthash:8].js',
+        chunkFilename: devMode ? '[name].chunk.js' : '[name].[contenthash:8].chunk.js',
         path: path.resolve(__dirname, 'examples/build'),
         publicPath: publicPath
     },
@@ -216,20 +217,41 @@ module.exports = {
                 },
             }),
         ],
-        // // Automatically split vendor and commons
-        // // https://twitter.com/wSokra/status/969633336732905474
-        // // https://medium.com/webpack/webpack-4-code-splitting-chunk-graph-and-the-splitchunks-optimization-be739a861366
-        // splitChunks: {
-        //     chunks: 'all',
-        //     name: false,
-        // },
-        // // Keep the runtime chunk separated to enable long term caching
-        // // https://twitter.com/wSokra/status/969679223278505985
-        // runtimeChunk: true,
+        // Automatically split vendor and commons
+        // https://twitter.com/wSokra/status/969633336732905474
+        // https://medium.com/webpack/webpack-4-code-splitting-chunk-graph-and-the-splitchunks-optimization-be739a861366
+        splitChunks: {
+            chunks: 'all',
+            name: false,
+            maxInitialRequests: Infinity,
+            minSize: 0,
+            cacheGroups: {
+                vendor: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: 'vendor',
+                    // name: (module) => {
+                    //     // get the name. E.g. node_modules/packageName/not/this/part.js
+                    //     // or node_modules/packageName
+                    //     const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
+            
+                    //     // npm package names are URL-safe, but some servers don't like @ symbols
+                    //     return `npm.${packageName.replace('@', '')}`;
+                    // },
+                    chunks: 'all',
+                    enforce: true
+                },
+            },
+        },
+        // Keep the runtime chunk separated to enable long term caching
+        // https://twitter.com/wSokra/status/969679223278505985
+        // https://github.com/facebook/create-react-app/issues/5358
+        runtimeChunk: {
+            name: entrypoint => `runtime-${entrypoint.name}`,
+        },
     },
 
     plugins: [
-        new webpack.HotModuleReplacementPlugin(),
+        devMode && new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
             inject: true,
             template: path.resolve(__dirname, 'examples/src/index.html'),
@@ -238,5 +260,5 @@ module.exports = {
             filename: '[name].[contenthash].css', // '[name].css'
             chunkFilename: '[id].[contenthash].css', // '[id].css'
         }),
-    ],
+    ].filter(Boolean),
 };
