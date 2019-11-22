@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'polestar';
-  src: url('../fonts/polestar.eot?1574384489');
-  src: url('../fonts/polestar.eot?1574384489#iefix') format('embedded-opentype'),
-       url('../fonts/polestar.woff2?1574384489') format('woff2'),
-       url('../fonts/polestar.woff?1574384489') format('woff'),
-       url('../fonts/polestar.ttf?1574384489') format('truetype'),
-       url('../fonts/polestar.svg?1574384489#fontello') format('svg');
+  src: url('../fonts/polestar.eot?1574405285');
+  src: url('../fonts/polestar.eot?1574405285#iefix') format('embedded-opentype'),
+       url('../fonts/polestar.woff2?1574405285') format('woff2'),
+       url('../fonts/polestar.woff?1574405285') format('woff'),
+       url('../fonts/polestar.ttf?1574405285') format('truetype'),
+       url('../fonts/polestar.svg?1574405285#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1184,3 +1184,54 @@
 .ps-font-icon-vpc:before { content: '\E46E' } 
 .ps-font-icon-vmportgroup:before { content: '\E46F' } 
 .ps-font-icon-emergencylight:before { content: '\E470' } 
+.ps-font-icon-kubernetes-k8s:before { content: '\E471' } 
+.ps-font-icon-cluster:before { content: '\E472' } 
+.ps-font-icon-cluster-roles:before { content: '\E473' } 
+.ps-font-icon-cluster-role:before { content: '\E474' } 
+.ps-font-icon-container-images:before { content: '\E475' } 
+.ps-font-icon-container-image:before { content: '\E476' } 
+.ps-font-icon-namespaces:before { content: '\E477' } 
+.ps-font-icon-namespace:before { content: '\E478' } 
+.ps-font-icon-nodes:before { content: '\E479' } 
+.ps-font-icon-node:before { content: '\E47A' } 
+.ps-font-icon-persistent-volumes:before { content: '\E47B' } 
+.ps-font-icon-persistent-volume:before { content: '\E47C' } 
+.ps-font-icon-storage-classes:before { content: '\E47D' } 
+.ps-font-icon-storage-class:before { content: '\E47E' } 
+.ps-font-icon-config-maps:before { content: '\E47F' } 
+.ps-font-icon-config-map:before { content: '\E480' } 
+.ps-font-icon-persistent-volume-claims:before { content: '\E481' } 
+.ps-font-icon-persistent-volume-claim:before { content: '\E482' } 
+.ps-font-icon-secrets:before { content: '\E483' } 
+.ps-font-icon-secret:before { content: '\E484' } 
+.ps-font-icon-endpoints:before { content: '\E485' } 
+.ps-font-icon-endpoint:before { content: '\E486' } 
+.ps-font-icon-ingresses:before { content: '\E487' } 
+.ps-font-icon-ingress:before { content: '\E488' } 
+.ps-font-icon-services:before { content: '\E489' } 
+.ps-font-icon-service:before { content: '\E48A' } 
+.ps-font-icon-containers:before { content: '\E48B' } 
+.ps-font-icon-container:before { content: '\E48C' } 
+.ps-font-icon-container-cronjobs:before { content: '\E48D' } 
+.ps-font-icon-container-cronjob:before { content: '\E48E' } 
+.ps-font-icon-daemon-sets:before { content: '\E48F' } 
+.ps-font-icon-daemon-set:before { content: '\E490' } 
+.ps-font-icon-deployments:before { content: '\E491' } 
+.ps-font-icon-deployment:before { content: '\E492' } 
+.ps-font-icon-horizontal-pod-autoscalers:before { content: '\E493' } 
+.ps-font-icon-horizontal-pod-autoscaler:before { content: '\E494' } 
+.ps-font-icon-container-job:before { content: '\E495' } 
+.ps-font-icon-container-jobs:before { content: '\E496' } 
+.ps-font-icon-pods:before { content: '\E497' } 
+.ps-font-icon-pod:before { content: '\E498' } 
+.ps-font-icon-replica-sets:before { content: '\E499' } 
+.ps-font-icon-replica-set:before { content: '\E49A' } 
+.ps-font-icon-replication-controllers:before { content: '\E49B' } 
+.ps-font-icon-replication-controller:before { content: '\E49C' } 
+.ps-font-icon-stateful-sets:before { content: '\E49D' } 
+.ps-font-icon-stateful-set:before { content: '\E49E' } 
+.ps-font-icon-amazon-eks:before { content: '\E49F' } 
+.ps-font-icon-pivotal-pks:before { content: '\E4A0' } 
+.ps-font-icon-google-gke:before { content: '\E4A1' } 
+.ps-font-icon-azure-aks:before { content: '\E4A2' } 
+.ps-font-icon-redhat-openshift:before { content: '\E4A3' } 
