@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'polestar';
-  src: url('../fonts/polestar.eot?1567489536');
-  src: url('../fonts/polestar.eot?1567489536#iefix') format('embedded-opentype'),
-       url('../fonts/polestar.woff2?1567489536') format('woff2'),
-       url('../fonts/polestar.woff?1567489536') format('woff'),
-       url('../fonts/polestar.ttf?1567489536') format('truetype'),
-       url('../fonts/polestar.svg?1567489536#fontello') format('svg');
+  src: url('../fonts/polestar.eot?1574384489');
+  src: url('../fonts/polestar.eot?1574384489#iefix') format('embedded-opentype'),
+       url('../fonts/polestar.woff2?1574384489') format('woff2'),
+       url('../fonts/polestar.woff?1574384489') format('woff'),
+       url('../fonts/polestar.ttf?1574384489') format('truetype'),
+       url('../fonts/polestar.svg?1574384489#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1147,7 +1147,40 @@
 .ps-font-icon-sigma:before { content: '\E449' } 
 .ps-font-icon-license:before { content: '\E44A' } 
 .ps-font-icon-windowslogo:before { content: '\E44B' } 
-.ps-font-icon-linux-1:before { content: '\E44C' } 
+.ps-font-icon-linux-circle:before { content: '\E44C' } 
 .ps-font-icon-wirerope-broken:before { content: '\E44D' } 
 .ps-font-icon-wirerope-corruption:before { content: '\E44E' } 
 .ps-font-icon-wirerope-abrasion:before { content: '\E44F' } 
+.ps-font-icon-glob:before { content: '\E450' } 
+.ps-font-icon-directconnectgateways:before { content: '\E451' } 
+.ps-font-icon-directconnectgateway:before { content: '\E452' } 
+.ps-font-icon-awsconfig:before { content: '\E453' } 
+.ps-font-icon-apigateways:before { content: '\E454' } 
+.ps-font-icon-directconnect:before { content: '\E455' } 
+.ps-font-icon-ec2-02:before { content: '\E456' } 
+.ps-font-icon-rds:before { content: '\E457' } 
+.ps-font-icon-s3:before { content: '\E458' } 
+.ps-font-icon-vpcs:before { content: '\E459' } 
+.ps-font-icon-efses:before { content: '\E45A' } 
+.ps-font-icon-lambda:before { content: '\E45B' } 
+.ps-font-icon-apigateway:before { content: '\E45C' } 
+.ps-font-icon-connections:before { content: '\E45D' } 
+.ps-font-icon-connection:before { content: '\E45E' } 
+.ps-font-icon-lag:before { content: '\E45F' } 
+.ps-font-icon-ebs:before { content: '\E460' } 
+.ps-font-icon-autoscalinggroups:before { content: '\E461' } 
+.ps-font-icon-elb:before { content: '\E462' } 
+.ps-font-icon-autoscaling-02:before { content: '\E463' } 
+.ps-font-icon-awssnapshots-02:before { content: '\E464' } 
+.ps-font-icon-awsvolumes-02:before { content: '\E465' } 
+.ps-font-icon-awssnapshot-02:before { content: '\E466' } 
+.ps-font-icon-instanceobj-02:before { content: '\E467' } 
+.ps-font-icon-awsvolume-02:before { content: '\E468' } 
+.ps-font-icon-elb-classic:before { content: '\E469' } 
+.ps-font-icon-keypairs:before { content: '\E46A' } 
+.ps-font-icon-efs:before { content: '\E46B' } 
+.ps-font-icon-lambdafunction:before { content: '\E46C' } 
+.ps-font-icon-bucket:before { content: '\E46D' } 
+.ps-font-icon-vpc:before { content: '\E46E' } 
+.ps-font-icon-vmportgroup:before { content: '\E46F' } 
+.ps-font-icon-emergencylight:before { content: '\E470' } 
