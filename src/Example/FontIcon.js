@@ -5,7 +5,7 @@ import iconList from './polestar.json';
 
 const FontIcon = () => (
     <div>
-        <h1 className="__ps-font-icon-title__">Polestar Font Icons</h1>
+        <h2 className="__ps-font-icon-title__">Font Icons</h2>
         <div
             className="__ps_font-icon-list__"
             style={{

@@ -3,7 +3,7 @@ import Icon from 'polestar-icons';
 
 const ImageIcon = () => (
     <div>
-        <h1 className="__ps-image-icon-title__">Polestar Image Icons</h1>
+        <h2 className="__ps-image-icon-title__">Image Icons</h2>
         <div
             className="__ps_image-icon-list__"
         >

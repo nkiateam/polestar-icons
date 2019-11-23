@@ -42,7 +42,7 @@ class SvgIcon extends Component {
     render() {
         return (
             <div>
-                <h1 className="__ps-image-icon-title__">Polestar SVG Icons</h1>
+                <h2 className="__ps-image-icon-title__">SVG Icons</h2>
                 <div
                     className="__ps_image-icon-list__"
                     style={{
