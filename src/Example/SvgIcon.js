@@ -32,8 +32,9 @@ class SvgIcon extends Component {
                 {
                     name: 'window-service-monitor',
                     className: 'svg-test-window-service-monitor',
-                    width: 150,
-                    height: 150,
+                    // width: 150,
+                    // height: 150,
+                    size: 9,
                 },
             ],
         };
@@ -73,6 +74,7 @@ class SvgIcon extends Component {
                                 className={icon.className}
                                 width={icon.width}
                                 height={icon.height}
+                                size={icon.size}
                                 // color="rgba(0,0,0,1)"
                             />
                             <span style={{

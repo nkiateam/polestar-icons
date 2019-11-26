@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import classNames from 'classnames';
+
 import AsyncSvg from './AsyncSvg';
 
 import './css/polestar.css';
@@ -17,9 +19,10 @@ class Icon extends React.Component {
         /** 폰트 아이콘 / 이미지 스프라이트 아이콘 */
         type: PropTypes.oneOf(['font', 'svg', 'image']),
         /** 아이콘 사이즈(em, lg, fw) - 폰트 아이콘에만 적용 */
-        size: PropTypes.oneOfType([
-            PropTypes.number,
-            PropTypes.string,
+        size: PropTypes.oneOf([
+            2, 3, 4, 5, 6, 7, 8, 9,
+            '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x',
+            'lg',
         ]),
         /** 아이콘 색상 */
         color: PropTypes.string,
@@ -78,7 +81,7 @@ class Icon extends React.Component {
 
     static defaultProps = {
         type: 'font',
-        size: 1,
+        // size: 1,
         innerSize: 1,
         stackRatio: [1, 1],
         animationType: 'always',
@@ -102,7 +105,15 @@ class Icon extends React.Component {
         // const prefix = this.props.type === 'font' ? 'ps-font-icon' : 'ps-image-icon';
         const prefix = `ps-${type}-icon`;
         const stackRatioClass = isStack ? `icon-stack-${stackRatio}x` : '';
-        const iconSize = Number.isNaN(Number(size)) ? `icon-${size}` : `icon-${size}x`;
+        // const iconSize = Number.isNaN(Number(size)) ? `icon-${size}` : `icon-${size}x`;
+        let iconSize;
+        if (typeof size !== 'undefined') {
+            if (typeof size === 'number') {
+                iconSize = `icon-${size}x`;
+            } else if (typeof size === 'string') {
+                iconSize = `icon-${size}`;
+            }
+        }
         const animationClassName = this.getAnimationClassName(animation, animationType);
         const iconClassName = `polestar-icon ${prefix}-${name} ${iconSize} ${className || ''} ${stackRatioClass} ${animationClassName}`;
         const iconStyle = {
@@ -171,7 +182,13 @@ class Icon extends React.Component {
             return (
                 <AsyncSvg
                     name={name}
-                    className={className}
+                    className={classNames(
+                        'ps-svg-icon',
+                        className,
+                        { 'ps-svg-size': typeof size !== 'undefined' },
+                        { [`ps-svg-size-${size}x`]: typeof size === 'number' },
+                        { [`ps-svg-size-${size}`]: typeof size === 'string' },
+                    )}
                     {...rest}
                 />
             );

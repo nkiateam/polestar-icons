@@ -94,21 +94,18 @@ class Usage extends Component {
                 <Icon
                     name="spinner"
                     color="blue"
-                    size={1}
                     animation={animation}
                     style={{ margin: '0 10px' }}
                 />
                 <Icon
                     name="square-o"
                     color="blue"
-                    size={1}
                     animation={animation}
                     style={{ margin: '0 10px' }}
                 />
                 <Icon
                     name="star-o"
                     color="blue"
-                    size={1}
                     animation={animation}
                     style={{ margin: '0 10px' }}
                 />
@@ -139,11 +136,6 @@ class Usage extends Component {
                     <Icon
                         name="bell"
                         color="black"
-                        size={1}
-                    />
-                    <Icon
-                        name="bell"
-                        color="black"
                         size={2}
                     />
                     <Icon
@@ -160,6 +152,26 @@ class Usage extends Component {
                         name="bell"
                         color="black"
                         size={5}
+                    />
+                    <Icon
+                        name="bell"
+                        color="black"
+                        size={6}
+                    />
+                    <Icon
+                        name="bell"
+                        color="black"
+                        size={7}
+                    />
+                    <Icon
+                        name="bell"
+                        color="black"
+                        size={8}
+                    />
+                    <Icon
+                        name="bell"
+                        color="black"
+                        size={9}
                     />
                 )
             }
@@ -169,11 +181,10 @@ class Usage extends Component {
                 <h3>Icon Size</h3>
                 <pre>{code}</pre>
                 <div>
-                    <Icon
+                    {/* <Icon
                         name="bell"
                         color="black"
-                        size={1}
-                    />
+                    /> */}
                     <Icon
                         name="bell"
                         color="black"
@@ -193,6 +204,26 @@ class Usage extends Component {
                         name="bell"
                         color="black"
                         size={5}
+                    />
+                    <Icon
+                        name="bell"
+                        color="black"
+                        size={6}
+                    />
+                    <Icon
+                        name="bell"
+                        color="black"
+                        size={7}
+                    />
+                    <Icon
+                        name="bell"
+                        color="black"
+                        size={8}
+                    />
+                    <Icon
+                        name="bell"
+                        color="black"
+                        size={9}
                     />
                 </div>
             </div>
@@ -220,6 +251,7 @@ class Usage extends Component {
                     <Icon
                         type="svg"
                         name="server"
+                        // name="window-service-monitor"
                     />
                 </div>
             </div>
@@ -234,28 +266,43 @@ class Usage extends Component {
                 return (
                     <Icon
                         type="svg"
-                        name="server"
-                        size={1}
-                    />
-                    <Icon
-                        type="svg"
-                        name="server"
+                        name="window-service-monitor"
                         size={2}
-                    />
+                    />&nbsp;
                     <Icon
                         type="svg"
-                        name="server"
+                        name="window-service-monitor"
                         size={3}
-                    />
+                    />&nbsp;
                     <Icon
                         type="svg"
-                        name="server"
+                        name="window-service-monitor"
                         size={4}
+                    />&nbsp;
+                    <Icon
+                        type="svg"
+                        name="window-service-monitor"
+                        size={5}
+                    />&nbsp;
+                    <Icon
+                        type="svg"
+                        name="window-service-monitor"
+                        size={6}
                     />
                     <Icon
                         type="svg"
-                        name="server"
-                        size={5}
+                        name="window-service-monitor"
+                        size={7}
+                    />
+                    <Icon
+                        type="svg"
+                        name="window-service-monitor"
+                        size={8}
+                    />
+                    <Icon
+                        type="svg"
+                        name="window-service-monitor"
+                        size={9}
                     />
                     <Icon
                         type="svg"
@@ -271,36 +318,55 @@ class Usage extends Component {
                 <h3>Icon Size</h3>
                 <pre>{code}</pre>
                 <div>
+                    {/* <Icon
+                        type="svg"
+                        name="window-service-monitor"
+                    />&nbsp; */}
                     <Icon
                         type="svg"
-                        name="server"
-                        size={1}
-                    />&nbsp;
-                    <Icon
-                        type="svg"
-                        name="server"
+                        name="window-service-monitor"
                         size={2}
                     />&nbsp;
                     <Icon
                         type="svg"
-                        name="server"
+                        name="window-service-monitor"
                         size={3}
                     />&nbsp;
                     <Icon
                         type="svg"
-                        name="server"
+                        name="window-service-monitor"
                         size={4}
                     />&nbsp;
                     <Icon
                         type="svg"
-                        name="server"
+                        name="window-service-monitor"
                         size={5}
+                    />&nbsp;
+                    <Icon
+                        type="svg"
+                        name="window-service-monitor"
+                        size={6}
+                    />&nbsp;
+                    <Icon
+                        type="svg"
+                        name="window-service-monitor"
+                        size={7}
+                    />&nbsp;
+                    <Icon
+                        type="svg"
+                        name="window-service-monitor"
+                        size={8}
+                    />&nbsp;
+                    <Icon
+                        type="svg"
+                        name="window-service-monitor"
+                        size={9}
                     />
                 </div>
                 <div>
                     <Icon
                         type="svg"
-                        name="server-device"
+                        name="window-service-monitor"
                         width={200}
                         height={250}
                     />

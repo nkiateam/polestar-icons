@@ -1,9 +1,48 @@
+/* 모든 svg 공통 클래스 */
+.ps-svg-icon {
+    
+}
+
+/* size 속성 사용하는 경우 .ps-svg-size 추가됨 */
+.ps-svg-size {
+    width: 0.875em;
+}
+
+.ps-svg-size-2x {
+    font-size: 2em;
+}
+.ps-svg-size-3x {
+    font-size: 3em;
+}
+.ps-svg-size-4x {
+    font-size: 4em;
+}
+.ps-svg-size-5x {
+    font-size: 5em;
+}
+.ps-svg-size-6x {
+    font-size: 6em;
+}
+.ps-svg-size-7x {
+    font-size: 7em;
+}
+.ps-svg-size-8x {
+    font-size: 8em;
+}
+.ps-svg-size-9x {
+    font-size: 9em;
+}
+
 .svg-test-server path {
     fill: #e4ae19;
 }
 
 .svg-test-server-device path:nth-of-type(5) {
     fill: #6123c5;
+}
+
+.svg-test-network-switch {
+    /* font-size: 9em; */
 }
 
 .svg-test-window-service-monitor {
