@@ -238,7 +238,7 @@ class Usage extends Component {
                 return (
                     <Icon
                         type="svg"
-                        name="server"
+                        name="linux"
                     />
                 )
             }
@@ -250,8 +250,9 @@ class Usage extends Component {
                 <div>
                     <Icon
                         type="svg"
-                        name="server"
+                        // name="server"
                         // name="window-service-monitor"
+                        name="linux"
                     />
                 </div>
             </div>
@@ -325,41 +326,53 @@ class Usage extends Component {
                     <Icon
                         type="svg"
                         name="window-service-monitor"
+                        // name="linux"
                         size={2}
                     />&nbsp;
                     <Icon
                         type="svg"
                         name="window-service-monitor"
+                        // name="linux"
                         size={3}
                     />&nbsp;
                     <Icon
                         type="svg"
                         name="window-service-monitor"
+                        // name="linux"
                         size={4}
                     />&nbsp;
                     <Icon
                         type="svg"
                         name="window-service-monitor"
+                        // name="linux"
                         size={5}
                     />&nbsp;
                     <Icon
                         type="svg"
                         name="window-service-monitor"
+                        // name="linux"
+                        // name="server-linux"
                         size={6}
                     />&nbsp;
                     <Icon
                         type="svg"
                         name="window-service-monitor"
+                        // name="linux"
+                        // name="server-linux"
                         size={7}
                     />&nbsp;
                     <Icon
                         type="svg"
                         name="window-service-monitor"
+                        // name="linux"
+                        // name="server-linux"
                         size={8}
                     />&nbsp;
                     <Icon
                         type="svg"
                         name="window-service-monitor"
+                        // name="linux"
+                        // name="server-linux"
                         size={9}
                     />
                 </div>
@@ -367,6 +380,7 @@ class Usage extends Component {
                     <Icon
                         type="svg"
                         name="window-service-monitor"
+                        // name="linux"
                         width={200}
                         height={250}
                     />
