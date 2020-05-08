@@ -302,7 +302,7 @@
 
 .polestar-icon {
     display: inline-block;
-    /* font: normal normal normal 14px/1 polestar; */
+    font: normal normal normal 14px/1 polestar;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
