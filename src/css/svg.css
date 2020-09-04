@@ -1,11 +1,10 @@
 /* 모든 svg 공통 클래스 */
 .ps-svg-icon {
-    
 }
 
 /* size 속성 사용하는 경우 .ps-svg-size 추가됨 */
 .ps-svg-size {
-    width: 0.875em;
+    width: 0.875em; /*.ps-svg-icon 에 공통으로 들어갈 필요가 있어 보임 */
 }
 
 .ps-svg-size-2x {
@@ -33,17 +32,21 @@
     font-size: 9em;
 }
 
-.svg-test-server path {
+.svg-test-linux path {
     fill: #e4ae19;
 }
+
+/* .svg-test-server path {
+    fill: #e4ae19;
+} */
 
 .svg-test-server-device path:nth-of-type(5) {
     fill: #6123c5;
 }
 
-.svg-test-network-switch {
-    /* font-size: 9em; */
-}
+/* .svg-test-network-switch {
+    font-size: 9em;
+} */
 
 .svg-test-window-service-monitor {
     fill: #4abe6d;

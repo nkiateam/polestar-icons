@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-function SvgLinux(props) {
+function SvgLinux1(props) {
     return (
-        <svg viewBox="0 0 50 50" {...props}>
+        <svg width={50} height={50} {...props}>
             <g fillRule="evenodd" clipRule="evenodd">
                 <path
                     fill="#1D1917"
@@ -6867,4 +6867,4 @@ function SvgLinux(props) {
     );
 }
 
-export default SvgLinux;
+export default SvgLinux1;

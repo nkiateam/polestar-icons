@@ -242,9 +242,10 @@ class Usage extends Component {
                 <div>
                     <Icon
                         type="svg"
-                        // name="server"
+                        // name="server-device"
                         // name="window-service-monitor"
                         name="linux"
+                        size={1}
                     />
                 </div>
             </div>
@@ -257,6 +258,10 @@ class Usage extends Component {
 
             render() {
                 return (
+                    <Icon
+                        type="svg"
+                        name="window-service-monitor"
+                    />&nbsp;
                     <Icon
                         type="svg"
                         name="window-service-monitor"
@@ -315,6 +320,13 @@ class Usage extends Component {
                         type="svg"
                         name="window-service-monitor"
                     />&nbsp; */}
+                    <Icon
+                        type="svg"
+                        name="window-service-monitor"
+                        // name="linux"
+                        size={1}
+                    />
+                    &nbsp;
                     <Icon
                         type="svg"
                         name="window-service-monitor"
@@ -410,7 +422,10 @@ class Usage extends Component {
                     <Icon
                         type="svg"
                         className="svg-test-server"
-                        name="server"
+                        // name="server"
+                        name="server-device"
+                        // name="window-service-monitor"
+                        size={2}
                     />
                 </div>
             </div>
