@@ -21,10 +21,7 @@ class Usage extends Component {
                 <h3>Basic</h3>
                 <pre>{code}</pre>
                 <div>
-                    <Icon
-                        name="glass"
-                        color="red"
-                    />
+                    <Icon name="glass" color="red" />
                 </div>
             </div>
         );
@@ -70,11 +67,27 @@ class Usage extends Component {
                 </div>
             </div>
         );
-    }
+    };
 
     renderAnimationIcon = () => {
-        const animations = ['spin', 'spin-pulse', 'wrench', 'ring', 'vertical', 'horizontal', 'flash', 'bounce',
-            'float', 'pulse', 'tada', 'passing', 'passing-reverse', 'burst', 'falling', 'shake'];
+        const animations = [
+            'spin',
+            'spin-pulse',
+            'wrench',
+            'ring',
+            'vertical',
+            'horizontal',
+            'flash',
+            'bounce',
+            'float',
+            'pulse',
+            'tada',
+            'passing',
+            'passing-reverse',
+            'burst',
+            'falling',
+            'shake',
+        ];
         const code = `
             import Icon from 'polestar-icons';
 
@@ -90,7 +103,10 @@ class Usage extends Component {
             }
         `;
         const icons = animations.map((animation) => (
-            <div key={animation} style={{ minWidth: '250px', margin: '20px 0px' }}>
+            <div
+                key={animation}
+                style={{ minWidth: '250px', margin: '20px 0px' }}
+            >
                 <Icon
                     name="spinner"
                     color="blue"
@@ -118,14 +134,17 @@ class Usage extends Component {
                 <pre>{code}</pre>
                 <div
                     style={{
-                        display: 'flex', justifyContent: 'space-evenly', flexWrap: 'wrap', margin: '10px 30px',
+                        display: 'flex',
+                        justifyContent: 'space-evenly',
+                        flexWrap: 'wrap',
+                        margin: '10px 30px',
                     }}
                 >
                     {icons}
                 </div>
             </div>
         );
-    }
+    };
 
     renderIconSize = () => {
         const code = `
@@ -133,6 +152,10 @@ class Usage extends Component {
 
             render() {
                 return (
+                    <Icon
+                        name="bell"
+                        color="black"
+                    />
                     <Icon
                         name="bell"
                         color="black"
@@ -185,50 +208,19 @@ class Usage extends Component {
                         name="bell"
                         color="black"
                     /> */}
-                    <Icon
-                        name="bell"
-                        color="black"
-                        size={2}
-                    />
-                    <Icon
-                        name="bell"
-                        color="black"
-                        size={3}
-                    />
-                    <Icon
-                        name="bell"
-                        color="black"
-                        size={4}
-                    />
-                    <Icon
-                        name="bell"
-                        color="black"
-                        size={5}
-                    />
-                    <Icon
-                        name="bell"
-                        color="black"
-                        size={6}
-                    />
-                    <Icon
-                        name="bell"
-                        color="black"
-                        size={7}
-                    />
-                    <Icon
-                        name="bell"
-                        color="black"
-                        size={8}
-                    />
-                    <Icon
-                        name="bell"
-                        color="black"
-                        size={9}
-                    />
+                    <Icon name="bell" color="black" size={1} />
+                    <Icon name="bell" color="black" size={2} />
+                    <Icon name="bell" color="black" size={3} />
+                    <Icon name="bell" color="black" size={4} />
+                    <Icon name="bell" color="black" size={5} />
+                    <Icon name="bell" color="black" size={6} />
+                    <Icon name="bell" color="black" size={7} />
+                    <Icon name="bell" color="black" size={8} />
+                    <Icon name="bell" color="black" size={9} />
                 </div>
             </div>
         );
-    }
+    };
 
     renderSVGBasic = () => {
         const code = `
@@ -328,46 +320,53 @@ class Usage extends Component {
                         name="window-service-monitor"
                         // name="linux"
                         size={2}
-                    />&nbsp;
+                    />
+                    &nbsp;
                     <Icon
                         type="svg"
                         name="window-service-monitor"
                         // name="linux"
                         size={3}
-                    />&nbsp;
+                    />
+                    &nbsp;
                     <Icon
                         type="svg"
                         name="window-service-monitor"
                         // name="linux"
                         size={4}
-                    />&nbsp;
+                    />
+                    &nbsp;
                     <Icon
                         type="svg"
                         name="window-service-monitor"
                         // name="linux"
                         size={5}
-                    />&nbsp;
+                    />
+                    &nbsp;
                     <Icon
                         type="svg"
                         name="window-service-monitor"
                         // name="linux"
                         // name="server-linux"
                         size={6}
-                    />&nbsp;
+                    />
+                    &nbsp;
                     <Icon
                         type="svg"
                         name="window-service-monitor"
                         // name="linux"
                         // name="server-linux"
                         size={7}
-                    />&nbsp;
+                    />
+                    &nbsp;
                     <Icon
                         type="svg"
                         name="window-service-monitor"
                         // name="linux"
                         // name="server-linux"
                         size={8}
-                    />&nbsp;
+                    />
+                    &nbsp;
                     <Icon
                         type="svg"
                         name="window-service-monitor"
@@ -387,7 +386,7 @@ class Usage extends Component {
                 </div>
             </div>
         );
-    }
+    };
 
     renderSVGClass = () => {
         const code = `

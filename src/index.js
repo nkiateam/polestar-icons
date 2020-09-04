@@ -20,8 +20,24 @@ class Icon extends React.Component {
         type: PropTypes.oneOf(['font', 'svg', 'image']),
         /** 아이콘 사이즈(em, lg, fw) - 폰트 아이콘에만 적용 */
         size: PropTypes.oneOf([
-            2, 3, 4, 5, 6, 7, 8, 9,
-            '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x',
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            '1x',
+            '2x',
+            '3x',
+            '4x',
+            '5x',
+            '6x',
+            '7x',
+            '8x',
+            '9x',
             'lg',
         ]),
         /** 아이콘 색상 */
@@ -34,22 +50,36 @@ class Icon extends React.Component {
         hidden: PropTypes.bool,
         /** 아이콘 애니메이션 */
         animation: PropTypes.oneOf([
-            'spin', 'spin-pulse', 'wrench', 'ring', 'vertical', 'horizontal', 'flash', 'bounce',
-            'float', 'pulse', 'tada', 'passing', 'passing-reverse', 'burst', 'falling', 'shake',
+            'spin',
+            'spin-pulse',
+            'wrench',
+            'ring',
+            'vertical',
+            'horizontal',
+            'flash',
+            'bounce',
+            'float',
+            'pulse',
+            'tada',
+            'passing',
+            'passing-reverse',
+            'burst',
+            'falling',
+            'shake',
         ]),
         /** 아이콘 애니메이션 표시 방법(항상, 일정시간, 호버, 부모노드 호버) */
         animationType: PropTypes.oneOf([
-            'always', 'duration', 'hover', 'parent-hover',
+            'always',
+            'duration',
+            'hover',
+            'parent-hover',
         ]),
         /** 아이콘 애니메이션 표시 시간(초) */
         animationDuration: PropTypes.number,
         /** 중첩 아이콘 이름 */
         innerName: PropTypes.string,
         /** 중첩 사이즈(em) - 폰트 아이콘에만 적용 */
-        innerSize: PropTypes.oneOfType([
-            PropTypes.number,
-            PropTypes.string,
-        ]),
+        innerSize: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
         /** 중첩 아이콘 색상 */
         innerColor: PropTypes.string,
         /** 중첩 아이콘 hide */
@@ -60,22 +90,39 @@ class Icon extends React.Component {
         innerStyle: PropTypes.object,
         /** 아이콘 애니메이션 */
         innerAnimation: PropTypes.oneOf([
-            'spin', 'spin-pulse', 'wrench', 'ring', 'vertical', 'horizontal', 'flash', 'bounce',
-            'float', 'pulse', 'tada', 'passing', 'passing-reverse', 'burst', 'falling', 'shake',
+            'spin',
+            'spin-pulse',
+            'wrench',
+            'ring',
+            'vertical',
+            'horizontal',
+            'flash',
+            'bounce',
+            'float',
+            'pulse',
+            'tada',
+            'passing',
+            'passing-reverse',
+            'burst',
+            'falling',
+            'shake',
         ]),
         /** 아이콘 애니메이션 표시 방법(항상, 일정시간, 호버, 부모노드 호버) */
         innerAnimationType: PropTypes.oneOf([
-            'always', 'duration', 'hover', 'parent-hover',
+            'always',
+            'duration',
+            'hover',
+            'parent-hover',
         ]),
         /** 아이콘 애니메이션 표시 시간(초) */
         innerAnimationDuration: PropTypes.number,
         /** 중첩 아이콘 및 기본 아이콘의 배율(1배, 2배), default [1, 1] */
         stackRatio: PropTypes.array,
         /**
-        * \[Event\] 아이콘 클릭시 발생하는 이벤트
-        *
-        * @param {object} e 이벤트 객체.
-        */
+         * \[Event\] 아이콘 클릭시 발생하는 이벤트
+         *
+         * @param {object} e 이벤트 객체.
+         */
         onClick: PropTypes.func,
     };
 
@@ -99,8 +146,19 @@ class Icon extends React.Component {
     // }
 
     getIcon = (
-        name, className, size, color, hidden, style, animation, animationType, animationDuration,
-        type, onClick, isStack, stackRatio,
+        name,
+        className,
+        size,
+        color,
+        hidden,
+        style,
+        animation,
+        animationType,
+        animationDuration,
+        type,
+        onClick,
+        isStack,
+        stackRatio,
     ) => {
         // const prefix = this.props.type === 'font' ? 'ps-font-icon' : 'ps-image-icon';
         const prefix = `ps-${type}-icon`;
@@ -114,8 +172,12 @@ class Icon extends React.Component {
                 iconSize = `icon-${size}`;
             }
         }
-        const animationClassName = this.getAnimationClassName(animation, animationType);
-        const iconClassName = `polestar-icon ${prefix}-${name} ${iconSize} ${className || ''} ${stackRatioClass} ${animationClassName}`;
+        const animationClassName = this.getAnimationClassName(
+            animation,
+            animationType,
+        );
+        const iconClassName = `polestar-icon ${prefix}-${name} ${iconSize} ${className ||
+            ''} ${stackRatioClass} ${animationClassName}`;
         const iconStyle = {
             ...style,
             color,
@@ -132,25 +194,29 @@ class Icon extends React.Component {
 
         return (
             <i
-                ref={(ref) => { this.icon = ref; }}
+                ref={(ref) => {
+                    this.icon = ref;
+                }}
                 className={iconClassName}
                 role="presentation"
                 style={iconStyle}
                 onClick={onClick}
             />
         );
-    }
+    };
 
     getAnimationClassName = (animation, animationType) => {
         if (animationType === 'hover') {
             return `ps-${animation} animated-hover`;
-        } if (animationType === 'parent-hover') {
+        }
+        if (animationType === 'parent-hover') {
             return `ps-${animation}`;
-        } if (!animation) {
+        }
+        if (!animation) {
             return '';
         }
         return `ps-${animation} animated`;
-    }
+    };
 
     render() {
         const {
@@ -195,16 +261,36 @@ class Icon extends React.Component {
         }
 
         const icon = this.getIcon(
-            name, className, size, color, hidden, style,
-            animation, animationType, animationDuration,
-            type, onClick, Boolean(innerName), stackRatio[0],
+            name,
+            className,
+            size,
+            color,
+            hidden,
+            style,
+            animation,
+            animationType,
+            animationDuration,
+            type,
+            onClick,
+            Boolean(innerName),
+            stackRatio[0],
         );
 
         if (innerName) {
             const innerIcon = this.getIcon(
-                innerName, innerClassName, innerSize || size, innerColor, innerHidden, innerStyle,
-                innerAnimation, innerAnimationType, innerAnimationDuration,
-                type, null, Boolean(innerName), stackRatio[1],
+                innerName,
+                innerClassName,
+                innerSize || size,
+                innerColor,
+                innerHidden,
+                innerStyle,
+                innerAnimation,
+                innerAnimationType,
+                innerAnimationDuration,
+                type,
+                null,
+                Boolean(innerName),
+                stackRatio[1],
             );
             return (
                 <span className="icon-stack">
