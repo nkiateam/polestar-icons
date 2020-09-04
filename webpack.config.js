@@ -54,6 +54,7 @@ module.exports = {
                         },
                     },
                 ],
+                exclude: /node_modules/,
             },
             {
                 test: /\.(js|jsx)$/,
@@ -144,7 +145,7 @@ module.exports = {
         }
     },
 
-    devtool: devMode ? 'cheap-module-source-map' : 'source-map', // cheap-module-source-map, eval-source-map, inline-source-map
+    devtool: devMode ? 'inline-source-map' : 'cheap-module-source-map', // cheap-module-source-map, eval-source-map, inline-source-map
 
     devServer: {
         inline: true,
