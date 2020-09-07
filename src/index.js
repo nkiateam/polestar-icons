@@ -251,7 +251,12 @@ class Icon extends React.Component {
                     className={classNames(
                         'ps-svg-icon',
                         className,
-                        { 'ps-svg-size': typeof size !== 'undefined' },
+                        {
+                            'ps-svg-size':
+                                typeof size !== 'undefined' ||
+                                (typeof this.props.width === 'undefined' &&
+                                    typeof this.props.height === 'undefined'),
+                        },
                         { [`ps-svg-size-${size}x`]: typeof size === 'number' },
                         { [`ps-svg-size-${size}`]: typeof size === 'string' },
                     )}

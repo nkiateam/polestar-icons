@@ -4,7 +4,8 @@
 
 /* size 속성 사용하는 경우 .ps-svg-size 추가됨 */
 .ps-svg-size {
-    width: 0.875em; /*.ps-svg-icon 에 공통으로 들어갈 필요가 있어 보임 */
+    /* width: 0.875em; width/height 값 지정시 width: 1em; 없어야 함*/
+    width: 1em;
 }
 
 .ps-svg-size-2x {

@@ -22,6 +22,7 @@
     "build:docs": "rimraf docs && styleguidist build && git add docs",
     "build:examples": "rimraf examples/build && cross-env NODE_ENV=production webpack",
     "prepublishOnly": "rimraf lib && babel src --out-dir lib --copy-files",
+    "gen:svg": "npm run svgr && node scripts/createSvgIcons.js",
     "generate": "node_modules/.bin/cross-env NODE_ENV=production babel-node --presets=@babel/env --plugins=@babel/transform-async-to-generator ./generator/app.js",
     "gen": "node_modules/.bin/cross-env NODE_ENV=production babel-node --presets=@babel/env --plugins=@babel/transform-async-to-generator ./generator/app.js",
     "lint": "eslint . --cache && echo \"eslint: no lint errors\"",

@@ -245,7 +245,8 @@ class Usage extends Component {
                         // name="server-device"
                         // name="window-service-monitor"
                         name="linux"
-                        size={1}
+                        // size={1}
+                        // width={200}
                     />
                 </div>
             </div>
@@ -390,8 +391,8 @@ class Usage extends Component {
                 <div>
                     <Icon
                         type="svg"
-                        name="window-service-monitor"
-                        // name="linux"
+                        // name="window-service-monitor"
+                        name="linux"
                         width={200}
                         height={250}
                     />
@@ -421,9 +422,9 @@ class Usage extends Component {
                 <div>
                     <Icon
                         type="svg"
-                        className="svg-test-server"
-                        // name="server"
-                        name="server-device"
+                        className="svg-test-linux"
+                        name="linux"
+                        // name="server-device"
                         // name="window-service-monitor"
                         size={2}
                     />
