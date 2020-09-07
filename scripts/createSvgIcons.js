@@ -16,19 +16,22 @@ files.forEach((file) => {
 
     if (suffix === '.svg') {
         const fileName = file.substr(0, file.length - 4); // 확장자 추출
-        console.log(fileName);
+        // console.log(fileName);
         const icon = {};
         icon['name'] = fileName;
         icons.push(icon);
     }
 });
-console.log({ icons });
+// console.log({ icons });
 
 fs.writeFile(
     path.resolve(__dirname, '../src/Example/svgIcons.json'),
     JSON.stringify({ icons }),
     (err) => {
         if (err) throw err;
-        console.log('Icon List file for SVG Examples is Saved!');
+        console.log(
+            '\x1b[36m%s\x1b[0m',
+            'Icon List file for SVG Examples is Saved!',
+        );
     },
 );
