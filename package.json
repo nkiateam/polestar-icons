@@ -24,7 +24,8 @@
     "prepublishOnly:test": "rimraf lib && babel src --out-dir lib --copy-files",
     "gen:svg": "npm run svgr && node scripts/createSvgIcons.js",
     "generate": "node_modules/.bin/cross-env NODE_ENV=production babel-node --presets=@babel/env --plugins=@babel/transform-async-to-generator ./generator/app.js",
-    "gen": "node_modules/.bin/cross-env NODE_ENV=production babel-node --presets=@babel/env --plugins=@babel/transform-async-to-generator ./generator/app.js",
+    "gen:font": "node_modules/.bin/cross-env NODE_ENV=production babel-node --presets=@babel/env --plugins=@babel/transform-async-to-generator ./generator/app.js",
+    "gen": "npm run gen:font && npm run gen:svg",
     "lint": "eslint . --cache && echo \"eslint: no lint errors\"",
     "http-server": "http-server examples/ -p 4101 -o",
     "start": "webpack-dev-server --open"
