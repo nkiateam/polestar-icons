@@ -2,6 +2,7 @@ module.exports = {
     extends: ['polestar'],
     rules: {
         'max-len': [1, 120, 2, { ignoreComments: true, ignoreStrings: true }],
+        'template-curly-spacing': 'off', // AsyncSvg.js 의 dynamic import 에 대한 rule 제외
         indent: [1, 4, { SwitchCase: 1, ignoredNodes: ['TemplateLiteral'] }], // AsyncSvg.js 의 dynamic import 에 대한 rule 제외
         // "arrow-body-style": ["error", "as-needed", { "requireReturnForObjectLiteral": true }],
         // "arrow-parens": "off", // Incompatible with prettier

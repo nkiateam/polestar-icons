@@ -10,6 +10,7 @@ const AsyncSvg = loadable(
         });
         // console.log('name', name);
         return import(`./svgComponents/${name}`);
+        // return import('./svgComponents/' + name);
     },
     {
         fallback: null, // <div>Loading...</div>,

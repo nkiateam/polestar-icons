@@ -1,7 +1,7 @@
 {
   "name": "polestar-icons",
   "author": "NKIA",
-  "version": "0.10.1",
+  "version": "0.10.1-beta.1",
   "description": "Polestar UI Icons",
   "main": "./lib/index.js",
   "keywords": [
@@ -21,7 +21,7 @@
     "docs": "styleguidist server",
     "build:docs": "rimraf docs && styleguidist build && git add docs",
     "build:examples": "rimraf examples/build && cross-env NODE_ENV=production webpack",
-    "prepublishOnly": "rimraf lib && babel src --out-dir lib --copy-files",
+    "prepublishOnly:test": "rimraf lib && babel src --out-dir lib --copy-files",
     "gen:svg": "npm run svgr && node scripts/createSvgIcons.js",
     "generate": "node_modules/.bin/cross-env NODE_ENV=production babel-node --presets=@babel/env --plugins=@babel/transform-async-to-generator ./generator/app.js",
     "gen": "node_modules/.bin/cross-env NODE_ENV=production babel-node --presets=@babel/env --plugins=@babel/transform-async-to-generator ./generator/app.js",
