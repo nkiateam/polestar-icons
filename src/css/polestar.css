@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'polestar';
-  src: url('../fonts/polestar.eot?1604387905');
-  src: url('../fonts/polestar.eot?1604387905#iefix') format('embedded-opentype'),
-       url('../fonts/polestar.woff2?1604387905') format('woff2'),
-       url('../fonts/polestar.woff?1604387905') format('woff'),
-       url('../fonts/polestar.ttf?1604387905') format('truetype'),
-       url('../fonts/polestar.svg?1604387905#fontello') format('svg');
+  src: url('../fonts/polestar.eot?1604622137');
+  src: url('../fonts/polestar.eot?1604622137#iefix') format('embedded-opentype'),
+       url('../fonts/polestar.woff2?1604622137') format('woff2'),
+       url('../fonts/polestar.woff?1604622137') format('woff'),
+       url('../fonts/polestar.ttf?1604622137') format('truetype'),
+       url('../fonts/polestar.svg?1604622137#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1259,6 +1259,6 @@
 .ps-font-icon-dynamodb-indexes:before { content: '\E4B9' } 
 .ps-font-icon-dynamodb-index:before { content: '\E4BA' } 
 .ps-font-icon-solaris:before { content: '\E4BB' } 
-.ps-font-icon-hp-logo:before { content: '\E4BC' } 
+.ps-font-icon-hplogo:before { content: '\E4BC' } 
 .ps-font-icon-error-round:before { content: '\E4BD' } 
 .ps-font-icon-error-square:before { content: '\E4BE' } 
