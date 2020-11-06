@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import AsyncSvg from './AsyncSvg';
+// import AsyncSvg from '../lib/AsyncSvg';
 
 import './css/polestar.css';
 import './css/sprite.css';
