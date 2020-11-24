@@ -2,7 +2,12 @@ import * as React from 'react';
 
 function SvgServerHpux(props) {
     return (
-        <svg width={100} height={100} {...props}>
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={100}
+            height={100}
+            {...props}
+        >
             <g fill="#313333">
                 <path d="M42.1 75.3c-11.9-3.2-20.6-13.5-20.6-25.8 0-11.6 7.5-21.6 18.4-25.4l1.3-3.6H6.5c-2.8 0-5 2.3-5 5v49c0 2.8 2.3 5 5 5h34.1l1.5-4.2zM93.5 20.5h-41l-.7 2.1c14.7 1.1 26.7 12.9 26.7 27 0 14.2-11.7 25.8-26.6 26.7l-1.1 3.2h42.7c2.8 0 5-2.3 5-5v-49c0-2.8-2.2-5-5-5z" />
                 <g>

@@ -2,7 +2,12 @@ import * as React from 'react';
 
 function SvgServer(props) {
     return (
-        <svg width={32.019} height={51.593} {...props}>
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={32.019}
+            height={51.593}
+            {...props}
+        >
             <linearGradient
                 id="server_svg__a"
                 gradientUnits="userSpaceOnUse"

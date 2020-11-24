@@ -2,7 +2,12 @@ import * as React from 'react';
 
 function SvgNetworkSwitch(props) {
     return (
-        <svg width={42.283} height={33.96} {...props}>
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={42.283}
+            height={33.96}
+            {...props}
+        >
             <linearGradient
                 id="network-switch_svg__a"
                 gradientUnits="userSpaceOnUse"

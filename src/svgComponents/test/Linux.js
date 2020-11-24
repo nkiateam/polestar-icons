@@ -2,7 +2,7 @@ import * as React from 'react';
 
 function SvgLinux(props) {
     return (
-        <svg viewBox="0 0 50 50" {...props}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" {...props}>
             <g fillRule="evenodd" clipRule="evenodd">
                 <path
                     fill="#1D1917"
