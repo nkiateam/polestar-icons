@@ -411,18 +411,182 @@ class Usage extends Component {
             }
         `;
         return (
-            <div>
+            <div className="classname">
                 <h3>className</h3>
                 <pre>{code}</pre>
                 <div>
-                    <Icon
-                        type="svg"
-                        className="svg-test-linux"
-                        // name="linux"
-                        name="windows"
-                        size={2}
-                    />
+                    <div>
+                        <Icon
+                            type="svg"
+                            className="ps-svg-icon-aix"
+                            name="aix"
+                            size={2}
+                        />
+                    </div>
+                    <div>
+                        <Icon
+                            type="svg"
+                            name="aix"
+                            className="ps-svg-icon-aix disabled"
+                            size={2}
+                        />
+                    </div>
+                    <div>
+
+                        <Icon
+                            type="svg"
+                            name="aix"
+                            className="ps-svg-icon-aix success"
+                            size={2}
+                        />
+                    </div>
+                    <div>
+                        <Icon
+                            type="svg"
+                            name="aix"
+                            className="ps-svg-icon-aix warning"
+                            size={2}
+                        />
+                    </div>
+                    <div>
+                        <Icon
+                            type="svg"
+                            name="aix"
+                            className="ps-svg-icon-aix critical"
+                            size={2}
+                        />
+                    </div>
                 </div>
+                <div>
+                    <div>
+                        <Icon
+                            type="svg"
+                            className="ps-svg-icon-hpux"
+                            name="hpux"
+                            size={2}
+                        />
+                    </div>
+                    <div>
+                        <Icon
+                            type="svg"
+                            name="hpux"
+                            className="ps-svg-icon-hpux disabled"
+                            size={2}
+                        />
+                    </div>
+                    <div>
+
+                        <Icon
+                            type="svg"
+                            name="hpux"
+                            className="ps-svg-icon-hpux success"
+                            size={2}
+                        />
+                    </div>
+                    <div>
+                        <Icon
+                            type="svg"
+                            name="hpux"
+                            className="ps-svg-icon-hpux warning"
+                            size={2}
+                        />
+                    </div>
+                    <div>
+                        <Icon
+                            type="svg"
+                            name="hpux"
+                            className="ps-svg-icon-hpux critical"
+                            size={2}
+                        />
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <Icon
+                            type="svg"
+                            className="ps-svg-icon-linux"
+                            name="linux"
+                            size={2}
+                        />
+                    </div>
+                    <div>
+                        <Icon
+                            type="svg"
+                            name="linux"
+                            className="ps-svg-icon-linux disabled"
+                            size={2}
+                        />
+                    </div>
+                    <div>
+
+                        <Icon
+                            type="svg"
+                            name="linux"
+                            className="ps-svg-icon-linux success"
+                            size={2}
+                        />
+                    </div>
+                    <div>
+                        <Icon
+                            type="svg"
+                            name="linux"
+                            className="ps-svg-icon-linux warning"
+                            size={2}
+                        />
+                    </div>
+                    <div>
+                        <Icon
+                            type="svg"
+                            name="linux"
+                            className="ps-svg-icon-linux critical"
+                            size={2}
+                        />
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <Icon
+                            type="svg"
+                            className="ps-svg-icon-windows"
+                            name="windows"
+                            size={2}
+                        />
+                    </div>
+                    <div>
+                        <Icon
+                            type="svg"
+                            name="windows"
+                            className="ps-svg-icon-windows disabled"
+                            size={2}
+                        />
+                    </div>
+                    <div>
+
+                        <Icon
+                            type="svg"
+                            name="windows"
+                            className="ps-svg-icon-windows success"
+                            size={2}
+                        />
+                    </div>
+                    <div>
+                        <Icon
+                            type="svg"
+                            name="windows"
+                            className="ps-svg-icon-windows warning"
+                            size={2}
+                        />
+                    </div>
+                    <div>
+                        <Icon
+                            type="svg"
+                            name="windows"
+                            className="ps-svg-icon-windows critical"
+                            size={2}
+                        />
+                    </div>
+                </div>
+
             </div>
         );
     };

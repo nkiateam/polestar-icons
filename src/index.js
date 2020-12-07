@@ -12,6 +12,7 @@ import './css/animate.css';
 import './css/size.css';
 import './css/stacked.css';
 import './css/svg.css';
+import './Example/styles/style.css';
 
 class Icon extends React.Component {
     static propTypes = {

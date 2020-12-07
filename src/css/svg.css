@@ -2,6 +2,125 @@
 .ps-svg-icon {
 }
 
+
+.ps-svg-icon[class~="disabled"] path,
+.ps-svg-icon[class~="disabled"] circle,
+.ps-svg-icon[class~="disabled"] rect,
+.ps-svg-icon[class~="disabled"] polygon,
+.ps-svg-icon[class~="disabled"] ellipse {
+    fill: #aaa;
+}
+
+.ps-svg-icon[class~="success"] path,
+.ps-svg-icon[class~="success"] circle,
+.ps-svg-icon[class~="success"] rect,
+.ps-svg-icon[class~="success"] polygon,
+.ps-svg-icon[class~="success"] ellipse {
+    fill: #009603;
+}
+
+.ps-svg-icon[class~="warning"] path,
+.ps-svg-icon[class~="warning"] circle,
+.ps-svg-icon[class~="warning"] rect,
+.ps-svg-icon[class~="warning"] polygon,
+.ps-svg-icon[class~="warning"] ellipse {
+    fill: #f3ac00;
+}
+
+.ps-svg-icon[class~="critical"] path,
+.ps-svg-icon[class~="critical"] circle,
+.ps-svg-icon[class~="critical"] rect,
+.ps-svg-icon[class~="critical"] polygon,
+.ps-svg-icon[class~="critical"] ellipse {
+    fill: #f40000;
+}
+
+
+
+/* aix */
+.ps-svg-icon[class~="disabled"].ps-svg-icon-aix path:nth-of-type(1),
+.ps-svg-icon[class~="success"].ps-svg-icon-aix path:nth-of-type(1),
+.ps-svg-icon[class~="warning"].ps-svg-icon-aix path:nth-of-type(1),
+.ps-svg-icon[class~="critical"].ps-svg-icon-aix path:nth-of-type(1) {
+    opacity: 0.8;
+}
+.ps-svg-icon[class~="disabled"].ps-svg-icon-aix path:nth-of-type(2),
+.ps-svg-icon[class~="success"].ps-svg-icon-aix path:nth-of-type(2),
+.ps-svg-icon[class~="warning"].ps-svg-icon-aix path:nth-of-type(2),
+.ps-svg-icon[class~="critical"].ps-svg-icon-aix path:nth-of-type(2) {
+    opacity: 1;
+}
+.ps-svg-icon[class~="disabled"].ps-svg-icon-aix .aix_svg__st2,
+.ps-svg-icon[class~="success"].ps-svg-icon-aix .aix_svg__st2,
+.ps-svg-icon[class~="warning"].ps-svg-icon-aix .aix_svg__st2,
+.ps-svg-icon[class~="critical"].ps-svg-icon-aix .aix_svg__st2 {
+    fill: #fff;
+}
+
+/* hpux */
+.ps-svg-icon[class~="disabled"].ps-svg-icon-hpux path:nth-of-type(1),
+.ps-svg-icon[class~="success"].ps-svg-icon-hpux path:nth-of-type(1),
+.ps-svg-icon[class~="warning"].ps-svg-icon-hpux path:nth-of-type(1),
+.ps-svg-icon[class~="critical"].ps-svg-icon-hpux path:nth-of-type(1) {
+    opacity: 0.7;
+}
+.ps-svg-icon[class~="disabled"].ps-svg-icon-hpux .hpux_svg__st1
+.ps-svg-icon[class~="success"].ps-svg-icon-hpux .hpux_svg__st1,
+.ps-svg-icon[class~="warning"].ps-svg-icon-hpux .hpux_svg__st1,
+.ps-svg-icon[class~="critical"].ps-svg-icon-hpux .hpux_svg__st1 {
+    opacity: 1;
+}
+
+
+
+/* linux */
+.ps-svg-icon[class~="disabled"].ps-svg-icon-linux .linux_svg__st0,
+.ps-svg-icon[class~="success"].ps-svg-icon-linux .linux_svg__st0,
+.ps-svg-icon[class~="warning"].ps-svg-icon-linux .linux_svg__st0,
+.ps-svg-icon[class~="critical"].ps-svg-icon-linux .linux_svg__st0 {
+    opacity: 1;
+}
+.ps-svg-icon[class~="disabled"].ps-svg-icon-linux .linux_svg__st1,
+.ps-svg-icon[class~="success"].ps-svg-icon-linux .linux_svg__st1,
+.ps-svg-icon[class~="warning"].ps-svg-icon-linux .linux_svg__st1,
+.ps-svg-icon[class~="critical"].ps-svg-icon-linux .linux_svg__st1 {
+    opacity: 0.6;
+    fill: #fff;
+}
+.ps-svg-icon[class~="disabled"].ps-svg-icon-linux .linux_svg__st2,
+.ps-svg-icon[class~="success"].ps-svg-icon-linux .linux_svg__st2,
+.ps-svg-icon[class~="warning"].ps-svg-icon-linux .linux_svg__st2,
+.ps-svg-icon[class~="critical"].ps-svg-icon-linux .linux_svg__st2 {
+    fill: #fff;
+}
+
+/* windows */
+.ps-svg-icon[class~="disabled"].ps-svg-icon-windows path:nth-of-type(1),
+.ps-svg-icon[class~="success"].ps-svg-icon-windows path:nth-of-type(1),
+.ps-svg-icon[class~="warning"].ps-svg-icon-windows path:nth-of-type(1),
+.ps-svg-icon[class~="critical"].ps-svg-icon-windows path:nth-of-type(1) {
+    opacity: 0.6;
+}
+.ps-svg-icon[class~="disabled"].ps-svg-icon-windows path:nth-of-type(2),
+.ps-svg-icon[class~="success"].ps-svg-icon-windows path:nth-of-type(2),
+.ps-svg-icon[class~="warning"].ps-svg-icon-windows path:nth-of-type(2),
+.ps-svg-icon[class~="critical"].ps-svg-icon-windows path:nth-of-type(2) {
+    opacity: 0.4;
+}
+.ps-svg-icon[class~="disabled"].ps-svg-icon-windows path:nth-of-type(3),
+.ps-svg-icon[class~="success"].ps-svg-icon-windows path:nth-of-type(3),
+.ps-svg-icon[class~="warning"].ps-svg-icon-windows path:nth-of-type(3),
+.ps-svg-icon[class~="critical"].ps-svg-icon-windows path:nth-of-type(3) {
+    opacity: 1;
+}
+.ps-svg-icon[class~="disabled"].ps-svg-icon-windows path:nth-of-type(4),
+.ps-svg-icon[class~="success"].ps-svg-icon-windows path:nth-of-type(4),
+.ps-svg-icon[class~="warning"].ps-svg-icon-windows path:nth-of-type(4),
+.ps-svg-icon[class~="critical"].ps-svg-icon-windows path:nth-of-type(4) {
+    opacity: 0.8;
+}
+
+
 /* size 속성 사용하는 경우 .ps-svg-size 추가됨 */
 .ps-svg-size {
     /* width: 0.875em; width/height 값 지정시 width: 1em; 없어야 함*/
