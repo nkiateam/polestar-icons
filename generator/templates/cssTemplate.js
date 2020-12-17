@@ -22,8 +22,6 @@ export default ({
   font-weight: normal;
   speak: none;
  
-  vertical-align: 5%;
- 
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -43,7 +41,7 @@ export default ({
   /* margin-left: .2em; */
  
   /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
+  font-size: 110%;
  
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;

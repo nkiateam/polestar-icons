@@ -1,1267 +1,1265 @@
 @font-face {
-    font-family: 'polestar';
-    src: url('../fonts/polestar.eot?1607650751');
-    src: url('../fonts/polestar.eot?1607650751#iefix') format('embedded-opentype'),
-         url('../fonts/polestar.woff2?1607650751') format('woff2'),
-         url('../fonts/polestar.woff?1607650751') format('woff'),
-         url('../fonts/polestar.ttf?1607650751') format('truetype'),
-         url('../fonts/polestar.svg?1607650751#fontello') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  [class^="ps-font-icon-"]:before, [class*=" ps-font-icon-"]:before {
-    font-family: "polestar";
-    font-style: normal;
-    font-weight: normal;
-    speak: none;
-   
-    vertical-align: 5%;
-   
-    display: inline-block;
-    text-decoration: inherit;
-    width: 1em;
-    /* margin-right: .2em; */
-    text-align: center;
-    /* opacity: .8; */
-   
-    /* For safety - reset parent styles, that can break glyph codes*/
-    font-variant: normal;
-    text-transform: none;
-   
-    /* fix buttons height, for twitter bootstrap */
-    line-height: 1em;
-   
-    /* Animation center compensation - margins should be symmetric */
-    /* remove if not needed */
-    /* margin-left: .2em; */
-   
-    /* you can be more comfortable with increased icons size */
-    /* font-size: 120%; */
-   
-    /* Font smoothing. That was taken from TWBS */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-   
-    /* Uncomment for 3D effect */
-    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-  }
-  
-  .ps-font-icon--500px:before { content: '\E000' } 
-  .ps-font-icon-address-book-o:before { content: '\E001' } 
-  .ps-font-icon-address-book:before { content: '\E002' } 
-  .ps-font-icon-address-card-o:before { content: '\E003' } 
-  .ps-font-icon-address-card:before { content: '\E004' } 
-  .ps-font-icon-adjust:before { content: '\E005' } 
-  .ps-font-icon-adn:before { content: '\E006' } 
-  .ps-font-icon-align-center:before { content: '\E007' } 
-  .ps-font-icon-align-left:before { content: '\E008' } 
-  .ps-font-icon-amazon:before { content: '\E009' } 
-  .ps-font-icon-ambulance:before { content: '\E00A' } 
-  .ps-font-icon-asl-interpreting:before { content: '\E00B' } 
-  .ps-font-icon-anchor:before { content: '\E00C' } 
-  .ps-font-icon-android:before { content: '\E00D' } 
-  .ps-font-icon-angellist:before { content: '\E00E' } 
-  .ps-font-icon-angle-double-down:before { content: '\E00F' } 
-  .ps-font-icon-angle-double-left:before { content: '\E010' } 
-  .ps-font-icon-angle-double-right:before { content: '\E011' } 
-  .ps-font-icon-angle-double-up:before { content: '\E012' } 
-  .ps-font-icon-angle-down:before { content: '\E013' } 
-  .ps-font-icon-angle-left:before { content: '\E014' } 
-  .ps-font-icon-angle-right:before { content: '\E015' } 
-  .ps-font-icon-angle-up:before { content: '\E016' } 
-  .ps-font-icon-apple:before { content: '\E017' } 
-  .ps-font-icon-archive:before { content: '\E018' } 
-  .ps-font-icon-area-chart:before { content: '\E019' } 
-  .ps-font-icon-arrow-circle-down:before { content: '\E01A' } 
-  .ps-font-icon-arrow-circle-left:before { content: '\E01B' } 
-  .ps-font-icon-arrow-circle-o-down:before { content: '\E01C' } 
-  .ps-font-icon-arrow-circle-o-left:before { content: '\E01D' } 
-  .ps-font-icon-arrow-circle-o-right:before { content: '\E01E' } 
-  .ps-font-icon-arrow-circle-o-up:before { content: '\E01F' } 
-  .ps-font-icon-arrow-circle-right:before { content: '\E020' } 
-  .ps-font-icon-arrow-circle-up:before { content: '\E021' } 
-  .ps-font-icon-arrow-down:before { content: '\E022' } 
-  .ps-font-icon-arrow-left:before { content: '\E023' } 
-  .ps-font-icon-arrow-right:before { content: '\E024' } 
-  .ps-font-icon-arrow-up:before { content: '\E025' } 
-  .ps-font-icon-arrows-alt:before { content: '\E026' } 
-  .ps-font-icon-arrows-h:before { content: '\E027' } 
-  .ps-font-icon-arrows-v:before { content: '\E028' } 
-  .ps-font-icon-arrows:before { content: '\E029' } 
-  .ps-font-icon-assistive-listening-systems:before { content: '\E02A' } 
-  .ps-font-icon-asterisk:before { content: '\E02B' } 
-  .ps-font-icon-at:before { content: '\E02C' } 
-  .ps-font-icon-audio-description:before { content: '\E02D' } 
-  .ps-font-icon-automobile:before { content: '\E02E' } 
-  .ps-font-icon-backward:before { content: '\E02F' } 
-  .ps-font-icon-balance-scale:before { content: '\E030' } 
-  .ps-font-icon-ban:before { content: '\E031' } 
-  .ps-font-icon-bandcamp:before { content: '\E032' } 
-  .ps-font-icon-bank:before { content: '\E033' } 
-  .ps-font-icon-bar-chart-o:before { content: '\E034' } 
-  .ps-font-icon-barcode:before { content: '\E035' } 
-  .ps-font-icon-bars:before { content: '\E036' } 
-  .ps-font-icon-bath:before { content: '\E037' } 
-  .ps-font-icon-battery-0:before { content: '\E038' } 
-  .ps-font-icon-battery-1:before { content: '\E039' } 
-  .ps-font-icon-battery-2:before { content: '\E03A' } 
-  .ps-font-icon-battery-3:before { content: '\E03B' } 
-  .ps-font-icon-battery-4:before { content: '\E03C' } 
-  .ps-font-icon-battery-empty:before { content: '\E03D' } 
-  .ps-font-icon-battery-full:before { content: '\E03E' } 
-  .ps-font-icon-battery-half:before { content: '\E03F' } 
-  .ps-font-icon-battery-quarter:before { content: '\E040' } 
-  .ps-font-icon-battery-three-quarters:before { content: '\E041' } 
-  .ps-font-icon-battery:before { content: '\E042' } 
-  .ps-font-icon-bed:before { content: '\E043' } 
-  .ps-font-icon-beer:before { content: '\E044' } 
-  .ps-font-icon-behance-square:before { content: '\E045' } 
-  .ps-font-icon-behance:before { content: '\E046' } 
-  .ps-font-icon-bell-o:before { content: '\E047' } 
-  .ps-font-icon-bell-slash-o:before { content: '\E048' } 
-  .ps-font-icon-bell-slash:before { content: '\E049' } 
-  .ps-font-icon-bell:before { content: '\E04A' } 
-  .ps-font-icon-bicycle:before { content: '\E04B' } 
-  .ps-font-icon-binoculars:before { content: '\E04C' } 
-  .ps-font-icon-birthday-cake:before { content: '\E04D' } 
-  .ps-font-icon-bitbucket-square:before { content: '\E04E' } 
-  .ps-font-icon-bitbucket:before { content: '\E04F' } 
-  .ps-font-icon-bitcoin:before { content: '\E050' } 
-  .ps-font-icon-black-tie:before { content: '\E051' } 
-  .ps-font-icon-blind:before { content: '\E052' } 
-  .ps-font-icon-bluetooth-b:before { content: '\E053' } 
-  .ps-font-icon-bluetooth:before { content: '\E054' } 
-  .ps-font-icon-bold:before { content: '\E055' } 
-  .ps-font-icon-bolt:before { content: '\E056' } 
-  .ps-font-icon-bomb:before { content: '\E057' } 
-  .ps-font-icon-book:before { content: '\E058' } 
-  .ps-font-icon-bookmark-o:before { content: '\E059' } 
-  .ps-font-icon-bookmark:before { content: '\E05A' } 
-  .ps-font-icon-braille:before { content: '\E05B' } 
-  .ps-font-icon-briefcase:before { content: '\E05C' } 
-  .ps-font-icon-btc:before { content: '\E05D' } 
-  .ps-font-icon-bug:before { content: '\E05E' } 
-  .ps-font-icon-building-o:before { content: '\E05F' } 
-  .ps-font-icon-building:before { content: '\E060' } 
-  .ps-font-icon-bullhorn:before { content: '\E061' } 
-  .ps-font-icon-align-right:before { content: '\E062' } 
-  .ps-font-icon-align-justify:before { content: '\E063' } 
-  .ps-font-icon-bullseye:before { content: '\E064' } 
-  .ps-font-icon-bus:before { content: '\E065' } 
-  .ps-font-icon-buysellads:before { content: '\E066' } 
-  .ps-font-icon-cab:before { content: '\E067' } 
-  .ps-font-icon-calculator:before { content: '\E068' } 
-  .ps-font-icon-calendar-check-o:before { content: '\E069' } 
-  .ps-font-icon-calendar-minus-o:before { content: '\E06A' } 
-  .ps-font-icon-calendar-o:before { content: '\E06B' } 
-  .ps-font-icon-calendar-plus-o:before { content: '\E06C' } 
-  .ps-font-icon-calendar-times-o:before { content: '\E06D' } 
-  .ps-font-icon-calendar:before { content: '\E06E' } 
-  .ps-font-icon-camera-retro:before { content: '\E06F' } 
-  .ps-font-icon-camera:before { content: '\E070' } 
-  .ps-font-icon-car:before { content: '\E071' } 
-  .ps-font-icon-caret-down:before { content: '\E072' } 
-  .ps-font-icon-caret-left:before { content: '\E073' } 
-  .ps-font-icon-caret-right:before { content: '\E074' } 
-  .ps-font-icon-caret-square-o-down:before { content: '\E075' } 
-  .ps-font-icon-caret-square-o-left:before { content: '\E076' } 
-  .ps-font-icon-caret-square-o-right:before { content: '\E077' } 
-  .ps-font-icon-caret-square-o-up:before { content: '\E078' } 
-  .ps-font-icon-caret-up:before { content: '\E079' } 
-  .ps-font-icon-cart-arrow-down:before { content: '\E07A' } 
-  .ps-font-icon-cart-plus:before { content: '\E07B' } 
-  .ps-font-icon-cc-amex:before { content: '\E07C' } 
-  .ps-font-icon-cc-diners-club:before { content: '\E07D' } 
-  .ps-font-icon-cc-discover:before { content: '\E07E' } 
-  .ps-font-icon-cc-jcb:before { content: '\E07F' } 
-  .ps-font-icon-cc-mastercard:before { content: '\E080' } 
-  .ps-font-icon-cc-paypal:before { content: '\E081' } 
-  .ps-font-icon-cc-stripe:before { content: '\E082' } 
-  .ps-font-icon-cc-visa:before { content: '\E083' } 
-  .ps-font-icon-cc:before { content: '\E084' } 
-  .ps-font-icon-certificate:before { content: '\E085' } 
-  .ps-font-icon-chain-broken:before { content: '\E086' } 
-  .ps-font-icon-chain:before { content: '\E087' } 
-  .ps-font-icon-check-circle-o:before { content: '\E088' } 
-  .ps-font-icon-check-circle:before { content: '\E089' } 
-  .ps-font-icon-check-square-o:before { content: '\E08A' } 
-  .ps-font-icon-check-square:before { content: '\E08B' } 
-  .ps-font-icon-check:before { content: '\E08C' } 
-  .ps-font-icon-chevron-circle-down:before { content: '\E08D' } 
-  .ps-font-icon-chevron-circle-left:before { content: '\E08E' } 
-  .ps-font-icon-chevron-circle-right:before { content: '\E08F' } 
-  .ps-font-icon-chevron-circle-up:before { content: '\E090' } 
-  .ps-font-icon-chevron-down:before { content: '\E091' } 
-  .ps-font-icon-chevron-left:before { content: '\E092' } 
-  .ps-font-icon-chevron-right:before { content: '\E093' } 
-  .ps-font-icon-chevron-up:before { content: '\E094' } 
-  .ps-font-icon-child:before { content: '\E095' } 
-  .ps-font-icon-chrome:before { content: '\E096' } 
-  .ps-font-icon-circle-o-notch:before { content: '\E097' } 
-  .ps-font-icon-circle-o:before { content: '\E098' } 
-  .ps-font-icon-circle-thin:before { content: '\E099' } 
-  .ps-font-icon-circle:before { content: '\E09A' } 
-  .ps-font-icon-clipboard:before { content: '\E09B' } 
-  .ps-font-icon-clock-o:before { content: '\E09C' } 
-  .ps-font-icon-clone:before { content: '\E09D' } 
-  .ps-font-icon-close:before { content: '\E09E' } 
-  .ps-font-icon-cloud-download:before { content: '\E09F' } 
-  .ps-font-icon-cloud-upload:before { content: '\E0A0' } 
-  .ps-font-icon-cloud:before { content: '\E0A1' } 
-  .ps-font-icon-cny:before { content: '\E0A2' } 
-  .ps-font-icon-code-fork:before { content: '\E0A3' } 
-  .ps-font-icon-code:before { content: '\E0A4' } 
-  .ps-font-icon-codepen:before { content: '\E0A5' } 
-  .ps-font-icon-codiepie:before { content: '\E0A6' } 
-  .ps-font-icon-coffee:before { content: '\E0A7' } 
-  .ps-font-icon-cog:before { content: '\E0A8' } 
-  .ps-font-icon-cogs:before { content: '\E0A9' } 
-  .ps-font-icon-columns:before { content: '\E0AA' } 
-  .ps-font-icon-comment-o:before { content: '\E0AB' } 
-  .ps-font-icon-comment:before { content: '\E0AC' } 
-  .ps-font-icon-commenting-o:before { content: '\E0AD' } 
-  .ps-font-icon-commenting:before { content: '\E0AE' } 
-  .ps-font-icon-comments-o:before { content: '\E0AF' } 
-  .ps-font-icon-comments:before { content: '\E0B0' } 
-  .ps-font-icon-compass:before { content: '\E0B1' } 
-  .ps-font-icon-compress:before { content: '\E0B2' } 
-  .ps-font-icon-connectdevelop:before { content: '\E0B3' } 
-  .ps-font-icon-contao:before { content: '\E0B4' } 
-  .ps-font-icon-copy:before { content: '\E0B5' } 
-  .ps-font-icon-copyright:before { content: '\E0B6' } 
-  .ps-font-icon-creative-commons:before { content: '\E0B7' } 
-  .ps-font-icon-credit-card-alt:before { content: '\E0B8' } 
-  .ps-font-icon-credit-card:before { content: '\E0B9' } 
-  .ps-font-icon-crop:before { content: '\E0BA' } 
-  .ps-font-icon-crosshairs:before { content: '\E0BB' } 
-  .ps-font-icon-css3:before { content: '\E0BC' } 
-  .ps-font-icon-cube:before { content: '\E0BD' } 
-  .ps-font-icon-cubes:before { content: '\E0BE' } 
-  .ps-font-icon-cut:before { content: '\E0BF' } 
-  .ps-font-icon-cutlery:before { content: '\E0C0' } 
-  .ps-font-icon-dashboard:before { content: '\E0C1' } 
-  .ps-font-icon-dashcube:before { content: '\E0C2' } 
-  .ps-font-icon-database:before { content: '\E0C3' } 
-  .ps-font-icon-deaf:before { content: '\E0C4' } 
-  .ps-font-icon-deafness:before { content: '\E0C5' } 
-  .ps-font-icon-dedent:before { content: '\E0C6' } 
-  .ps-font-icon-delicious:before { content: '\E0C7' } 
-  .ps-font-icon-desktop:before { content: '\E0C8' } 
-  .ps-font-icon-deviantart:before { content: '\E0C9' } 
-  .ps-font-icon-diamond:before { content: '\E0CA' } 
-  .ps-font-icon-digg:before { content: '\E0CB' } 
-  .ps-font-icon-dollar:before { content: '\E0CC' } 
-  .ps-font-icon-dot-circle-o:before { content: '\E0CD' } 
-  .ps-font-icon-download:before { content: '\E0CE' } 
-  .ps-font-icon-dribbble:before { content: '\E0CF' } 
-  .ps-font-icon-drivers-license-o:before { content: '\E0D0' } 
-  .ps-font-icon-drivers-license:before { content: '\E0D1' } 
-  .ps-font-icon-dropbox:before { content: '\E0D2' } 
-  .ps-font-icon-drupal:before { content: '\E0D3' } 
-  .ps-font-icon-edge:before { content: '\E0D4' } 
-  .ps-font-icon-edit:before { content: '\E0D5' } 
-  .ps-font-icon-eercast:before { content: '\E0D6' } 
-  .ps-font-icon-eject:before { content: '\E0D7' } 
-  .ps-font-icon-ellipsis-h:before { content: '\E0D8' } 
-  .ps-font-icon-ellipsis-v:before { content: '\E0D9' } 
-  .ps-font-icon-empire:before { content: '\E0DA' } 
-  .ps-font-icon-envelope-o:before { content: '\E0DB' } 
-  .ps-font-icon-envelope-open-o:before { content: '\E0DC' } 
-  .ps-font-icon-envelope-open:before { content: '\E0DD' } 
-  .ps-font-icon-envelope-square:before { content: '\E0DE' } 
-  .ps-font-icon-envelope:before { content: '\E0DF' } 
-  .ps-font-icon-envira:before { content: '\E0E0' } 
-  .ps-font-icon-eraser:before { content: '\E0E1' } 
-  .ps-font-icon-etsy:before { content: '\E0E2' } 
-  .ps-font-icon-eur:before { content: '\E0E3' } 
-  .ps-font-icon-euro:before { content: '\E0E4' } 
-  .ps-font-icon-exchange:before { content: '\E0E5' } 
-  .ps-font-icon-exclamation-circle:before { content: '\E0E6' } 
-  .ps-font-icon-exclamation-triangle:before { content: '\E0E7' } 
-  .ps-font-icon-exclamation:before { content: '\E0E8' } 
-  .ps-font-icon-expand:before { content: '\E0E9' } 
-  .ps-font-icon-expeditedssl:before { content: '\E0EA' } 
-  .ps-font-icon-external-link-square:before { content: '\E0EB' } 
-  .ps-font-icon-external-link:before { content: '\E0EC' } 
-  .ps-font-icon-eye-slash:before { content: '\E0ED' } 
-  .ps-font-icon-eye:before { content: '\E0EE' } 
-  .ps-font-icon-eyedropper:before { content: '\E0EF' } 
-  .ps-font-icon-fa:before { content: '\E0F0' } 
-  .ps-font-icon-facebook-f:before { content: '\E0F1' } 
-  .ps-font-icon-facebook-official:before { content: '\E0F2' } 
-  .ps-font-icon-facebook-square:before { content: '\E0F3' } 
-  .ps-font-icon-facebook:before { content: '\E0F4' } 
-  .ps-font-icon-fast-backward:before { content: '\E0F5' } 
-  .ps-font-icon-fast-forward:before { content: '\E0F6' } 
-  .ps-font-icon-fax:before { content: '\E0F7' } 
-  .ps-font-icon-feed:before { content: '\E0F8' } 
-  .ps-font-icon-female:before { content: '\E0F9' } 
-  .ps-font-icon-fighter-jet:before { content: '\E0FA' } 
-  .ps-font-icon-file-archive-o:before { content: '\E0FB' } 
-  .ps-font-icon-file-audio-o:before { content: '\E0FC' } 
-  .ps-font-icon-file-code-o:before { content: '\E0FD' } 
-  .ps-font-icon-file-excel-o:before { content: '\E0FE' } 
-  .ps-font-icon-file-image-o:before { content: '\E0FF' } 
-  .ps-font-icon-file-movie-o:before { content: '\E100' } 
-  .ps-font-icon-file-o:before { content: '\E101' } 
-  .ps-font-icon-file-pdf-o:before { content: '\E102' } 
-  .ps-font-icon-file-photo-o:before { content: '\E103' } 
-  .ps-font-icon-file-picture-o:before { content: '\E104' } 
-  .ps-font-icon-file-powerpoint-o:before { content: '\E105' } 
-  .ps-font-icon-file-sound-o:before { content: '\E106' } 
-  .ps-font-icon-file-text-o:before { content: '\E107' } 
-  .ps-font-icon-file-text:before { content: '\E108' } 
-  .ps-font-icon-file-video-o:before { content: '\E109' } 
-  .ps-font-icon-file-word-o:before { content: '\E10A' } 
-  .ps-font-icon-file-zip-o:before { content: '\E10B' } 
-  .ps-font-icon-file:before { content: '\E10C' } 
-  .ps-font-icon-files-o:before { content: '\E10D' } 
-  .ps-font-icon-film:before { content: '\E10E' } 
-  .ps-font-icon-filter:before { content: '\E10F' } 
-  .ps-font-icon-fire-extinguisher:before { content: '\E110' } 
-  .ps-font-icon-fire:before { content: '\E111' } 
-  .ps-font-icon-firefox:before { content: '\E112' } 
-  .ps-font-icon-first-order:before { content: '\E113' } 
-  .ps-font-icon-flag-checkered:before { content: '\E114' } 
-  .ps-font-icon-flag-o:before { content: '\E115' } 
-  .ps-font-icon-flag:before { content: '\E116' } 
-  .ps-font-icon-flash:before { content: '\E117' } 
-  .ps-font-icon-flask:before { content: '\E118' } 
-  .ps-font-icon-flickr:before { content: '\E119' } 
-  .ps-font-icon-floppy-o:before { content: '\E11A' } 
-  .ps-font-icon-folder-o:before { content: '\E11B' } 
-  .ps-font-icon-folder-open-o:before { content: '\E11C' } 
-  .ps-font-icon-folder-open:before { content: '\E11D' } 
-  .ps-font-icon-folder:before { content: '\E11E' } 
-  .ps-font-icon-font-awesome:before { content: '\E11F' } 
-  .ps-font-icon-font:before { content: '\E120' } 
-  .ps-font-icon-fonticons:before { content: '\E121' } 
-  .ps-font-icon-fort-awesome:before { content: '\E122' } 
-  .ps-font-icon-forumbee:before { content: '\E123' } 
-  .ps-font-icon-forward:before { content: '\E124' } 
-  .ps-font-icon-foursquare:before { content: '\E125' } 
-  .ps-font-icon-free-code-camp:before { content: '\E126' } 
-  .ps-font-icon-frown-o:before { content: '\E127' } 
-  .ps-font-icon-futbol-o:before { content: '\E128' } 
-  .ps-font-icon-gamepad:before { content: '\E129' } 
-  .ps-font-icon-gavel:before { content: '\E12A' } 
-  .ps-font-icon-gbp:before { content: '\E12B' } 
-  .ps-font-icon-ge:before { content: '\E12C' } 
-  .ps-font-icon-gear:before { content: '\E12D' } 
-  .ps-font-icon-gears:before { content: '\E12E' } 
-  .ps-font-icon-genderless:before { content: '\E12F' } 
-  .ps-font-icon-get-pocket:before { content: '\E130' } 
-  .ps-font-icon-gg-circle:before { content: '\E131' } 
-  .ps-font-icon-gg:before { content: '\E132' } 
-  .ps-font-icon-gift:before { content: '\E133' } 
-  .ps-font-icon-git-square:before { content: '\E134' } 
-  .ps-font-icon-git:before { content: '\E135' } 
-  .ps-font-icon-github-alt:before { content: '\E136' } 
-  .ps-font-icon-github-square:before { content: '\E137' } 
-  .ps-font-icon-github:before { content: '\E138' } 
-  .ps-font-icon-gitlab:before { content: '\E139' } 
-  .ps-font-icon-gittip:before { content: '\E13A' } 
-  .ps-font-icon-glass:before { content: '\E13B' } 
-  .ps-font-icon-glide-g:before { content: '\E13C' } 
-  .ps-font-icon-glide:before { content: '\E13D' } 
-  .ps-font-icon-globe:before { content: '\E13E' } 
-  .ps-font-icon-google-plus-circle:before { content: '\E13F' } 
-  .ps-font-icon-google-plus-official:before { content: '\E140' } 
-  .ps-font-icon-google-plus-square:before { content: '\E141' } 
-  .ps-font-icon-google-plus:before { content: '\E142' } 
-  .ps-font-icon-google-wallet:before { content: '\E143' } 
-  .ps-font-icon-google:before { content: '\E144' } 
-  .ps-font-icon-graduation-cap:before { content: '\E145' } 
-  .ps-font-icon-gratipay:before { content: '\E146' } 
-  .ps-font-icon-grav:before { content: '\E147' } 
-  .ps-font-icon-group:before { content: '\E148' } 
-  .ps-font-icon-h-square:before { content: '\E149' } 
-  .ps-font-icon-hacker-news:before { content: '\E14A' } 
-  .ps-font-icon-hand-grab-o:before { content: '\E14B' } 
-  .ps-font-icon-hand-lizard-o:before { content: '\E14C' } 
-  .ps-font-icon-hand-o-down:before { content: '\E14D' } 
-  .ps-font-icon-hand-o-left:before { content: '\E14E' } 
-  .ps-font-icon-hand-o-right:before { content: '\E14F' } 
-  .ps-font-icon-hand-o-up:before { content: '\E150' } 
-  .ps-font-icon-hand-paper-o:before { content: '\E151' } 
-  .ps-font-icon-hand-peace-o:before { content: '\E152' } 
-  .ps-font-icon-hand-pointer-o:before { content: '\E153' } 
-  .ps-font-icon-hand-rock-o:before { content: '\E154' } 
-  .ps-font-icon-hand-scissors-o:before { content: '\E155' } 
-  .ps-font-icon-hand-spock-o:before { content: '\E156' } 
-  .ps-font-icon-hand-stop-o:before { content: '\E157' } 
-  .ps-font-icon-handshake-o:before { content: '\E158' } 
-  .ps-font-icon-hard-of-hearing:before { content: '\E159' } 
-  .ps-font-icon-hashtag:before { content: '\E15A' } 
-  .ps-font-icon-hdd-o:before { content: '\E15B' } 
-  .ps-font-icon-header:before { content: '\E15C' } 
-  .ps-font-icon-headphones:before { content: '\E15D' } 
-  .ps-font-icon-heart-o:before { content: '\E15E' } 
-  .ps-font-icon-heart:before { content: '\E15F' } 
-  .ps-font-icon-heartbeat:before { content: '\E160' } 
-  .ps-font-icon-history:before { content: '\E161' } 
-  .ps-font-icon-home:before { content: '\E162' } 
-  .ps-font-icon-hospital-o:before { content: '\E163' } 
-  .ps-font-icon-hotel:before { content: '\E164' } 
-  .ps-font-icon-hourglass-1:before { content: '\E165' } 
-  .ps-font-icon-hourglass-2:before { content: '\E166' } 
-  .ps-font-icon-hourglass-3:before { content: '\E167' } 
-  .ps-font-icon-hourglass-end:before { content: '\E168' } 
-  .ps-font-icon-hourglass-half:before { content: '\E169' } 
-  .ps-font-icon-hourglass-o:before { content: '\E16A' } 
-  .ps-font-icon-hourglass-start:before { content: '\E16B' } 
-  .ps-font-icon-hourglass:before { content: '\E16C' } 
-  .ps-font-icon-houzz:before { content: '\E16D' } 
-  .ps-font-icon-html5:before { content: '\E16E' } 
-  .ps-font-icon-i-cursor:before { content: '\E16F' } 
-  .ps-font-icon-id-badge:before { content: '\E170' } 
-  .ps-font-icon-id-card-o:before { content: '\E171' } 
-  .ps-font-icon-id-card:before { content: '\E172' } 
-  .ps-font-icon-ils:before { content: '\E173' } 
-  .ps-font-icon-image:before { content: '\E174' } 
-  .ps-font-icon-imdb:before { content: '\E175' } 
-  .ps-font-icon-inbox:before { content: '\E176' } 
-  .ps-font-icon-indent:before { content: '\E177' } 
-  .ps-font-icon-industry:before { content: '\E178' } 
-  .ps-font-icon-info-circle:before { content: '\E179' } 
-  .ps-font-icon-info:before { content: '\E17A' } 
-  .ps-font-icon-inr:before { content: '\E17B' } 
-  .ps-font-icon-instagram:before { content: '\E17C' } 
-  .ps-font-icon-institution:before { content: '\E17D' } 
-  .ps-font-icon-internet-explorer:before { content: '\E17E' } 
-  .ps-font-icon-intersex:before { content: '\E17F' } 
-  .ps-font-icon-ioxhost:before { content: '\E180' } 
-  .ps-font-icon-italic:before { content: '\E181' } 
-  .ps-font-icon-joomla:before { content: '\E182' } 
-  .ps-font-icon-jpy:before { content: '\E183' } 
-  .ps-font-icon-jsfiddle:before { content: '\E184' } 
-  .ps-font-icon-key:before { content: '\E185' } 
-  .ps-font-icon-keyboard-o:before { content: '\E186' } 
-  .ps-font-icon-krw:before { content: '\E187' } 
-  .ps-font-icon-language:before { content: '\E188' } 
-  .ps-font-icon-laptop:before { content: '\E189' } 
-  .ps-font-icon-lastfm-square:before { content: '\E18A' } 
-  .ps-font-icon-lastfm:before { content: '\E18B' } 
-  .ps-font-icon-leaf:before { content: '\E18C' } 
-  .ps-font-icon-leanpub:before { content: '\E18D' } 
-  .ps-font-icon-legal:before { content: '\E18E' } 
-  .ps-font-icon-lemon-o:before { content: '\E18F' } 
-  .ps-font-icon-level-down:before { content: '\E190' } 
-  .ps-font-icon-level-up:before { content: '\E191' } 
-  .ps-font-icon-life-bouy:before { content: '\E192' } 
-  .ps-font-icon-life-buoy:before { content: '\E193' } 
-  .ps-font-icon-life-ring:before { content: '\E194' } 
-  .ps-font-icon-life-saver:before { content: '\E195' } 
-  .ps-font-icon-lightbulb-o:before { content: '\E196' } 
-  .ps-font-icon-line-chart:before { content: '\E197' } 
-  .ps-font-icon-link:before { content: '\E198' } 
-  .ps-font-icon-linkedin-square:before { content: '\E199' } 
-  .ps-font-icon-linkedin:before { content: '\E19A' } 
-  .ps-font-icon-linode:before { content: '\E19B' } 
-  .ps-font-icon-list-ol:before { content: '\E19C' } 
-  .ps-font-icon-list-alt:before { content: '\E19D' } 
-  .ps-font-icon-list-ul:before { content: '\E19E' } 
-  .ps-font-icon-list:before { content: '\E19F' } 
-  .ps-font-icon-location-arrow:before { content: '\E1A0' } 
-  .ps-font-icon-lock:before { content: '\E1A1' } 
-  .ps-font-icon-long-arrow-down:before { content: '\E1A2' } 
-  .ps-font-icon-long-arrow-left:before { content: '\E1A3' } 
-  .ps-font-icon-long-arrow-right:before { content: '\E1A4' } 
-  .ps-font-icon-long-arrow-up:before { content: '\E1A5' } 
-  .ps-font-icon-low-vision:before { content: '\E1A6' } 
-  .ps-font-icon-magic:before { content: '\E1A7' } 
-  .ps-font-icon-magnet:before { content: '\E1A8' } 
-  .ps-font-icon-mail-forward:before { content: '\E1A9' } 
-  .ps-font-icon-mail-reply-all:before { content: '\E1AA' } 
-  .ps-font-icon-mail-reply:before { content: '\E1AB' } 
-  .ps-font-icon-male:before { content: '\E1AC' } 
-  .ps-font-icon-map-marker:before { content: '\E1AD' } 
-  .ps-font-icon-map-o:before { content: '\E1AE' } 
-  .ps-font-icon-map-pin:before { content: '\E1AF' } 
-  .ps-font-icon-map-signs:before { content: '\E1B0' } 
-  .ps-font-icon-map:before { content: '\E1B1' } 
-  .ps-font-icon-mars-double:before { content: '\E1B2' } 
-  .ps-font-icon-mars-stroke-h:before { content: '\E1B3' } 
-  .ps-font-icon-mars-stroke-v:before { content: '\E1B4' } 
-  .ps-font-icon-mars-stroke:before { content: '\E1B5' } 
-  .ps-font-icon-mars:before { content: '\E1B6' } 
-  .ps-font-icon-maxcdn:before { content: '\E1B7' } 
-  .ps-font-icon-meanpath:before { content: '\E1B8' } 
-  .ps-font-icon-medium:before { content: '\E1B9' } 
-  .ps-font-icon-medkit:before { content: '\E1BA' } 
-  .ps-font-icon-meetup:before { content: '\E1BB' } 
-  .ps-font-icon-meh-o:before { content: '\E1BC' } 
-  .ps-font-icon-mercury:before { content: '\E1BD' } 
-  .ps-font-icon-microchip:before { content: '\E1BE' } 
-  .ps-font-icon-microphone-slash:before { content: '\E1BF' } 
-  .ps-font-icon-microphone:before { content: '\E1C0' } 
-  .ps-font-icon-minus-circle:before { content: '\E1C1' } 
-  .ps-font-icon-minus-square-o:before { content: '\E1C2' } 
-  .ps-font-icon-minus-square:before { content: '\E1C3' } 
-  .ps-font-icon-minus:before { content: '\E1C4' } 
-  .ps-font-icon-mixcloud:before { content: '\E1C5' } 
-  .ps-font-icon-mobile-phone:before { content: '\E1C6' } 
-  .ps-font-icon-mobile:before { content: '\E1C7' } 
-  .ps-font-icon-modx:before { content: '\E1C8' } 
-  .ps-font-icon-money:before { content: '\E1C9' } 
-  .ps-font-icon-moon-o:before { content: '\E1CA' } 
-  .ps-font-icon-mortar-board:before { content: '\E1CB' } 
-  .ps-font-icon-motorcycle:before { content: '\E1CC' } 
-  .ps-font-icon-mouse-pointer:before { content: '\E1CD' } 
-  .ps-font-icon-music:before { content: '\E1CE' } 
-  .ps-font-icon-navicon:before { content: '\E1CF' } 
-  .ps-font-icon-neuter:before { content: '\E1D0' } 
-  .ps-font-icon-newspaper-o:before { content: '\E1D1' } 
-  .ps-font-icon-object-group:before { content: '\E1D2' } 
-  .ps-font-icon-object-ungroup:before { content: '\E1D3' } 
-  .ps-font-icon-odnoklassniki-square:before { content: '\E1D4' } 
-  .ps-font-icon-odnoklassniki:before { content: '\E1D5' } 
-  .ps-font-icon-opencart:before { content: '\E1D6' } 
-  .ps-font-icon-openid:before { content: '\E1D7' } 
-  .ps-font-icon-opera:before { content: '\E1D8' } 
-  .ps-font-icon-optin-monster:before { content: '\E1D9' } 
-  .ps-font-icon-outdent:before { content: '\E1DA' } 
-  .ps-font-icon-pagelines:before { content: '\E1DB' } 
-  .ps-font-icon-paint-brush:before { content: '\E1DC' } 
-  .ps-font-icon-paper-plane-o:before { content: '\E1DD' } 
-  .ps-font-icon-paper-plane:before { content: '\E1DE' } 
-  .ps-font-icon-paperclip:before { content: '\E1DF' } 
-  .ps-font-icon-paragraph:before { content: '\E1E0' } 
-  .ps-font-icon-paste:before { content: '\E1E1' } 
-  .ps-font-icon-pause-circle-o:before { content: '\E1E2' } 
-  .ps-font-icon-pause-circle:before { content: '\E1E3' } 
-  .ps-font-icon-pause:before { content: '\E1E4' } 
-  .ps-font-icon-paw:before { content: '\E1E5' } 
-  .ps-font-icon-paypal:before { content: '\E1E6' } 
-  .ps-font-icon-pencil-square-o:before { content: '\E1E7' } 
-  .ps-font-icon-pencil-square:before { content: '\E1E8' } 
-  .ps-font-icon-pencil:before { content: '\E1E9' } 
-  .ps-font-icon-percent:before { content: '\E1EA' } 
-  .ps-font-icon-phone-square:before { content: '\E1EB' } 
-  .ps-font-icon-phone:before { content: '\E1EC' } 
-  .ps-font-icon-photo:before { content: '\E1ED' } 
-  .ps-font-icon-picture-o:before { content: '\E1EE' } 
-  .ps-font-icon-pie-chart:before { content: '\E1EF' } 
-  .ps-font-icon-pied-piper-alt:before { content: '\E1F0' } 
-  .ps-font-icon-pied-piper-pp:before { content: '\E1F1' } 
-  .ps-font-icon-pied-piper:before { content: '\E1F2' } 
-  .ps-font-icon-pinterest-p:before { content: '\E1F3' } 
-  .ps-font-icon-linux:before { content: '\E1F4' } 
-  .ps-font-icon-pinterest-square:before { content: '\E1F5' } 
-  .ps-font-icon-pinterest:before { content: '\E1F6' } 
-  .ps-font-icon-plane:before { content: '\E1F7' } 
-  .ps-font-icon-play-circle-o:before { content: '\E1F8' } 
-  .ps-font-icon-play-circle:before { content: '\E1F9' } 
-  .ps-font-icon-play:before { content: '\E1FA' } 
-  .ps-font-icon-plug:before { content: '\E1FB' } 
-  .ps-font-icon-plus-circle:before { content: '\E1FC' } 
-  .ps-font-icon-plus-square-o:before { content: '\E1FD' } 
-  .ps-font-icon-plus-square:before { content: '\E1FE' } 
-  .ps-font-icon-plus:before { content: '\E1FF' } 
-  .ps-font-icon-podcast:before { content: '\E200' } 
-  .ps-font-icon-power-off:before { content: '\E201' } 
-  .ps-font-icon-print:before { content: '\E202' } 
-  .ps-font-icon-product-hunt:before { content: '\E203' } 
-  .ps-font-icon-puzzle-piece:before { content: '\E204' } 
-  .ps-font-icon-qq:before { content: '\E205' } 
-  .ps-font-icon-qrcode:before { content: '\E206' } 
-  .ps-font-icon-question-circle-o:before { content: '\E207' } 
-  .ps-font-icon-question-circle:before { content: '\E208' } 
-  .ps-font-icon-question:before { content: '\E209' } 
-  .ps-font-icon-quora:before { content: '\E20A' } 
-  .ps-font-icon-quote-left:before { content: '\E20B' } 
-  .ps-font-icon-quote-right:before { content: '\E20C' } 
-  .ps-font-icon-ra:before { content: '\E20D' } 
-  .ps-font-icon-random:before { content: '\E20E' } 
-  .ps-font-icon-ravelry:before { content: '\E20F' } 
-  .ps-font-icon-rebel:before { content: '\E210' } 
-  .ps-font-icon-recycle:before { content: '\E211' } 
-  .ps-font-icon-reddit-alien:before { content: '\E212' } 
-  .ps-font-icon-reddit-square:before { content: '\E213' } 
-  .ps-font-icon-reddit:before { content: '\E214' } 
-  .ps-font-icon-refresh:before { content: '\E215' } 
-  .ps-font-icon-registered:before { content: '\E216' } 
-  .ps-font-icon-remove:before { content: '\E217' } 
-  .ps-font-icon-renren:before { content: '\E218' } 
-  .ps-font-icon-reorder:before { content: '\E219' } 
-  .ps-font-icon-repeat:before { content: '\E21A' } 
-  .ps-font-icon-reply-all:before { content: '\E21B' } 
-  .ps-font-icon-reply:before { content: '\E21C' } 
-  .ps-font-icon-resistance:before { content: '\E21D' } 
-  .ps-font-icon-retweet:before { content: '\E21E' } 
-  .ps-font-icon-rmb:before { content: '\E21F' } 
-  .ps-font-icon-road:before { content: '\E220' } 
-  .ps-font-icon-rocket:before { content: '\E221' } 
-  .ps-font-icon-rotate-left:before { content: '\E222' } 
-  .ps-font-icon-rotate-right:before { content: '\E223' } 
-  .ps-font-icon-rouble:before { content: '\E224' } 
-  .ps-font-icon-rss-square:before { content: '\E225' } 
-  .ps-font-icon-rss:before { content: '\E226' } 
-  .ps-font-icon-rub:before { content: '\E227' } 
-  .ps-font-icon-ruble:before { content: '\E228' } 
-  .ps-font-icon-rupee:before { content: '\E229' } 
-  .ps-font-icon-s15:before { content: '\E22A' } 
-  .ps-font-icon-safari:before { content: '\E22B' } 
-  .ps-font-icon-save:before { content: '\E22C' } 
-  .ps-font-icon-scissors:before { content: '\E22D' } 
-  .ps-font-icon-scribd:before { content: '\E22E' } 
-  .ps-font-icon-search-minus:before { content: '\E22F' } 
-  .ps-font-icon-search-plus:before { content: '\E230' } 
-  .ps-font-icon-search:before { content: '\E231' } 
-  .ps-font-icon-sellsy:before { content: '\E232' } 
-  .ps-font-icon-send-o:before { content: '\E233' } 
-  .ps-font-icon-send:before { content: '\E234' } 
-  .ps-font-icon-server:before { content: '\E235' } 
-  .ps-font-icon-share-alt-square:before { content: '\E236' } 
-  .ps-font-icon-share-alt:before { content: '\E237' } 
-  .ps-font-icon-share-square-o:before { content: '\E238' } 
-  .ps-font-icon-share-square:before { content: '\E239' } 
-  .ps-font-icon-share:before { content: '\E23A' } 
-  .ps-font-icon-shekel:before { content: '\E23B' } 
-  .ps-font-icon-sheqel:before { content: '\E23C' } 
-  .ps-font-icon-shield:before { content: '\E23D' } 
-  .ps-font-icon-ship:before { content: '\E23E' } 
-  .ps-font-icon-shirtsinbulk:before { content: '\E23F' } 
-  .ps-font-icon-shopping-bag:before { content: '\E240' } 
-  .ps-font-icon-shopping-basket:before { content: '\E241' } 
-  .ps-font-icon-shopping-cart:before { content: '\E242' } 
-  .ps-font-icon-shower:before { content: '\E243' } 
-  .ps-font-icon-sign-in:before { content: '\E244' } 
-  .ps-font-icon-sign-language:before { content: '\E245' } 
-  .ps-font-icon-sign-out:before { content: '\E246' } 
-  .ps-font-icon-signal:before { content: '\E247' } 
-  .ps-font-icon-signing:before { content: '\E248' } 
-  .ps-font-icon-simplybuilt:before { content: '\E249' } 
-  .ps-font-icon-sitemap:before { content: '\E24A' } 
-  .ps-font-icon-skyatlas:before { content: '\E24B' } 
-  .ps-font-icon-skype:before { content: '\E24C' } 
-  .ps-font-icon-slack:before { content: '\E24D' } 
-  .ps-font-icon-sliders:before { content: '\E24E' } 
-  .ps-font-icon-slideshare:before { content: '\E24F' } 
-  .ps-font-icon-smile-o:before { content: '\E250' } 
-  .ps-font-icon-snapchat-ghost:before { content: '\E251' } 
-  .ps-font-icon-snapchat-square:before { content: '\E252' } 
-  .ps-font-icon-snapchat:before { content: '\E253' } 
-  .ps-font-icon-snowflake-o:before { content: '\E254' } 
-  .ps-font-icon-soccer-ball-o:before { content: '\E255' } 
-  .ps-font-icon-sort-alpha-asc:before { content: '\E256' } 
-  .ps-font-icon-sort-alpha-desc:before { content: '\E257' } 
-  .ps-font-icon-sort-amount-asc:before { content: '\E258' } 
-  .ps-font-icon-sort-amount-desc:before { content: '\E259' } 
-  .ps-font-icon-sort-asc:before { content: '\E25A' } 
-  .ps-font-icon-sort-desc:before { content: '\E25B' } 
-  .ps-font-icon-sort-down:before { content: '\E25C' } 
-  .ps-font-icon-sort-numeric-asc:before { content: '\E25D' } 
-  .ps-font-icon-sort-numeric-desc:before { content: '\E25E' } 
-  .ps-font-icon-sort-up:before { content: '\E25F' } 
-  .ps-font-icon-sort:before { content: '\E260' } 
-  .ps-font-icon-soundcloud:before { content: '\E261' } 
-  .ps-font-icon-space-shuttle:before { content: '\E262' } 
-  .ps-font-icon-spinner:before { content: '\E263' } 
-  .ps-font-icon-spoon:before { content: '\E264' } 
-  .ps-font-icon-spotify:before { content: '\E265' } 
-  .ps-font-icon-square-o:before { content: '\E266' } 
-  .ps-font-icon-square:before { content: '\E267' } 
-  .ps-font-icon-stack-exchange:before { content: '\E268' } 
-  .ps-font-icon-stack-overflow:before { content: '\E269' } 
-  .ps-font-icon-star-half-empty:before { content: '\E26A' } 
-  .ps-font-icon-star-half-full:before { content: '\E26B' } 
-  .ps-font-icon-star-half-o:before { content: '\E26C' } 
-  .ps-font-icon-star-half:before { content: '\E26D' } 
-  .ps-font-icon-star-o:before { content: '\E26E' } 
-  .ps-font-icon-star:before { content: '\E26F' } 
-  .ps-font-icon-steam-square:before { content: '\E270' } 
-  .ps-font-icon-steam:before { content: '\E271' } 
-  .ps-font-icon-step-backward:before { content: '\E272' } 
-  .ps-font-icon-step-forward:before { content: '\E273' } 
-  .ps-font-icon-stethoscope:before { content: '\E274' } 
-  .ps-font-icon-sticky-note-o:before { content: '\E275' } 
-  .ps-font-icon-sticky-note:before { content: '\E276' } 
-  .ps-font-icon-stop-circle-o:before { content: '\E277' } 
-  .ps-font-icon-stop-circle:before { content: '\E278' } 
-  .ps-font-icon-stop:before { content: '\E279' } 
-  .ps-font-icon-street-view:before { content: '\E27A' } 
-  .ps-font-icon-strikethrough:before { content: '\E27B' } 
-  .ps-font-icon-stumbleupon-circle:before { content: '\E27C' } 
-  .ps-font-icon-stumbleupon:before { content: '\E27D' } 
-  .ps-font-icon-subscript:before { content: '\E27E' } 
-  .ps-font-icon-subway:before { content: '\E27F' } 
-  .ps-font-icon-suitcase:before { content: '\E280' } 
-  .ps-font-icon-sun-o:before { content: '\E281' } 
-  .ps-font-icon-superpowers:before { content: '\E282' } 
-  .ps-font-icon-superscript:before { content: '\E283' } 
-  .ps-font-icon-support:before { content: '\E284' } 
-  .ps-font-icon-table:before { content: '\E285' } 
-  .ps-font-icon-tablet:before { content: '\E286' } 
-  .ps-font-icon-tachometer:before { content: '\E287' } 
-  .ps-font-icon-tag:before { content: '\E288' } 
-  .ps-font-icon-tags:before { content: '\E289' } 
-  .ps-font-icon-tasks:before { content: '\E28A' } 
-  .ps-font-icon-taxi:before { content: '\E28B' } 
-  .ps-font-icon-telegram:before { content: '\E28C' } 
-  .ps-font-icon-television:before { content: '\E28D' } 
-  .ps-font-icon-tencent-weibo:before { content: '\E28E' } 
-  .ps-font-icon-terminal:before { content: '\E28F' } 
-  .ps-font-icon-text-height:before { content: '\E290' } 
-  .ps-font-icon-text-width:before { content: '\E291' } 
-  .ps-font-icon-th-large:before { content: '\E292' } 
-  .ps-font-icon-th-list:before { content: '\E293' } 
-  .ps-font-icon-th:before { content: '\E294' } 
-  .ps-font-icon-themeisle:before { content: '\E295' } 
-  .ps-font-icon-thermometer-0:before { content: '\E296' } 
-  .ps-font-icon-thermometer-1:before { content: '\E297' } 
-  .ps-font-icon-thermometer-2:before { content: '\E298' } 
-  .ps-font-icon-thermometer-3:before { content: '\E299' } 
-  .ps-font-icon-thermometer-4:before { content: '\E29A' } 
-  .ps-font-icon-thermometer-empty:before { content: '\E29B' } 
-  .ps-font-icon-thermometer-full:before { content: '\E29C' } 
-  .ps-font-icon-thermometer-half:before { content: '\E29D' } 
-  .ps-font-icon-thermometer-quarter:before { content: '\E29E' } 
-  .ps-font-icon-thermometer-three-quarters:before { content: '\E29F' } 
-  .ps-font-icon-thermometer:before { content: '\E2A0' } 
-  .ps-font-icon-thumb-tack:before { content: '\E2A1' } 
-  .ps-font-icon-thumbs-down:before { content: '\E2A2' } 
-  .ps-font-icon-thumbs-o-down:before { content: '\E2A3' } 
-  .ps-font-icon-thumbs-o-up:before { content: '\E2A4' } 
-  .ps-font-icon-thumbs-up:before { content: '\E2A5' } 
-  .ps-font-icon-ticket:before { content: '\E2A6' } 
-  .ps-font-icon-times-circle-o:before { content: '\E2A7' } 
-  .ps-font-icon-times-circle:before { content: '\E2A8' } 
-  .ps-font-icon-times-rectangle-o:before { content: '\E2A9' } 
-  .ps-font-icon-times-rectangle:before { content: '\E2AA' } 
-  .ps-font-icon-times:before { content: '\E2AB' } 
-  .ps-font-icon-tint:before { content: '\E2AC' } 
-  .ps-font-icon-toggle-down:before { content: '\E2AD' } 
-  .ps-font-icon-toggle-left:before { content: '\E2AE' } 
-  .ps-font-icon-toggle-off:before { content: '\E2AF' } 
-  .ps-font-icon-toggle-on:before { content: '\E2B0' } 
-  .ps-font-icon-toggle-right:before { content: '\E2B1' } 
-  .ps-font-icon-toggle-up:before { content: '\E2B2' } 
-  .ps-font-icon-trademark:before { content: '\E2B3' } 
-  .ps-font-icon-train:before { content: '\E2B4' } 
-  .ps-font-icon-transgender-alt:before { content: '\E2B5' } 
-  .ps-font-icon-transgender:before { content: '\E2B6' } 
-  .ps-font-icon-trash-o:before { content: '\E2B7' } 
-  .ps-font-icon-trash:before { content: '\E2B8' } 
-  .ps-font-icon-tree:before { content: '\E2B9' } 
-  .ps-font-icon-trello:before { content: '\E2BA' } 
-  .ps-font-icon-tripadvisor:before { content: '\E2BB' } 
-  .ps-font-icon-trophy:before { content: '\E2BC' } 
-  .ps-font-icon-truck:before { content: '\E2BD' } 
-  .ps-font-icon-try:before { content: '\E2BE' } 
-  .ps-font-icon-tty:before { content: '\E2BF' } 
-  .ps-font-icon-tumblr-square:before { content: '\E2C0' } 
-  .ps-font-icon-tumblr:before { content: '\E2C1' } 
-  .ps-font-icon-turkish-lira:before { content: '\E2C2' } 
-  .ps-font-icon-tv:before { content: '\E2C3' } 
-  .ps-font-icon-twitch:before { content: '\E2C4' } 
-  .ps-font-icon-twitter-square:before { content: '\E2C5' } 
-  .ps-font-icon-twitter:before { content: '\E2C6' } 
-  .ps-font-icon-umbrella:before { content: '\E2C7' } 
-  .ps-font-icon-underline:before { content: '\E2C8' } 
-  .ps-font-icon-undo:before { content: '\E2C9' } 
-  .ps-font-icon-universal-access:before { content: '\E2CA' } 
-  .ps-font-icon-university:before { content: '\E2CB' } 
-  .ps-font-icon-unlink:before { content: '\E2CC' } 
-  .ps-font-icon-unlock-alt:before { content: '\E2CD' } 
-  .ps-font-icon-unlock:before { content: '\E2CE' } 
-  .ps-font-icon-unsorted:before { content: '\E2CF' } 
-  .ps-font-icon-upload:before { content: '\E2D0' } 
-  .ps-font-icon-usb:before { content: '\E2D1' } 
-  .ps-font-icon-usd:before { content: '\E2D2' } 
-  .ps-font-icon-user-circle-o:before { content: '\E2D3' } 
-  .ps-font-icon-user-circle:before { content: '\E2D4' } 
-  .ps-font-icon-user-md:before { content: '\E2D5' } 
-  .ps-font-icon-user-o:before { content: '\E2D6' } 
-  .ps-font-icon-user-plus:before { content: '\E2D7' } 
-  .ps-font-icon-user-secret:before { content: '\E2D8' } 
-  .ps-font-icon-user-times:before { content: '\E2D9' } 
-  .ps-font-icon-user:before { content: '\E2DA' } 
-  .ps-font-icon-users:before { content: '\E2DB' } 
-  .ps-font-icon-vcard-o:before { content: '\E2DC' } 
-  .ps-font-icon-vcard:before { content: '\E2DD' } 
-  .ps-font-icon-venus-double:before { content: '\E2DE' } 
-  .ps-font-icon-venus-mars:before { content: '\E2DF' } 
-  .ps-font-icon-venus:before { content: '\E2E0' } 
-  .ps-font-icon-viacoin:before { content: '\E2E1' } 
-  .ps-font-icon-viadeo-square:before { content: '\E2E2' } 
-  .ps-font-icon-viadeo:before { content: '\E2E3' } 
-  .ps-font-icon-video-camera:before { content: '\E2E4' } 
-  .ps-font-icon-vimeo-square:before { content: '\E2E5' } 
-  .ps-font-icon-vimeo:before { content: '\E2E6' } 
-  .ps-font-icon-vine:before { content: '\E2E7' } 
-  .ps-font-icon-vk:before { content: '\E2E8' } 
-  .ps-font-icon-volume-control-phone:before { content: '\E2E9' } 
-  .ps-font-icon-volume-down:before { content: '\E2EA' } 
-  .ps-font-icon-volume-off:before { content: '\E2EB' } 
-  .ps-font-icon-volume-up:before { content: '\E2EC' } 
-  .ps-font-icon-warning:before { content: '\E2ED' } 
-  .ps-font-icon-wechat:before { content: '\E2EE' } 
-  .ps-font-icon-weibo:before { content: '\E2EF' } 
-  .ps-font-icon-weixin:before { content: '\E2F0' } 
-  .ps-font-icon-whatsapp:before { content: '\E2F1' } 
-  .ps-font-icon-wheelchair-alt:before { content: '\E2F2' } 
-  .ps-font-icon-wheelchair:before { content: '\E2F3' } 
-  .ps-font-icon-wifi:before { content: '\E2F4' } 
-  .ps-font-icon-wikipedia-w:before { content: '\E2F5' } 
-  .ps-font-icon-window-close-o:before { content: '\E2F6' } 
-  .ps-font-icon-window-close:before { content: '\E2F7' } 
-  .ps-font-icon-window-maximize:before { content: '\E2F8' } 
-  .ps-font-icon-window-minimize:before { content: '\E2F9' } 
-  .ps-font-icon-window-restore:before { content: '\E2FA' } 
-  .ps-font-icon-windows:before { content: '\E2FB' } 
-  .ps-font-icon-won:before { content: '\E2FC' } 
-  .ps-font-icon-wordpress:before { content: '\E2FD' } 
-  .ps-font-icon-wpbeginner:before { content: '\E2FE' } 
-  .ps-font-icon-wpexplorer:before { content: '\E2FF' } 
-  .ps-font-icon-wpforms:before { content: '\E300' } 
-  .ps-font-icon-wrench:before { content: '\E301' } 
-  .ps-font-icon-xing-square:before { content: '\E302' } 
-  .ps-font-icon-xing:before { content: '\E303' } 
-  .ps-font-icon-y-combinator-square:before { content: '\E304' } 
-  .ps-font-icon-y-combinator:before { content: '\E305' } 
-  .ps-font-icon-yahoo:before { content: '\E306' } 
-  .ps-font-icon-yc-square:before { content: '\E307' } 
-  .ps-font-icon-yc:before { content: '\E308' } 
-  .ps-font-icon-yelp:before { content: '\E309' } 
-  .ps-font-icon-yen:before { content: '\E30A' } 
-  .ps-font-icon-yoast:before { content: '\E30B' } 
-  .ps-font-icon-youtube-play:before { content: '\E30C' } 
-  .ps-font-icon-youtube-square:before { content: '\E30D' } 
-  .ps-font-icon-youtube:before { content: '\E30E' } 
-  .ps-font-icon-aiotion:before { content: '\E30F' } 
-  .ps-font-icon-aiotion-ap:before { content: '\E310' } 
-  .ps-font-icon-kafka:before { content: '\E311' } 
-  .ps-font-icon-kafka-broker:before { content: '\E312' } 
-  .ps-font-icon-cassandra:before { content: '\E313' } 
-  .ps-font-icon-cassandra-node:before { content: '\E314' } 
-  .ps-font-icon-iot-gateway:before { content: '\E315' } 
-  .ps-font-icon-sensor-group:before { content: '\E316' } 
-  .ps-font-icon-env-sensor:before { content: '\E317' } 
-  .ps-font-icon-vib-sensor:before { content: '\E318' } 
-  .ps-font-icon-electric-sensor:before { content: '\E319' } 
-  .ps-font-icon-mfl:before { content: '\E31A' } 
-  .ps-font-icon-facilities:before { content: '\E31B' } 
-  .ps-font-icon-factory:before { content: '\E31C' } 
-  .ps-font-icon-facility:before { content: '\E31D' } 
-  .ps-font-icon-crane:before { content: '\E31E' } 
-  .ps-font-icon-hoist:before { content: '\E31F' } 
-  .ps-font-icon-wirerope:before { content: '\E320' } 
-  .ps-font-icon-sheave:before { content: '\E321' } 
-  .ps-font-icon-hospital:before { content: '\E322' } 
-  .ps-font-icon-hospital-room:before { content: '\E323' } 
-  .ps-font-icon-thermoelectric:before { content: '\E324' } 
-  .ps-font-icon-cold-pipe-line:before { content: '\E325' } 
-  .ps-font-icon-heat-pipe-line:before { content: '\E326' } 
-  .ps-font-icon-weather-partly-cloudy:before { content: '\E327' } 
-  .ps-font-icon-weather-mainly-cloudy:before { content: '\E328' } 
-  .ps-font-icon-weather-cloudy:before { content: '\E329' } 
-  .ps-font-icon-temperature:before { content: '\E32A' } 
-  .ps-font-icon-humidity:before { content: '\E32B' } 
-  .ps-font-icon-wind-dir:before { content: '\E32C' } 
-  .ps-font-icon-rain:before { content: '\E32D' } 
-  .ps-font-icon-sleet:before { content: '\E32E' } 
-  .ps-font-icon-unit-stack-group:before { content: '\E32F' } 
-  .ps-font-icon-unit-stack:before { content: '\E330' } 
-  .ps-font-icon-pir-sensor:before { content: '\E331' } 
-  .ps-font-icon-temp-sensor:before { content: '\E332' } 
-  .ps-font-icon-humi-sensor:before { content: '\E333' } 
-  .ps-font-icon-lux-sensor:before { content: '\E334' } 
-  .ps-font-icon-weather-forecast:before { content: '\E335' } 
-  .ps-font-icon-main-transformer:before { content: '\E336' } 
-  .ps-font-icon-gis:before { content: '\E337' } 
-  .ps-font-icon-weather-sunny:before { content: '\E338' } 
-  .ps-font-icon-snow:before { content: '\E339' } 
-  .ps-font-icon-add-document:before { content: '\E33A' } 
-  .ps-font-icon-add-creation:before { content: '\E33B' } 
-  .ps-font-icon-add-next:before { content: '\E33C' } 
-  .ps-font-icon-file-excel:before { content: '\E33D' } 
-  .ps-font-icon-file-powerpoint:before { content: '\E33E' } 
-  .ps-font-icon-file-word:before { content: '\E33F' } 
-  .ps-font-icon-file-pdf:before { content: '\E340' } 
-  .ps-font-icon-file-jpg:before { content: '\E341' } 
-  .ps-font-icon-file-svg:before { content: '\E342' } 
-  .ps-font-icon-file-psd:before { content: '\E343' } 
-  .ps-font-icon-file-ai:before { content: '\E344' } 
-  .ps-font-icon-file-xml:before { content: '\E345' } 
-  .ps-font-icon-file-json:before { content: '\E346' } 
-  .ps-font-icon-columns-1:before { content: '\E347' } 
-  .ps-font-icon-columns-2:before { content: '\E348' } 
-  .ps-font-icon-columns-3:before { content: '\E349' } 
-  .ps-font-icon-co2:before { content: '\E34A' } 
-  .ps-font-icon-electirc-power:before { content: '\E34B' } 
-  .ps-font-icon-voltage:before { content: '\E34C' } 
-  .ps-font-icon-electirc-current:before { content: '\E34D' } 
-  .ps-font-icon-fullscreen:before { content: '\E34E' } 
-  .ps-font-icon-fullscreen-exit:before { content: '\E34F' } 
-  .ps-font-icon-polygon:before { content: '\E350' } 
-  .ps-font-icon-rectangle:before { content: '\E351' } 
-  .ps-font-icon-triangle:before { content: '\E352' } 
-  .ps-font-icon-draw-line:before { content: '\E353' } 
-  .ps-font-icon-purification-plant:before { content: '\E354' } 
-  .ps-font-icon-gas-lel:before { content: '\E355' } 
-  .ps-font-icon-gas:before { content: '\E356' } 
-  .ps-font-icon-volumetric-flow:before { content: '\E357' } 
-  .ps-font-icon-mass-flow:before { content: '\E358' } 
-  .ps-font-icon-wind-speed:before { content: '\E359' } 
-  .ps-font-icon-soil-moisture:before { content: '\E35A' } 
-  .ps-font-icon-acidity:before { content: '\E35B' } 
-  .ps-font-icon-rain-fall:before { content: '\E35C' } 
-  .ps-font-icon-skull:before { content: '\E35D' } 
-  .ps-font-icon-rulechain:before { content: '\E35E' } 
-  .ps-font-icon-udp-trigger:before { content: '\E35F' } 
-  .ps-font-icon-udp-send:before { content: '\E360' } 
-  .ps-font-icon-http:before { content: '\E361' } 
-  .ps-font-icon-mqtt:before { content: '\E362' } 
-  .ps-font-icon-modbus-read:before { content: '\E363' } 
-  .ps-font-icon-modbus-write:before { content: '\E364' } 
-  .ps-font-icon-monitoring:before { content: '\E365' } 
-  .ps-font-icon-ai:before { content: '\E366' } 
-  .ps-font-icon-ai-model:before { content: '\E367' } 
-  .ps-font-icon-anomaly-detection:before { content: '\E368' } 
-  .ps-font-icon-counter-get:before { content: '\E369' } 
-  .ps-font-icon-counter-set:before { content: '\E36A' } 
-  .ps-font-icon-threshold:before { content: '\E36B' } 
-  .ps-font-icon-fine-dust:before { content: '\E36C' } 
-  .ps-font-icon-exit:before { content: '\E36D' } 
-  .ps-font-icon-aws-iot:before { content: '\E36E' } 
-  .ps-font-icon-aws:before { content: '\E36F' } 
-  .ps-font-icon-resource:before { content: '\E370' } 
-  .ps-font-icon-integration-1:before { content: '\E371' } 
-  .ps-font-icon-integration-2:before { content: '\E372' } 
-  .ps-font-icon-plus-square-edge:before { content: '\E373' } 
-  .ps-font-icon-minus-square-edge:before { content: '\E374' } 
-  .ps-font-icon-scatter-chart:before { content: '\E375' } 
-  .ps-font-icon-heat-map:before { content: '\E376' } 
-  .ps-font-icon-tree-map:before { content: '\E377' } 
-  .ps-font-icon-device-create:before { content: '\E378' } 
-  .ps-font-icon-device-update:before { content: '\E379' } 
-  .ps-font-icon-device-delete:before { content: '\E37A' } 
-  .ps-font-icon-device-query:before { content: '\E37B' } 
-  .ps-font-icon-bar-chart-1:before { content: '\E37C' } 
-  .ps-font-icon-column-bar-1:before { content: '\E37D' } 
-  .ps-font-icon-column-bar-2:before { content: '\E37E' } 
-  .ps-font-icon-column-bar-3:before { content: '\E37F' } 
-  .ps-font-icon-static-group:before { content: '\E380' } 
-  .ps-font-icon-smart-group:before { content: '\E381' } 
-  .ps-font-icon-sun-os:before { content: '\E382' } 
-  .ps-font-icon-hp-ux:before { content: '\E383' } 
-  .ps-font-icon-hp-ux-o:before { content: '\E384' } 
-  .ps-font-icon-aix:before { content: '\E385' } 
-  .ps-font-icon-thunderbolt-1:before { content: '\E386' } 
-  .ps-font-icon-thunderbolt-2:before { content: '\E387' } 
-  .ps-font-icon-thunderbolt-arrow:before { content: '\E388' } 
-  .ps-font-icon-kite:before { content: '\E389' } 
-  .ps-font-icon-kite-o:before { content: '\E38A' } 
-  .ps-font-icon-fire-1:before { content: '\E38B' } 
-  .ps-font-icon-fire-2:before { content: '\E38C' } 
-  .ps-font-icon-boat-1:before { content: '\E38D' } 
-  .ps-font-icon-boat-2:before { content: '\E38E' } 
-  .ps-font-icon-boat-o:before { content: '\E38F' } 
-  .ps-font-icon-hp:before { content: '\E390' } 
-  .ps-font-icon-agent-1:before { content: '\E391' } 
-  .ps-font-icon-agent-device:before { content: '\E392' } 
-  .ps-font-icon-agentless-device:before { content: '\E393' } 
-  .ps-font-icon-audit-job:before { content: '\E394' } 
-  .ps-font-icon-audit-job-o:before { content: '\E395' } 
-  .ps-font-icon-batch-job:before { content: '\E396' } 
-  .ps-font-icon-batch-job-o:before { content: '\E397' } 
-  .ps-font-icon-compliance-job:before { content: '\E398' } 
-  .ps-font-icon-compliance-job-o:before { content: '\E399' } 
-  .ps-font-icon-business-object:before { content: '\E39A' } 
-  .ps-font-icon-compliance:before { content: '\E39B' } 
-  .ps-font-icon-configuration-file:before { content: '\E39C' } 
-  .ps-font-icon-connected-switch:before { content: '\E39D' } 
-  .ps-font-icon-cpu:before { content: '\E39E' } 
-  .ps-font-icon-cpu-1:before { content: '\E39F' } 
-  .ps-font-icon-device:before { content: '\E3A0' } 
-  .ps-font-icon-disk:before { content: '\E3A1' } 
-  .ps-font-icon-file-collect:before { content: '\E3A2' } 
-  .ps-font-icon-file-deploy-job:before { content: '\E3A3' } 
-  .ps-font-icon-file-library:before { content: '\E3A4' } 
-  .ps-font-icon-file-system:before { content: '\E3A5' } 
-  .ps-font-icon-installed-software:before { content: '\E3A6' } 
-  .ps-font-icon-job:before { content: '\E3A7' } 
-  .ps-font-icon-library:before { content: '\E3A8' } 
-  .ps-font-icon-memory:before { content: '\E3A9' } 
-  .ps-font-icon-network-card:before { content: '\E3AA' } 
-  .ps-font-icon-network-custom-object:before { content: '\E3AB' } 
-  .ps-font-icon-network-custom-objects:before { content: '\E3AC' } 
-  .ps-font-icon-network-custom-cli-object:before { content: '\E3AD' } 
-  .ps-font-icon-network-custom-cli-objects:before { content: '\E3AE' } 
-  .ps-font-icon-network-device:before { content: '\E3AF' } 
-  .ps-font-icon-network-interface:before { content: '\E3B0' } 
-  .ps-font-icon-network-script-job:before { content: '\E3B1' } 
-  .ps-font-icon-network-system-information:before { content: '\E3B2' } 
-  .ps-font-icon-operating-system:before { content: '\E3B3' } 
-  .ps-font-icon-script-job:before { content: '\E3B4' } 
-  .ps-font-icon-script-library:before { content: '\E3B5' } 
-  .ps-font-icon-server-device:before { content: '\E3B6' } 
-  .ps-font-icon-software-packages:before { content: '\E3B7' } 
-  .ps-font-icon-server-device-o:before { content: '\E3B8' } 
-  .ps-font-icon-software-package-deploy-job:before { content: '\E3B9' } 
-  .ps-font-icon-system-information:before { content: '\E3BA' } 
-  .ps-font-icon-system-object:before { content: '\E3BB' } 
-  .ps-font-icon-windows-application:before { content: '\E3BC' } 
-  .ps-font-icon-windows-service:before { content: '\E3BD' } 
-  .ps-font-icon-windows-update:before { content: '\E3BE' } 
-  .ps-font-icon-windows-update-job:before { content: '\E3BF' } 
-  .ps-font-icon-wheel:before { content: '\E3C0' } 
-  .ps-font-icon-view-dashboard:before { content: '\E3C1' } 
-  .ps-font-icon-touch:before { content: '\E3C2' } 
-  .ps-font-icon-custom-object:before { content: '\E3C3' } 
-  .ps-font-icon-custom-objects:before { content: '\E3C4' } 
-  .ps-font-icon-check-circle-exclamation-mark:before { content: '\E3C5' } 
-  .ps-font-icon-light-bulb-on:before { content: '\E3C6' } 
-  .ps-font-icon-light-bulb-off:before { content: '\E3C7' } 
-  .ps-font-icon-group-1:before { content: '\E3C8' } 
-  .ps-font-icon-fire-3:before { content: '\E3C9' } 
-  .ps-font-icon-fire-4:before { content: '\E3CA' } 
-  .ps-font-icon-fire-5:before { content: '\E3CB' } 
-  .ps-font-icon-smart-group-1:before { content: '\E3CC' } 
-  .ps-font-icon-link-1:before { content: '\E3CD' } 
-  .ps-font-icon-networkrealservers:before { content: '\E3CE' } 
-  .ps-font-icon-filestack:before { content: '\E3CF' } 
-  .ps-font-icon-polestarlogo:before { content: '\E3D0' } 
-  .ps-font-icon-apmwebpage:before { content: '\E3D1' } 
-  .ps-font-icon-win-ok:before { content: '\E3D2' } 
-  .ps-font-icon-ami:before { content: '\E3D3' } 
-  .ps-font-icon-amis:before { content: '\E3D4' } 
-  .ps-font-icon-storageraidgroup:before { content: '\E3D5' } 
-  .ps-font-icon-transferdata:before { content: '\E3D6' } 
-  .ps-font-icon-filechange:before { content: '\E3D7' } 
-  .ps-font-icon-autoscalling:before { content: '\E3D8' } 
-  .ps-font-icon-youtube-1:before { content: '\E3D9' } 
-  .ps-font-icon-youtube-sign:before { content: '\E3DA' } 
-  .ps-font-icon-configuration-check:before { content: '\E3DB' } 
-  .ps-font-icon-aws-1:before { content: '\E3DC' } 
-  .ps-font-icon-region:before { content: '\E3DD' } 
-  .ps-font-icon-file-log:before { content: '\E3DE' } 
-  .ps-font-icon-ec2:before { content: '\E3DF' } 
-  .ps-font-icon-elasticbs:before { content: '\E3E0' } 
-  .ps-font-icon-elasticip:before { content: '\E3E1' } 
-  .ps-font-icon-elasticips:before { content: '\E3E2' } 
-  .ps-font-icon-awsimages:before { content: '\E3E3' } 
-  .ps-font-icon-instanceobj:before { content: '\E3E4' } 
-  .ps-font-icon-instancelist:before { content: '\E3E5' } 
-  .ps-font-icon-key-1:before { content: '\E3E6' } 
-  .ps-font-icon-awsnetworkinterface:before { content: '\E3E7' } 
-  .ps-font-icon-awsnetworkinterfaces:before { content: '\E3E8' } 
-  .ps-font-icon-networksecurity:before { content: '\E3E9' } 
-  .ps-font-icon-firewall-01:before { content: '\E3EA' } 
-  .ps-font-icon-securityapproved:before { content: '\E3EB' } 
-  .ps-font-icon-awssnapshot:before { content: '\E3EC' } 
-  .ps-font-icon-awssnapshots:before { content: '\E3ED' } 
-  .ps-font-icon-awsvolumes:before { content: '\E3EE' } 
-  .ps-font-icon-udbcache:before { content: '\E3EF' } 
-  .ps-font-icon-cache:before { content: '\E3F0' } 
-  .ps-font-icon-redolog:before { content: '\E3F1' } 
-  .ps-font-icon-sybaseprocesses:before { content: '\E3F2' } 
-  .ps-font-icon-unisqlvolume:before { content: '\E3F3' } 
-  .ps-font-icon-unisqlvolumes:before { content: '\E3F4' } 
-  .ps-font-icon-hrstorages:before { content: '\E3F5' } 
-  .ps-font-icon-oracletablespace:before { content: '\E3F6' } 
-  .ps-font-icon-oracletablespaces:before { content: '\E3F7' } 
-  .ps-font-icon-udblock:before { content: '\E3F8' } 
-  .ps-font-icon-win-warning:before { content: '\E3F9' } 
-  .ps-font-icon-networkgroupsessions:before { content: '\E3FA' } 
-  .ps-font-icon-folder-cir:before { content: '\E3FB' } 
-  .ps-font-icon-network-01:before { content: '\E3FC' } 
-  .ps-font-icon-udbdirectrw:before { content: '\E3FD' } 
-  .ps-font-icon-micropartitioning01:before { content: '\E3FE' } 
-  .ps-font-icon-memorygroup:before { content: '\E3FF' } 
-  .ps-font-icon-wave:before { content: '\E400' } 
-  .ps-font-icon-filegroup:before { content: '\E401' } 
-  .ps-font-icon-fms8leak:before { content: '\E402' } 
-  .ps-font-icon-fms15voltage:before { content: '\E403' } 
-  .ps-font-icon-fms25thermometer:before { content: '\E404' } 
-  .ps-font-icon-fms2ups:before { content: '\E405' } 
-  .ps-font-icon-fms6ups:before { content: '\E406' } 
-  .ps-font-icon-domain:before { content: '\E407' } 
-  .ps-font-icon-server-01:before { content: '\E408' } 
-  .ps-font-icon-server-02:before { content: '\E409' } 
-  .ps-font-icon-server-03:before { content: '\E40A' } 
-  .ps-font-icon-server-04:before { content: '\E40B' } 
-  .ps-font-icon-server-05:before { content: '\E40C' } 
-  .ps-font-icon-laptop06:before { content: '\E40D' } 
-  .ps-font-icon-modulesinfo:before { content: '\E40E' } 
-  .ps-font-icon-fan-02:before { content: '\E40F' } 
-  .ps-font-icon-fwsession:before { content: '\E410' } 
-  .ps-font-icon-networkslb:before { content: '\E411' } 
-  .ps-font-icon-networkslbs:before { content: '\E412' } 
-  .ps-font-icon-temperature-1:before { content: '\E413' } 
-  .ps-font-icon-temperaturegroup:before { content: '\E414' } 
-  .ps-font-icon-port:before { content: '\E415' } 
-  .ps-font-icon-network-16:before { content: '\E416' } 
-  .ps-font-icon-tcpsession:before { content: '\E417' } 
-  .ps-font-icon-networknode:before { content: '\E418' } 
-  .ps-font-icon-networknode01:before { content: '\E419' } 
-  .ps-font-icon-jobjob:before { content: '\E41A' } 
-  .ps-font-icon-jobgroup:before { content: '\E41B' } 
-  .ps-font-icon-mssqlbuffercache:before { content: '\E41C' } 
-  .ps-font-icon-voicegateway:before { content: '\E41D' } 
-  .ps-font-icon-network-04:before { content: '\E41E' } 
-  .ps-font-icon-serverswap:before { content: '\E41F' } 
-  .ps-font-icon-flowchart-02:before { content: '\E420' } 
-  .ps-font-icon-bufferpool:before { content: '\E421' } 
-  .ps-font-icon-logfile02:before { content: '\E422' } 
-  .ps-font-icon-cpugroup:before { content: '\E423' } 
-  .ps-font-icon-network-memory:before { content: '\E424' } 
-  .ps-font-icon-netstatmonitor01:before { content: '\E425' } 
-  .ps-font-icon-netstat02:before { content: '\E426' } 
-  .ps-font-icon-pingmonitor:before { content: '\E427' } 
-  .ps-font-icon-win-monitoring:before { content: '\E428' } 
-  .ps-font-icon-mailgroup:before { content: '\E429' } 
-  .ps-font-icon-http-1:before { content: '\E42A' } 
-  .ps-font-icon-windowservicemonitor:before { content: '\E42B' } 
-  .ps-font-icon-performancecounters:before { content: '\E42C' } 
-  .ps-font-icon-storagegroup:before { content: '\E42D' } 
-  .ps-font-icon-piechart-10:before { content: '\E42E' } 
-  .ps-font-icon-network-share:before { content: '\E42F' } 
-  .ps-font-icon-income:before { content: '\E430' } 
-  .ps-font-icon-server-08:before { content: '\E431' } 
-  .ps-font-icon-storage-workflow:before { content: '\E432' } 
-  .ps-font-icon-disk-01:before { content: '\E433' } 
-  .ps-font-icon-disk-02:before { content: '\E434' } 
-  .ps-font-icon-building-03:before { content: '\E435' } 
-  .ps-font-icon-networkgroup:before { content: '\E436' } 
-  .ps-font-icon-cloud-alt-glyph:before { content: '\E437' } 
-  .ps-font-icon-vmware:before { content: '\E438' } 
-  .ps-font-icon-webspherewebspheresystem:before { content: '\E439' } 
-  .ps-font-icon-waswassystem:before { content: '\E43A' } 
-  .ps-font-icon-shufflearrow:before { content: '\E43B' } 
-  .ps-font-icon-circle-blank:before { content: '\E43C' } 
-  .ps-font-icon-time:before { content: '\E43D' } 
-  .ps-font-icon-hdd:before { content: '\E43E' } 
-  .ps-font-icon-cpu01:before { content: '\E43F' } 
-  .ps-font-icon-location:before { content: '\E440' } 
-  .ps-font-icon-ar:before { content: '\E441' } 
-  .ps-font-icon-gltf:before { content: '\E442' } 
-  .ps-font-icon-file-read:before { content: '\E443' } 
-  .ps-font-icon-file-write:before { content: '\E444' } 
-  .ps-font-icon-file-csv:before { content: '\E445' } 
-  .ps-font-icon-storage-read:before { content: '\E446' } 
-  .ps-font-icon-storage-write:before { content: '\E447' } 
-  .ps-font-icon-sql:before { content: '\E448' } 
-  .ps-font-icon-sigma:before { content: '\E449' } 
-  .ps-font-icon-license:before { content: '\E44A' } 
-  .ps-font-icon-windowslogo:before { content: '\E44B' } 
-  .ps-font-icon-linux-circle:before { content: '\E44C' } 
-  .ps-font-icon-wirerope-broken:before { content: '\E44D' } 
-  .ps-font-icon-wirerope-corruption:before { content: '\E44E' } 
-  .ps-font-icon-wirerope-abrasion:before { content: '\E44F' } 
-  .ps-font-icon-glob:before { content: '\E450' } 
-  .ps-font-icon-directconnectgateways:before { content: '\E451' } 
-  .ps-font-icon-directconnectgateway:before { content: '\E452' } 
-  .ps-font-icon-awsconfig:before { content: '\E453' } 
-  .ps-font-icon-apigateways:before { content: '\E454' } 
-  .ps-font-icon-directconnect:before { content: '\E455' } 
-  .ps-font-icon-ec2-02:before { content: '\E456' } 
-  .ps-font-icon-rds:before { content: '\E457' } 
-  .ps-font-icon-s3:before { content: '\E458' } 
-  .ps-font-icon-vpcs:before { content: '\E459' } 
-  .ps-font-icon-efses:before { content: '\E45A' } 
-  .ps-font-icon-lambda:before { content: '\E45B' } 
-  .ps-font-icon-apigateway:before { content: '\E45C' } 
-  .ps-font-icon-connections:before { content: '\E45D' } 
-  .ps-font-icon-connection:before { content: '\E45E' } 
-  .ps-font-icon-lag:before { content: '\E45F' } 
-  .ps-font-icon-ebs:before { content: '\E460' } 
-  .ps-font-icon-autoscalinggroups:before { content: '\E461' } 
-  .ps-font-icon-elb:before { content: '\E462' } 
-  .ps-font-icon-autoscaling-02:before { content: '\E463' } 
-  .ps-font-icon-awssnapshots-02:before { content: '\E464' } 
-  .ps-font-icon-awsvolumes-02:before { content: '\E465' } 
-  .ps-font-icon-awssnapshot-02:before { content: '\E466' } 
-  .ps-font-icon-instanceobj-02:before { content: '\E467' } 
-  .ps-font-icon-awsvolume-02:before { content: '\E468' } 
-  .ps-font-icon-elb-classic:before { content: '\E469' } 
-  .ps-font-icon-keypairs:before { content: '\E46A' } 
-  .ps-font-icon-efs:before { content: '\E46B' } 
-  .ps-font-icon-lambdafunction:before { content: '\E46C' } 
-  .ps-font-icon-bucket:before { content: '\E46D' } 
-  .ps-font-icon-vpc:before { content: '\E46E' } 
-  .ps-font-icon-vmportgroup:before { content: '\E46F' } 
-  .ps-font-icon-emergencylight:before { content: '\E470' } 
-  .ps-font-icon-kubernetes-k8s:before { content: '\E471' } 
-  .ps-font-icon-cluster:before { content: '\E472' } 
-  .ps-font-icon-cluster-roles:before { content: '\E473' } 
-  .ps-font-icon-cluster-role:before { content: '\E474' } 
-  .ps-font-icon-container-images:before { content: '\E475' } 
-  .ps-font-icon-container-image:before { content: '\E476' } 
-  .ps-font-icon-namespaces:before { content: '\E477' } 
-  .ps-font-icon-namespace:before { content: '\E478' } 
-  .ps-font-icon-nodes:before { content: '\E479' } 
-  .ps-font-icon-node:before { content: '\E47A' } 
-  .ps-font-icon-persistent-volumes:before { content: '\E47B' } 
-  .ps-font-icon-persistent-volume:before { content: '\E47C' } 
-  .ps-font-icon-storage-classes:before { content: '\E47D' } 
-  .ps-font-icon-storage-class:before { content: '\E47E' } 
-  .ps-font-icon-config-maps:before { content: '\E47F' } 
-  .ps-font-icon-config-map:before { content: '\E480' } 
-  .ps-font-icon-persistent-volume-claims:before { content: '\E481' } 
-  .ps-font-icon-persistent-volume-claim:before { content: '\E482' } 
-  .ps-font-icon-secrets:before { content: '\E483' } 
-  .ps-font-icon-secret:before { content: '\E484' } 
-  .ps-font-icon-endpoints:before { content: '\E485' } 
-  .ps-font-icon-endpoint:before { content: '\E486' } 
-  .ps-font-icon-ingresses:before { content: '\E487' } 
-  .ps-font-icon-ingress:before { content: '\E488' } 
-  .ps-font-icon-services:before { content: '\E489' } 
-  .ps-font-icon-service:before { content: '\E48A' } 
-  .ps-font-icon-containers:before { content: '\E48B' } 
-  .ps-font-icon-container:before { content: '\E48C' } 
-  .ps-font-icon-container-cronjobs:before { content: '\E48D' } 
-  .ps-font-icon-container-cronjob:before { content: '\E48E' } 
-  .ps-font-icon-daemon-sets:before { content: '\E48F' } 
-  .ps-font-icon-daemon-set:before { content: '\E490' } 
-  .ps-font-icon-deployments:before { content: '\E491' } 
-  .ps-font-icon-deployment:before { content: '\E492' } 
-  .ps-font-icon-horizontal-pod-autoscalers:before { content: '\E493' } 
-  .ps-font-icon-horizontal-pod-autoscaler:before { content: '\E494' } 
-  .ps-font-icon-container-job:before { content: '\E495' } 
-  .ps-font-icon-container-jobs:before { content: '\E496' } 
-  .ps-font-icon-pods:before { content: '\E497' } 
-  .ps-font-icon-pod:before { content: '\E498' } 
-  .ps-font-icon-replica-sets:before { content: '\E499' } 
-  .ps-font-icon-replica-set:before { content: '\E49A' } 
-  .ps-font-icon-replication-controllers:before { content: '\E49B' } 
-  .ps-font-icon-replication-controller:before { content: '\E49C' } 
-  .ps-font-icon-stateful-sets:before { content: '\E49D' } 
-  .ps-font-icon-stateful-set:before { content: '\E49E' } 
-  .ps-font-icon-amazon-eks:before { content: '\E49F' } 
-  .ps-font-icon-pivotal-pks:before { content: '\E4A0' } 
-  .ps-font-icon-google-gke:before { content: '\E4A1' } 
-  .ps-font-icon-azure-aks:before { content: '\E4A2' } 
-  .ps-font-icon-redhat-openshift:before { content: '\E4A3' } 
-  .ps-font-icon-file-explorer:before { content: '\E4A4' } 
-  .ps-font-icon-registry:before { content: '\E4A5' } 
-  .ps-font-icon-registry-value:before { content: '\E4A6' } 
-  .ps-font-icon-route:before { content: '\E4A7' } 
-  .ps-font-icon-routes:before { content: '\E4A8' } 
-  .ps-font-icon-resource-quota:before { content: '\E4A9' } 
-  .ps-font-icon-resource-quotas:before { content: '\E4AA' } 
-  .ps-font-icon-firmware:before { content: '\E4AB' } 
-  .ps-font-icon-gateway-group:before { content: '\E4AC' } 
-  .ps-font-icon-cloudfront:before { content: '\E4AD' } 
-  .ps-font-icon-cloudfront-web:before { content: '\E4AE' } 
-  .ps-font-icon-cloudfront-rtmp:before { content: '\E4AF' } 
-  .ps-font-icon-route53:before { content: '\E4B0' } 
-  .ps-font-icon-route53-domains:before { content: '\E4B1' } 
-  .ps-font-icon-route53-domain:before { content: '\E4B2' } 
-  .ps-font-icon-route53-healthchecks:before { content: '\E4B3' } 
-  .ps-font-icon-route53-healthcheck:before { content: '\E4B4' } 
-  .ps-font-icon-route53-hostedzones:before { content: '\E4B5' } 
-  .ps-font-icon-route53-hostedzone:before { content: '\E4B6' } 
-  .ps-font-icon-dynamodb:before { content: '\E4B7' } 
-  .ps-font-icon-dynamodb-table:before { content: '\E4B8' } 
-  .ps-font-icon-dynamodb-indexes:before { content: '\E4B9' } 
-  .ps-font-icon-dynamodb-index:before { content: '\E4BA' } 
-  .ps-font-icon-solaris:before { content: '\E4BB' } 
-  .ps-font-icon-hplogo:before { content: '\E4BC' } 
-  .ps-font-icon-error-round:before { content: '\E4BD' } 
-  .ps-font-icon-error-square:before { content: '\E4BE' } 
-  .ps-font-icon-more:before { content: '\E4BF' } 
-  .ps-font-icon-sap:before { content: '\E4C0' } 
-  
+  font-family: 'polestar';
+  src: url('../fonts/polestar.eot?1608188142');
+  src: url('../fonts/polestar.eot?1608188142#iefix') format('embedded-opentype'),
+       url('../fonts/polestar.woff2?1608188142') format('woff2'),
+       url('../fonts/polestar.woff?1608188142') format('woff'),
+       url('../fonts/polestar.ttf?1608188142') format('truetype'),
+       url('../fonts/polestar.svg?1608188142#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ps-font-icon-"]:before, [class*=" ps-font-icon-"]:before {
+  font-family: "polestar";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  /* margin-right: .2em; */
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  /* margin-left: .2em; */
+ 
+  /* you can be more comfortable with increased icons size */
+  font-size: 110%;
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.ps-font-icon--500px:before { content: '\E000' } 
+.ps-font-icon-address-book-o:before { content: '\E001' } 
+.ps-font-icon-address-book:before { content: '\E002' } 
+.ps-font-icon-address-card-o:before { content: '\E003' } 
+.ps-font-icon-address-card:before { content: '\E004' } 
+.ps-font-icon-adjust:before { content: '\E005' } 
+.ps-font-icon-adn:before { content: '\E006' } 
+.ps-font-icon-align-center:before { content: '\E007' } 
+.ps-font-icon-align-left:before { content: '\E008' } 
+.ps-font-icon-amazon:before { content: '\E009' } 
+.ps-font-icon-ambulance:before { content: '\E00A' } 
+.ps-font-icon-asl-interpreting:before { content: '\E00B' } 
+.ps-font-icon-anchor:before { content: '\E00C' } 
+.ps-font-icon-android:before { content: '\E00D' } 
+.ps-font-icon-angellist:before { content: '\E00E' } 
+.ps-font-icon-angle-double-down:before { content: '\E00F' } 
+.ps-font-icon-angle-double-left:before { content: '\E010' } 
+.ps-font-icon-angle-double-right:before { content: '\E011' } 
+.ps-font-icon-angle-double-up:before { content: '\E012' } 
+.ps-font-icon-angle-down:before { content: '\E013' } 
+.ps-font-icon-angle-left:before { content: '\E014' } 
+.ps-font-icon-angle-right:before { content: '\E015' } 
+.ps-font-icon-angle-up:before { content: '\E016' } 
+.ps-font-icon-apple:before { content: '\E017' } 
+.ps-font-icon-archive:before { content: '\E018' } 
+.ps-font-icon-area-chart:before { content: '\E019' } 
+.ps-font-icon-arrow-circle-down:before { content: '\E01A' } 
+.ps-font-icon-arrow-circle-left:before { content: '\E01B' } 
+.ps-font-icon-arrow-circle-o-down:before { content: '\E01C' } 
+.ps-font-icon-arrow-circle-o-left:before { content: '\E01D' } 
+.ps-font-icon-arrow-circle-o-right:before { content: '\E01E' } 
+.ps-font-icon-arrow-circle-o-up:before { content: '\E01F' } 
+.ps-font-icon-arrow-circle-right:before { content: '\E020' } 
+.ps-font-icon-arrow-circle-up:before { content: '\E021' } 
+.ps-font-icon-arrow-down:before { content: '\E022' } 
+.ps-font-icon-arrow-left:before { content: '\E023' } 
+.ps-font-icon-arrow-right:before { content: '\E024' } 
+.ps-font-icon-arrow-up:before { content: '\E025' } 
+.ps-font-icon-arrows-alt:before { content: '\E026' } 
+.ps-font-icon-arrows-h:before { content: '\E027' } 
+.ps-font-icon-arrows-v:before { content: '\E028' } 
+.ps-font-icon-arrows:before { content: '\E029' } 
+.ps-font-icon-assistive-listening-systems:before { content: '\E02A' } 
+.ps-font-icon-asterisk:before { content: '\E02B' } 
+.ps-font-icon-at:before { content: '\E02C' } 
+.ps-font-icon-audio-description:before { content: '\E02D' } 
+.ps-font-icon-automobile:before { content: '\E02E' } 
+.ps-font-icon-backward:before { content: '\E02F' } 
+.ps-font-icon-balance-scale:before { content: '\E030' } 
+.ps-font-icon-ban:before { content: '\E031' } 
+.ps-font-icon-bandcamp:before { content: '\E032' } 
+.ps-font-icon-bank:before { content: '\E033' } 
+.ps-font-icon-bar-chart-o:before { content: '\E034' } 
+.ps-font-icon-barcode:before { content: '\E035' } 
+.ps-font-icon-bars:before { content: '\E036' } 
+.ps-font-icon-bath:before { content: '\E037' } 
+.ps-font-icon-battery-0:before { content: '\E038' } 
+.ps-font-icon-battery-1:before { content: '\E039' } 
+.ps-font-icon-battery-2:before { content: '\E03A' } 
+.ps-font-icon-battery-3:before { content: '\E03B' } 
+.ps-font-icon-battery-full:before { content: '\E03C' } 
+.ps-font-icon-battery-empty:before { content: '\E03D' } 
+.ps-font-icon-battery-low:before { content: '\E03E' } 
+.ps-font-icon-battery-quater:before { content: '\E03F' } 
+.ps-font-icon-battery-half:before { content: '\E040' } 
+.ps-font-icon-battery-three-quarters:before { content: '\E041' } 
+.ps-font-icon-battery:before { content: '\E042' } 
+.ps-font-icon-bed:before { content: '\E043' } 
+.ps-font-icon-beer:before { content: '\E044' } 
+.ps-font-icon-behance-square:before { content: '\E045' } 
+.ps-font-icon-behance:before { content: '\E046' } 
+.ps-font-icon-bell-o:before { content: '\E047' } 
+.ps-font-icon-bell-slash-o:before { content: '\E048' } 
+.ps-font-icon-bell-slash:before { content: '\E049' } 
+.ps-font-icon-bell:before { content: '\E04A' } 
+.ps-font-icon-bicycle:before { content: '\E04B' } 
+.ps-font-icon-binoculars:before { content: '\E04C' } 
+.ps-font-icon-birthday-cake:before { content: '\E04D' } 
+.ps-font-icon-bitbucket-square:before { content: '\E04E' } 
+.ps-font-icon-bitbucket:before { content: '\E04F' } 
+.ps-font-icon-bitcoin:before { content: '\E050' } 
+.ps-font-icon-black-tie:before { content: '\E051' } 
+.ps-font-icon-blind:before { content: '\E052' } 
+.ps-font-icon-bluetooth-b:before { content: '\E053' } 
+.ps-font-icon-bluetooth:before { content: '\E054' } 
+.ps-font-icon-bold:before { content: '\E055' } 
+.ps-font-icon-bolt:before { content: '\E056' } 
+.ps-font-icon-bomb:before { content: '\E057' } 
+.ps-font-icon-book:before { content: '\E058' } 
+.ps-font-icon-bookmark-o:before { content: '\E059' } 
+.ps-font-icon-bookmark:before { content: '\E05A' } 
+.ps-font-icon-braille:before { content: '\E05B' } 
+.ps-font-icon-briefcase:before { content: '\E05C' } 
+.ps-font-icon-btc:before { content: '\E05D' } 
+.ps-font-icon-bug:before { content: '\E05E' } 
+.ps-font-icon-building-o:before { content: '\E05F' } 
+.ps-font-icon-building:before { content: '\E060' } 
+.ps-font-icon-bullhorn:before { content: '\E061' } 
+.ps-font-icon-align-right:before { content: '\E062' } 
+.ps-font-icon-align-justify:before { content: '\E063' } 
+.ps-font-icon-bullseye:before { content: '\E064' } 
+.ps-font-icon-bus:before { content: '\E065' } 
+.ps-font-icon-buysellads:before { content: '\E066' } 
+.ps-font-icon-cab:before { content: '\E067' } 
+.ps-font-icon-calculator:before { content: '\E068' } 
+.ps-font-icon-calendar-check-o:before { content: '\E069' } 
+.ps-font-icon-calendar-minus-o:before { content: '\E06A' } 
+.ps-font-icon-calendar-o:before { content: '\E06B' } 
+.ps-font-icon-calendar-plus-o:before { content: '\E06C' } 
+.ps-font-icon-calendar-times-o:before { content: '\E06D' } 
+.ps-font-icon-calendar:before { content: '\E06E' } 
+.ps-font-icon-camera-retro:before { content: '\E06F' } 
+.ps-font-icon-camera:before { content: '\E070' } 
+.ps-font-icon-car:before { content: '\E071' } 
+.ps-font-icon-caret-down:before { content: '\E072' } 
+.ps-font-icon-caret-left:before { content: '\E073' } 
+.ps-font-icon-caret-right:before { content: '\E074' } 
+.ps-font-icon-caret-square-o-down:before { content: '\E075' } 
+.ps-font-icon-caret-square-o-left:before { content: '\E076' } 
+.ps-font-icon-caret-square-o-right:before { content: '\E077' } 
+.ps-font-icon-caret-square-o-up:before { content: '\E078' } 
+.ps-font-icon-caret-up:before { content: '\E079' } 
+.ps-font-icon-cart-arrow-down:before { content: '\E07A' } 
+.ps-font-icon-cart-plus:before { content: '\E07B' } 
+.ps-font-icon-cc-amex:before { content: '\E07C' } 
+.ps-font-icon-cc-diners-club:before { content: '\E07D' } 
+.ps-font-icon-cc-discover:before { content: '\E07E' } 
+.ps-font-icon-cc-jcb:before { content: '\E07F' } 
+.ps-font-icon-cc-mastercard:before { content: '\E080' } 
+.ps-font-icon-cc-paypal:before { content: '\E081' } 
+.ps-font-icon-cc-stripe:before { content: '\E082' } 
+.ps-font-icon-cc-visa:before { content: '\E083' } 
+.ps-font-icon-cc:before { content: '\E084' } 
+.ps-font-icon-certificate:before { content: '\E085' } 
+.ps-font-icon-chain-broken:before { content: '\E086' } 
+.ps-font-icon-chain:before { content: '\E087' } 
+.ps-font-icon-check-circle-o:before { content: '\E088' } 
+.ps-font-icon-check-circle:before { content: '\E089' } 
+.ps-font-icon-check-square-o:before { content: '\E08A' } 
+.ps-font-icon-check-square:before { content: '\E08B' } 
+.ps-font-icon-check:before { content: '\E08C' } 
+.ps-font-icon-chevron-circle-down:before { content: '\E08D' } 
+.ps-font-icon-chevron-circle-left:before { content: '\E08E' } 
+.ps-font-icon-chevron-circle-right:before { content: '\E08F' } 
+.ps-font-icon-chevron-circle-up:before { content: '\E090' } 
+.ps-font-icon-chevron-down:before { content: '\E091' } 
+.ps-font-icon-chevron-left:before { content: '\E092' } 
+.ps-font-icon-chevron-right:before { content: '\E093' } 
+.ps-font-icon-chevron-up:before { content: '\E094' } 
+.ps-font-icon-child:before { content: '\E095' } 
+.ps-font-icon-chrome:before { content: '\E096' } 
+.ps-font-icon-circle-o-notch:before { content: '\E097' } 
+.ps-font-icon-circle-o:before { content: '\E098' } 
+.ps-font-icon-circle-thin:before { content: '\E099' } 
+.ps-font-icon-circle:before { content: '\E09A' } 
+.ps-font-icon-clipboard:before { content: '\E09B' } 
+.ps-font-icon-clock-o:before { content: '\E09C' } 
+.ps-font-icon-clone:before { content: '\E09D' } 
+.ps-font-icon-close:before { content: '\E09E' } 
+.ps-font-icon-cloud-download:before { content: '\E09F' } 
+.ps-font-icon-cloud-upload:before { content: '\E0A0' } 
+.ps-font-icon-cloud:before { content: '\E0A1' } 
+.ps-font-icon-cny:before { content: '\E0A2' } 
+.ps-font-icon-code-fork:before { content: '\E0A3' } 
+.ps-font-icon-code:before { content: '\E0A4' } 
+.ps-font-icon-codepen:before { content: '\E0A5' } 
+.ps-font-icon-codiepie:before { content: '\E0A6' } 
+.ps-font-icon-coffee:before { content: '\E0A7' } 
+.ps-font-icon-cog:before { content: '\E0A8' } 
+.ps-font-icon-cogs:before { content: '\E0A9' } 
+.ps-font-icon-columns:before { content: '\E0AA' } 
+.ps-font-icon-comment-o:before { content: '\E0AB' } 
+.ps-font-icon-comment:before { content: '\E0AC' } 
+.ps-font-icon-commenting-o:before { content: '\E0AD' } 
+.ps-font-icon-commenting:before { content: '\E0AE' } 
+.ps-font-icon-comments-o:before { content: '\E0AF' } 
+.ps-font-icon-comments:before { content: '\E0B0' } 
+.ps-font-icon-compass:before { content: '\E0B1' } 
+.ps-font-icon-compress:before { content: '\E0B2' } 
+.ps-font-icon-connectdevelop:before { content: '\E0B3' } 
+.ps-font-icon-contao:before { content: '\E0B4' } 
+.ps-font-icon-copy:before { content: '\E0B5' } 
+.ps-font-icon-copyright:before { content: '\E0B6' } 
+.ps-font-icon-creative-commons:before { content: '\E0B7' } 
+.ps-font-icon-credit-card-alt:before { content: '\E0B8' } 
+.ps-font-icon-credit-card:before { content: '\E0B9' } 
+.ps-font-icon-crop:before { content: '\E0BA' } 
+.ps-font-icon-crosshairs:before { content: '\E0BB' } 
+.ps-font-icon-css3:before { content: '\E0BC' } 
+.ps-font-icon-cube:before { content: '\E0BD' } 
+.ps-font-icon-cubes:before { content: '\E0BE' } 
+.ps-font-icon-cut:before { content: '\E0BF' } 
+.ps-font-icon-cutlery:before { content: '\E0C0' } 
+.ps-font-icon-dashboard:before { content: '\E0C1' } 
+.ps-font-icon-dashcube:before { content: '\E0C2' } 
+.ps-font-icon-database:before { content: '\E0C3' } 
+.ps-font-icon-deaf:before { content: '\E0C4' } 
+.ps-font-icon-deafness:before { content: '\E0C5' } 
+.ps-font-icon-dedent:before { content: '\E0C6' } 
+.ps-font-icon-delicious:before { content: '\E0C7' } 
+.ps-font-icon-desktop:before { content: '\E0C8' } 
+.ps-font-icon-deviantart:before { content: '\E0C9' } 
+.ps-font-icon-diamond:before { content: '\E0CA' } 
+.ps-font-icon-digg:before { content: '\E0CB' } 
+.ps-font-icon-dollar:before { content: '\E0CC' } 
+.ps-font-icon-dot-circle-o:before { content: '\E0CD' } 
+.ps-font-icon-download:before { content: '\E0CE' } 
+.ps-font-icon-dribbble:before { content: '\E0CF' } 
+.ps-font-icon-drivers-license-o:before { content: '\E0D0' } 
+.ps-font-icon-drivers-license:before { content: '\E0D1' } 
+.ps-font-icon-dropbox:before { content: '\E0D2' } 
+.ps-font-icon-drupal:before { content: '\E0D3' } 
+.ps-font-icon-edge:before { content: '\E0D4' } 
+.ps-font-icon-edit:before { content: '\E0D5' } 
+.ps-font-icon-eercast:before { content: '\E0D6' } 
+.ps-font-icon-eject:before { content: '\E0D7' } 
+.ps-font-icon-ellipsis-h:before { content: '\E0D8' } 
+.ps-font-icon-ellipsis-v:before { content: '\E0D9' } 
+.ps-font-icon-empire:before { content: '\E0DA' } 
+.ps-font-icon-envelope-o:before { content: '\E0DB' } 
+.ps-font-icon-envelope-open-o:before { content: '\E0DC' } 
+.ps-font-icon-envelope-open:before { content: '\E0DD' } 
+.ps-font-icon-envelope-square:before { content: '\E0DE' } 
+.ps-font-icon-envelope:before { content: '\E0DF' } 
+.ps-font-icon-envira:before { content: '\E0E0' } 
+.ps-font-icon-eraser:before { content: '\E0E1' } 
+.ps-font-icon-etsy:before { content: '\E0E2' } 
+.ps-font-icon-eur:before { content: '\E0E3' } 
+.ps-font-icon-euro:before { content: '\E0E4' } 
+.ps-font-icon-exchange:before { content: '\E0E5' } 
+.ps-font-icon-exclamation-circle:before { content: '\E0E6' } 
+.ps-font-icon-exclamation-triangle:before { content: '\E0E7' } 
+.ps-font-icon-exclamation:before { content: '\E0E8' } 
+.ps-font-icon-expand:before { content: '\E0E9' } 
+.ps-font-icon-expeditedssl:before { content: '\E0EA' } 
+.ps-font-icon-external-link-square:before { content: '\E0EB' } 
+.ps-font-icon-external-link:before { content: '\E0EC' } 
+.ps-font-icon-eye-slash:before { content: '\E0ED' } 
+.ps-font-icon-eye:before { content: '\E0EE' } 
+.ps-font-icon-eyedropper:before { content: '\E0EF' } 
+.ps-font-icon-fa:before { content: '\E0F0' } 
+.ps-font-icon-facebook-f:before { content: '\E0F1' } 
+.ps-font-icon-facebook-official:before { content: '\E0F2' } 
+.ps-font-icon-facebook-square:before { content: '\E0F3' } 
+.ps-font-icon-facebook:before { content: '\E0F4' } 
+.ps-font-icon-fast-backward:before { content: '\E0F5' } 
+.ps-font-icon-fast-forward:before { content: '\E0F6' } 
+.ps-font-icon-fax:before { content: '\E0F7' } 
+.ps-font-icon-feed:before { content: '\E0F8' } 
+.ps-font-icon-female:before { content: '\E0F9' } 
+.ps-font-icon-fighter-jet:before { content: '\E0FA' } 
+.ps-font-icon-file-archive-o:before { content: '\E0FB' } 
+.ps-font-icon-file-audio-o:before { content: '\E0FC' } 
+.ps-font-icon-file-code-o:before { content: '\E0FD' } 
+.ps-font-icon-file-excel-o:before { content: '\E0FE' } 
+.ps-font-icon-file-image-o:before { content: '\E0FF' } 
+.ps-font-icon-file-movie-o:before { content: '\E100' } 
+.ps-font-icon-file-o:before { content: '\E101' } 
+.ps-font-icon-file-pdf-o:before { content: '\E102' } 
+.ps-font-icon-file-photo-o:before { content: '\E103' } 
+.ps-font-icon-file-picture-o:before { content: '\E104' } 
+.ps-font-icon-file-powerpoint-o:before { content: '\E105' } 
+.ps-font-icon-file-sound-o:before { content: '\E106' } 
+.ps-font-icon-file-text-o:before { content: '\E107' } 
+.ps-font-icon-file-text:before { content: '\E108' } 
+.ps-font-icon-file-video-o:before { content: '\E109' } 
+.ps-font-icon-file-word-o:before { content: '\E10A' } 
+.ps-font-icon-file-zip-o:before { content: '\E10B' } 
+.ps-font-icon-file:before { content: '\E10C' } 
+.ps-font-icon-files-o:before { content: '\E10D' } 
+.ps-font-icon-film:before { content: '\E10E' } 
+.ps-font-icon-filter:before { content: '\E10F' } 
+.ps-font-icon-fire-extinguisher:before { content: '\E110' } 
+.ps-font-icon-fire:before { content: '\E111' } 
+.ps-font-icon-firefox:before { content: '\E112' } 
+.ps-font-icon-first-order:before { content: '\E113' } 
+.ps-font-icon-flag-checkered:before { content: '\E114' } 
+.ps-font-icon-flag-o:before { content: '\E115' } 
+.ps-font-icon-flag:before { content: '\E116' } 
+.ps-font-icon-flash:before { content: '\E117' } 
+.ps-font-icon-flask:before { content: '\E118' } 
+.ps-font-icon-flickr:before { content: '\E119' } 
+.ps-font-icon-floppy-o:before { content: '\E11A' } 
+.ps-font-icon-folder-o:before { content: '\E11B' } 
+.ps-font-icon-folder-open-o:before { content: '\E11C' } 
+.ps-font-icon-folder-open:before { content: '\E11D' } 
+.ps-font-icon-folder:before { content: '\E11E' } 
+.ps-font-icon-font-awesome:before { content: '\E11F' } 
+.ps-font-icon-font:before { content: '\E120' } 
+.ps-font-icon-fonticons:before { content: '\E121' } 
+.ps-font-icon-fort-awesome:before { content: '\E122' } 
+.ps-font-icon-forumbee:before { content: '\E123' } 
+.ps-font-icon-forward:before { content: '\E124' } 
+.ps-font-icon-foursquare:before { content: '\E125' } 
+.ps-font-icon-free-code-camp:before { content: '\E126' } 
+.ps-font-icon-frown-o:before { content: '\E127' } 
+.ps-font-icon-futbol-o:before { content: '\E128' } 
+.ps-font-icon-gamepad:before { content: '\E129' } 
+.ps-font-icon-gavel:before { content: '\E12A' } 
+.ps-font-icon-gbp:before { content: '\E12B' } 
+.ps-font-icon-ge:before { content: '\E12C' } 
+.ps-font-icon-gear:before { content: '\E12D' } 
+.ps-font-icon-gears:before { content: '\E12E' } 
+.ps-font-icon-genderless:before { content: '\E12F' } 
+.ps-font-icon-get-pocket:before { content: '\E130' } 
+.ps-font-icon-gg-circle:before { content: '\E131' } 
+.ps-font-icon-gg:before { content: '\E132' } 
+.ps-font-icon-gift:before { content: '\E133' } 
+.ps-font-icon-git-square:before { content: '\E134' } 
+.ps-font-icon-git:before { content: '\E135' } 
+.ps-font-icon-github-alt:before { content: '\E136' } 
+.ps-font-icon-github-square:before { content: '\E137' } 
+.ps-font-icon-github:before { content: '\E138' } 
+.ps-font-icon-gitlab:before { content: '\E139' } 
+.ps-font-icon-gittip:before { content: '\E13A' } 
+.ps-font-icon-glass:before { content: '\E13B' } 
+.ps-font-icon-glide-g:before { content: '\E13C' } 
+.ps-font-icon-glide:before { content: '\E13D' } 
+.ps-font-icon-globe:before { content: '\E13E' } 
+.ps-font-icon-google-plus-circle:before { content: '\E13F' } 
+.ps-font-icon-google-plus-official:before { content: '\E140' } 
+.ps-font-icon-google-plus-square:before { content: '\E141' } 
+.ps-font-icon-google-plus:before { content: '\E142' } 
+.ps-font-icon-google-wallet:before { content: '\E143' } 
+.ps-font-icon-google:before { content: '\E144' } 
+.ps-font-icon-graduation-cap:before { content: '\E145' } 
+.ps-font-icon-gratipay:before { content: '\E146' } 
+.ps-font-icon-grav:before { content: '\E147' } 
+.ps-font-icon-group:before { content: '\E148' } 
+.ps-font-icon-h-square:before { content: '\E149' } 
+.ps-font-icon-hacker-news:before { content: '\E14A' } 
+.ps-font-icon-hand-grab-o:before { content: '\E14B' } 
+.ps-font-icon-hand-lizard-o:before { content: '\E14C' } 
+.ps-font-icon-hand-o-down:before { content: '\E14D' } 
+.ps-font-icon-hand-o-left:before { content: '\E14E' } 
+.ps-font-icon-hand-o-right:before { content: '\E14F' } 
+.ps-font-icon-hand-o-up:before { content: '\E150' } 
+.ps-font-icon-hand-paper-o:before { content: '\E151' } 
+.ps-font-icon-hand-peace-o:before { content: '\E152' } 
+.ps-font-icon-hand-pointer-o:before { content: '\E153' } 
+.ps-font-icon-hand-rock-o:before { content: '\E154' } 
+.ps-font-icon-hand-scissors-o:before { content: '\E155' } 
+.ps-font-icon-hand-spock-o:before { content: '\E156' } 
+.ps-font-icon-hand-stop-o:before { content: '\E157' } 
+.ps-font-icon-handshake-o:before { content: '\E158' } 
+.ps-font-icon-hard-of-hearing:before { content: '\E159' } 
+.ps-font-icon-hashtag:before { content: '\E15A' } 
+.ps-font-icon-hdd-o:before { content: '\E15B' } 
+.ps-font-icon-header:before { content: '\E15C' } 
+.ps-font-icon-headphones:before { content: '\E15D' } 
+.ps-font-icon-heart-o:before { content: '\E15E' } 
+.ps-font-icon-heart:before { content: '\E15F' } 
+.ps-font-icon-heartbeat:before { content: '\E160' } 
+.ps-font-icon-history:before { content: '\E161' } 
+.ps-font-icon-home:before { content: '\E162' } 
+.ps-font-icon-hospital-o:before { content: '\E163' } 
+.ps-font-icon-hotel:before { content: '\E164' } 
+.ps-font-icon-hourglass-1:before { content: '\E165' } 
+.ps-font-icon-hourglass-2:before { content: '\E166' } 
+.ps-font-icon-hourglass-3:before { content: '\E167' } 
+.ps-font-icon-hourglass-end:before { content: '\E168' } 
+.ps-font-icon-hourglass-half:before { content: '\E169' } 
+.ps-font-icon-hourglass-o:before { content: '\E16A' } 
+.ps-font-icon-hourglass-start:before { content: '\E16B' } 
+.ps-font-icon-hourglass:before { content: '\E16C' } 
+.ps-font-icon-houzz:before { content: '\E16D' } 
+.ps-font-icon-html5:before { content: '\E16E' } 
+.ps-font-icon-i-cursor:before { content: '\E16F' } 
+.ps-font-icon-id-badge:before { content: '\E170' } 
+.ps-font-icon-id-card-o:before { content: '\E171' } 
+.ps-font-icon-id-card:before { content: '\E172' } 
+.ps-font-icon-ils:before { content: '\E173' } 
+.ps-font-icon-image:before { content: '\E174' } 
+.ps-font-icon-imdb:before { content: '\E175' } 
+.ps-font-icon-inbox:before { content: '\E176' } 
+.ps-font-icon-indent:before { content: '\E177' } 
+.ps-font-icon-industry:before { content: '\E178' } 
+.ps-font-icon-info-circle:before { content: '\E179' } 
+.ps-font-icon-info:before { content: '\E17A' } 
+.ps-font-icon-inr:before { content: '\E17B' } 
+.ps-font-icon-instagram:before { content: '\E17C' } 
+.ps-font-icon-institution:before { content: '\E17D' } 
+.ps-font-icon-internet-explorer:before { content: '\E17E' } 
+.ps-font-icon-intersex:before { content: '\E17F' } 
+.ps-font-icon-ioxhost:before { content: '\E180' } 
+.ps-font-icon-italic:before { content: '\E181' } 
+.ps-font-icon-joomla:before { content: '\E182' } 
+.ps-font-icon-jpy:before { content: '\E183' } 
+.ps-font-icon-jsfiddle:before { content: '\E184' } 
+.ps-font-icon-key:before { content: '\E185' } 
+.ps-font-icon-keyboard-o:before { content: '\E186' } 
+.ps-font-icon-krw:before { content: '\E187' } 
+.ps-font-icon-language:before { content: '\E188' } 
+.ps-font-icon-laptop:before { content: '\E189' } 
+.ps-font-icon-lastfm-square:before { content: '\E18A' } 
+.ps-font-icon-lastfm:before { content: '\E18B' } 
+.ps-font-icon-leaf:before { content: '\E18C' } 
+.ps-font-icon-leanpub:before { content: '\E18D' } 
+.ps-font-icon-legal:before { content: '\E18E' } 
+.ps-font-icon-lemon-o:before { content: '\E18F' } 
+.ps-font-icon-level-down:before { content: '\E190' } 
+.ps-font-icon-level-up:before { content: '\E191' } 
+.ps-font-icon-life-bouy:before { content: '\E192' } 
+.ps-font-icon-life-buoy:before { content: '\E193' } 
+.ps-font-icon-life-ring:before { content: '\E194' } 
+.ps-font-icon-life-saver:before { content: '\E195' } 
+.ps-font-icon-lightbulb-o:before { content: '\E196' } 
+.ps-font-icon-line-chart:before { content: '\E197' } 
+.ps-font-icon-link:before { content: '\E198' } 
+.ps-font-icon-linkedin-square:before { content: '\E199' } 
+.ps-font-icon-linkedin:before { content: '\E19A' } 
+.ps-font-icon-linode:before { content: '\E19B' } 
+.ps-font-icon-list-ol:before { content: '\E19C' } 
+.ps-font-icon-list-alt:before { content: '\E19D' } 
+.ps-font-icon-list-ul:before { content: '\E19E' } 
+.ps-font-icon-list:before { content: '\E19F' } 
+.ps-font-icon-location-arrow:before { content: '\E1A0' } 
+.ps-font-icon-lock:before { content: '\E1A1' } 
+.ps-font-icon-long-arrow-down:before { content: '\E1A2' } 
+.ps-font-icon-long-arrow-left:before { content: '\E1A3' } 
+.ps-font-icon-long-arrow-right:before { content: '\E1A4' } 
+.ps-font-icon-long-arrow-up:before { content: '\E1A5' } 
+.ps-font-icon-low-vision:before { content: '\E1A6' } 
+.ps-font-icon-magic:before { content: '\E1A7' } 
+.ps-font-icon-magnet:before { content: '\E1A8' } 
+.ps-font-icon-mail-forward:before { content: '\E1A9' } 
+.ps-font-icon-mail-reply-all:before { content: '\E1AA' } 
+.ps-font-icon-mail-reply:before { content: '\E1AB' } 
+.ps-font-icon-male:before { content: '\E1AC' } 
+.ps-font-icon-map-marker:before { content: '\E1AD' } 
+.ps-font-icon-map-o:before { content: '\E1AE' } 
+.ps-font-icon-map-pin:before { content: '\E1AF' } 
+.ps-font-icon-map-signs:before { content: '\E1B0' } 
+.ps-font-icon-map:before { content: '\E1B1' } 
+.ps-font-icon-mars-double:before { content: '\E1B2' } 
+.ps-font-icon-mars-stroke-h:before { content: '\E1B3' } 
+.ps-font-icon-mars-stroke-v:before { content: '\E1B4' } 
+.ps-font-icon-mars-stroke:before { content: '\E1B5' } 
+.ps-font-icon-mars:before { content: '\E1B6' } 
+.ps-font-icon-maxcdn:before { content: '\E1B7' } 
+.ps-font-icon-meanpath:before { content: '\E1B8' } 
+.ps-font-icon-medium:before { content: '\E1B9' } 
+.ps-font-icon-medkit:before { content: '\E1BA' } 
+.ps-font-icon-meetup:before { content: '\E1BB' } 
+.ps-font-icon-meh-o:before { content: '\E1BC' } 
+.ps-font-icon-mercury:before { content: '\E1BD' } 
+.ps-font-icon-microchip:before { content: '\E1BE' } 
+.ps-font-icon-microphone-slash:before { content: '\E1BF' } 
+.ps-font-icon-microphone:before { content: '\E1C0' } 
+.ps-font-icon-minus-circle:before { content: '\E1C1' } 
+.ps-font-icon-minus-square-o:before { content: '\E1C2' } 
+.ps-font-icon-minus-square:before { content: '\E1C3' } 
+.ps-font-icon-minus:before { content: '\E1C4' } 
+.ps-font-icon-mixcloud:before { content: '\E1C5' } 
+.ps-font-icon-mobile-phone:before { content: '\E1C6' } 
+.ps-font-icon-mobile:before { content: '\E1C7' } 
+.ps-font-icon-modx:before { content: '\E1C8' } 
+.ps-font-icon-money:before { content: '\E1C9' } 
+.ps-font-icon-moon-o:before { content: '\E1CA' } 
+.ps-font-icon-mortar-board:before { content: '\E1CB' } 
+.ps-font-icon-motorcycle:before { content: '\E1CC' } 
+.ps-font-icon-mouse-pointer:before { content: '\E1CD' } 
+.ps-font-icon-music:before { content: '\E1CE' } 
+.ps-font-icon-navicon:before { content: '\E1CF' } 
+.ps-font-icon-neuter:before { content: '\E1D0' } 
+.ps-font-icon-newspaper-o:before { content: '\E1D1' } 
+.ps-font-icon-object-group:before { content: '\E1D2' } 
+.ps-font-icon-object-ungroup:before { content: '\E1D3' } 
+.ps-font-icon-odnoklassniki-square:before { content: '\E1D4' } 
+.ps-font-icon-odnoklassniki:before { content: '\E1D5' } 
+.ps-font-icon-opencart:before { content: '\E1D6' } 
+.ps-font-icon-openid:before { content: '\E1D7' } 
+.ps-font-icon-opera:before { content: '\E1D8' } 
+.ps-font-icon-optin-monster:before { content: '\E1D9' } 
+.ps-font-icon-outdent:before { content: '\E1DA' } 
+.ps-font-icon-pagelines:before { content: '\E1DB' } 
+.ps-font-icon-paint-brush:before { content: '\E1DC' } 
+.ps-font-icon-paper-plane-o:before { content: '\E1DD' } 
+.ps-font-icon-paper-plane:before { content: '\E1DE' } 
+.ps-font-icon-paperclip:before { content: '\E1DF' } 
+.ps-font-icon-paragraph:before { content: '\E1E0' } 
+.ps-font-icon-paste:before { content: '\E1E1' } 
+.ps-font-icon-pause-circle-o:before { content: '\E1E2' } 
+.ps-font-icon-pause-circle:before { content: '\E1E3' } 
+.ps-font-icon-pause:before { content: '\E1E4' } 
+.ps-font-icon-paw:before { content: '\E1E5' } 
+.ps-font-icon-paypal:before { content: '\E1E6' } 
+.ps-font-icon-pencil-square-o:before { content: '\E1E7' } 
+.ps-font-icon-pencil-square:before { content: '\E1E8' } 
+.ps-font-icon-pencil:before { content: '\E1E9' } 
+.ps-font-icon-percent:before { content: '\E1EA' } 
+.ps-font-icon-phone-square:before { content: '\E1EB' } 
+.ps-font-icon-phone:before { content: '\E1EC' } 
+.ps-font-icon-photo:before { content: '\E1ED' } 
+.ps-font-icon-picture-o:before { content: '\E1EE' } 
+.ps-font-icon-pie-chart:before { content: '\E1EF' } 
+.ps-font-icon-pied-piper-alt:before { content: '\E1F0' } 
+.ps-font-icon-pied-piper-pp:before { content: '\E1F1' } 
+.ps-font-icon-pied-piper:before { content: '\E1F2' } 
+.ps-font-icon-pinterest-p:before { content: '\E1F3' } 
+.ps-font-icon-linux:before { content: '\E1F4' } 
+.ps-font-icon-pinterest-square:before { content: '\E1F5' } 
+.ps-font-icon-pinterest:before { content: '\E1F6' } 
+.ps-font-icon-plane:before { content: '\E1F7' } 
+.ps-font-icon-play-circle-o:before { content: '\E1F8' } 
+.ps-font-icon-play-circle:before { content: '\E1F9' } 
+.ps-font-icon-play:before { content: '\E1FA' } 
+.ps-font-icon-plug:before { content: '\E1FB' } 
+.ps-font-icon-plus-circle:before { content: '\E1FC' } 
+.ps-font-icon-plus-square-o:before { content: '\E1FD' } 
+.ps-font-icon-plus-square:before { content: '\E1FE' } 
+.ps-font-icon-plus:before { content: '\E1FF' } 
+.ps-font-icon-podcast:before { content: '\E200' } 
+.ps-font-icon-power-off:before { content: '\E201' } 
+.ps-font-icon-print:before { content: '\E202' } 
+.ps-font-icon-product-hunt:before { content: '\E203' } 
+.ps-font-icon-puzzle-piece:before { content: '\E204' } 
+.ps-font-icon-qq:before { content: '\E205' } 
+.ps-font-icon-qrcode:before { content: '\E206' } 
+.ps-font-icon-question-circle-o:before { content: '\E207' } 
+.ps-font-icon-question-circle:before { content: '\E208' } 
+.ps-font-icon-question:before { content: '\E209' } 
+.ps-font-icon-quora:before { content: '\E20A' } 
+.ps-font-icon-quote-left:before { content: '\E20B' } 
+.ps-font-icon-quote-right:before { content: '\E20C' } 
+.ps-font-icon-ra:before { content: '\E20D' } 
+.ps-font-icon-random:before { content: '\E20E' } 
+.ps-font-icon-ravelry:before { content: '\E20F' } 
+.ps-font-icon-rebel:before { content: '\E210' } 
+.ps-font-icon-recycle:before { content: '\E211' } 
+.ps-font-icon-reddit-alien:before { content: '\E212' } 
+.ps-font-icon-reddit-square:before { content: '\E213' } 
+.ps-font-icon-reddit:before { content: '\E214' } 
+.ps-font-icon-refresh:before { content: '\E215' } 
+.ps-font-icon-registered:before { content: '\E216' } 
+.ps-font-icon-remove:before { content: '\E217' } 
+.ps-font-icon-renren:before { content: '\E218' } 
+.ps-font-icon-reorder:before { content: '\E219' } 
+.ps-font-icon-repeat:before { content: '\E21A' } 
+.ps-font-icon-reply-all:before { content: '\E21B' } 
+.ps-font-icon-reply:before { content: '\E21C' } 
+.ps-font-icon-resistance:before { content: '\E21D' } 
+.ps-font-icon-retweet:before { content: '\E21E' } 
+.ps-font-icon-rmb:before { content: '\E21F' } 
+.ps-font-icon-road:before { content: '\E220' } 
+.ps-font-icon-rocket:before { content: '\E221' } 
+.ps-font-icon-rotate-left:before { content: '\E222' } 
+.ps-font-icon-rotate-right:before { content: '\E223' } 
+.ps-font-icon-rouble:before { content: '\E224' } 
+.ps-font-icon-rss-square:before { content: '\E225' } 
+.ps-font-icon-rss:before { content: '\E226' } 
+.ps-font-icon-rub:before { content: '\E227' } 
+.ps-font-icon-ruble:before { content: '\E228' } 
+.ps-font-icon-rupee:before { content: '\E229' } 
+.ps-font-icon-s15:before { content: '\E22A' } 
+.ps-font-icon-safari:before { content: '\E22B' } 
+.ps-font-icon-save:before { content: '\E22C' } 
+.ps-font-icon-scissors:before { content: '\E22D' } 
+.ps-font-icon-scribd:before { content: '\E22E' } 
+.ps-font-icon-search-minus:before { content: '\E22F' } 
+.ps-font-icon-search-plus:before { content: '\E230' } 
+.ps-font-icon-search:before { content: '\E231' } 
+.ps-font-icon-sellsy:before { content: '\E232' } 
+.ps-font-icon-send-o:before { content: '\E233' } 
+.ps-font-icon-send:before { content: '\E234' } 
+.ps-font-icon-server:before { content: '\E235' } 
+.ps-font-icon-share-alt-square:before { content: '\E236' } 
+.ps-font-icon-share-alt:before { content: '\E237' } 
+.ps-font-icon-share-square-o:before { content: '\E238' } 
+.ps-font-icon-share-square:before { content: '\E239' } 
+.ps-font-icon-share:before { content: '\E23A' } 
+.ps-font-icon-shekel:before { content: '\E23B' } 
+.ps-font-icon-sheqel:before { content: '\E23C' } 
+.ps-font-icon-shield:before { content: '\E23D' } 
+.ps-font-icon-ship:before { content: '\E23E' } 
+.ps-font-icon-shirtsinbulk:before { content: '\E23F' } 
+.ps-font-icon-shopping-bag:before { content: '\E240' } 
+.ps-font-icon-shopping-basket:before { content: '\E241' } 
+.ps-font-icon-shopping-cart:before { content: '\E242' } 
+.ps-font-icon-shower:before { content: '\E243' } 
+.ps-font-icon-sign-in:before { content: '\E244' } 
+.ps-font-icon-sign-language:before { content: '\E245' } 
+.ps-font-icon-sign-out:before { content: '\E246' } 
+.ps-font-icon-signal:before { content: '\E247' } 
+.ps-font-icon-signing:before { content: '\E248' } 
+.ps-font-icon-simplybuilt:before { content: '\E249' } 
+.ps-font-icon-sitemap:before { content: '\E24A' } 
+.ps-font-icon-skyatlas:before { content: '\E24B' } 
+.ps-font-icon-skype:before { content: '\E24C' } 
+.ps-font-icon-slack:before { content: '\E24D' } 
+.ps-font-icon-sliders:before { content: '\E24E' } 
+.ps-font-icon-slideshare:before { content: '\E24F' } 
+.ps-font-icon-smile-o:before { content: '\E250' } 
+.ps-font-icon-snapchat-ghost:before { content: '\E251' } 
+.ps-font-icon-snapchat-square:before { content: '\E252' } 
+.ps-font-icon-snapchat:before { content: '\E253' } 
+.ps-font-icon-snowflake-o:before { content: '\E254' } 
+.ps-font-icon-soccer-ball-o:before { content: '\E255' } 
+.ps-font-icon-sort-alpha-asc:before { content: '\E256' } 
+.ps-font-icon-sort-alpha-desc:before { content: '\E257' } 
+.ps-font-icon-sort-amount-asc:before { content: '\E258' } 
+.ps-font-icon-sort-amount-desc:before { content: '\E259' } 
+.ps-font-icon-sort-asc:before { content: '\E25A' } 
+.ps-font-icon-sort-desc:before { content: '\E25B' } 
+.ps-font-icon-sort-down:before { content: '\E25C' } 
+.ps-font-icon-sort-numeric-asc:before { content: '\E25D' } 
+.ps-font-icon-sort-numeric-desc:before { content: '\E25E' } 
+.ps-font-icon-sort-up:before { content: '\E25F' } 
+.ps-font-icon-sort:before { content: '\E260' } 
+.ps-font-icon-soundcloud:before { content: '\E261' } 
+.ps-font-icon-space-shuttle:before { content: '\E262' } 
+.ps-font-icon-spinner:before { content: '\E263' } 
+.ps-font-icon-spoon:before { content: '\E264' } 
+.ps-font-icon-spotify:before { content: '\E265' } 
+.ps-font-icon-square-o:before { content: '\E266' } 
+.ps-font-icon-square:before { content: '\E267' } 
+.ps-font-icon-stack-exchange:before { content: '\E268' } 
+.ps-font-icon-stack-overflow:before { content: '\E269' } 
+.ps-font-icon-star-half-empty:before { content: '\E26A' } 
+.ps-font-icon-star-half-full:before { content: '\E26B' } 
+.ps-font-icon-star-half-o:before { content: '\E26C' } 
+.ps-font-icon-star-half:before { content: '\E26D' } 
+.ps-font-icon-star-o:before { content: '\E26E' } 
+.ps-font-icon-star:before { content: '\E26F' } 
+.ps-font-icon-steam-square:before { content: '\E270' } 
+.ps-font-icon-steam:before { content: '\E271' } 
+.ps-font-icon-step-backward:before { content: '\E272' } 
+.ps-font-icon-step-forward:before { content: '\E273' } 
+.ps-font-icon-stethoscope:before { content: '\E274' } 
+.ps-font-icon-sticky-note-o:before { content: '\E275' } 
+.ps-font-icon-sticky-note:before { content: '\E276' } 
+.ps-font-icon-stop-circle-o:before { content: '\E277' } 
+.ps-font-icon-stop-circle:before { content: '\E278' } 
+.ps-font-icon-stop:before { content: '\E279' } 
+.ps-font-icon-street-view:before { content: '\E27A' } 
+.ps-font-icon-strikethrough:before { content: '\E27B' } 
+.ps-font-icon-stumbleupon-circle:before { content: '\E27C' } 
+.ps-font-icon-stumbleupon:before { content: '\E27D' } 
+.ps-font-icon-subscript:before { content: '\E27E' } 
+.ps-font-icon-subway:before { content: '\E27F' } 
+.ps-font-icon-suitcase:before { content: '\E280' } 
+.ps-font-icon-sun-o:before { content: '\E281' } 
+.ps-font-icon-superpowers:before { content: '\E282' } 
+.ps-font-icon-superscript:before { content: '\E283' } 
+.ps-font-icon-support:before { content: '\E284' } 
+.ps-font-icon-table:before { content: '\E285' } 
+.ps-font-icon-tablet:before { content: '\E286' } 
+.ps-font-icon-tachometer:before { content: '\E287' } 
+.ps-font-icon-tag:before { content: '\E288' } 
+.ps-font-icon-tags:before { content: '\E289' } 
+.ps-font-icon-tasks:before { content: '\E28A' } 
+.ps-font-icon-taxi:before { content: '\E28B' } 
+.ps-font-icon-telegram:before { content: '\E28C' } 
+.ps-font-icon-television:before { content: '\E28D' } 
+.ps-font-icon-tencent-weibo:before { content: '\E28E' } 
+.ps-font-icon-terminal:before { content: '\E28F' } 
+.ps-font-icon-text-height:before { content: '\E290' } 
+.ps-font-icon-text-width:before { content: '\E291' } 
+.ps-font-icon-th-large:before { content: '\E292' } 
+.ps-font-icon-th-list:before { content: '\E293' } 
+.ps-font-icon-th:before { content: '\E294' } 
+.ps-font-icon-themeisle:before { content: '\E295' } 
+.ps-font-icon-thermometer-0:before { content: '\E296' } 
+.ps-font-icon-thermometer-1:before { content: '\E297' } 
+.ps-font-icon-thermometer-2:before { content: '\E298' } 
+.ps-font-icon-thermometer-3:before { content: '\E299' } 
+.ps-font-icon-thermometer-4:before { content: '\E29A' } 
+.ps-font-icon-thermometer-empty:before { content: '\E29B' } 
+.ps-font-icon-thermometer-full:before { content: '\E29C' } 
+.ps-font-icon-thermometer-half:before { content: '\E29D' } 
+.ps-font-icon-thermometer-quarter:before { content: '\E29E' } 
+.ps-font-icon-thermometer-three-quarters:before { content: '\E29F' } 
+.ps-font-icon-thermometer:before { content: '\E2A0' } 
+.ps-font-icon-thumb-tack:before { content: '\E2A1' } 
+.ps-font-icon-thumbs-down:before { content: '\E2A2' } 
+.ps-font-icon-thumbs-o-down:before { content: '\E2A3' } 
+.ps-font-icon-thumbs-o-up:before { content: '\E2A4' } 
+.ps-font-icon-thumbs-up:before { content: '\E2A5' } 
+.ps-font-icon-ticket:before { content: '\E2A6' } 
+.ps-font-icon-times-circle-o:before { content: '\E2A7' } 
+.ps-font-icon-times-circle:before { content: '\E2A8' } 
+.ps-font-icon-times-rectangle-o:before { content: '\E2A9' } 
+.ps-font-icon-times-rectangle:before { content: '\E2AA' } 
+.ps-font-icon-times:before { content: '\E2AB' } 
+.ps-font-icon-tint:before { content: '\E2AC' } 
+.ps-font-icon-toggle-down:before { content: '\E2AD' } 
+.ps-font-icon-toggle-left:before { content: '\E2AE' } 
+.ps-font-icon-toggle-off:before { content: '\E2AF' } 
+.ps-font-icon-toggle-on:before { content: '\E2B0' } 
+.ps-font-icon-toggle-right:before { content: '\E2B1' } 
+.ps-font-icon-toggle-up:before { content: '\E2B2' } 
+.ps-font-icon-trademark:before { content: '\E2B3' } 
+.ps-font-icon-train:before { content: '\E2B4' } 
+.ps-font-icon-transgender-alt:before { content: '\E2B5' } 
+.ps-font-icon-transgender:before { content: '\E2B6' } 
+.ps-font-icon-trash-o:before { content: '\E2B7' } 
+.ps-font-icon-trash:before { content: '\E2B8' } 
+.ps-font-icon-tree:before { content: '\E2B9' } 
+.ps-font-icon-trello:before { content: '\E2BA' } 
+.ps-font-icon-tripadvisor:before { content: '\E2BB' } 
+.ps-font-icon-trophy:before { content: '\E2BC' } 
+.ps-font-icon-truck:before { content: '\E2BD' } 
+.ps-font-icon-try:before { content: '\E2BE' } 
+.ps-font-icon-tty:before { content: '\E2BF' } 
+.ps-font-icon-tumblr-square:before { content: '\E2C0' } 
+.ps-font-icon-tumblr:before { content: '\E2C1' } 
+.ps-font-icon-turkish-lira:before { content: '\E2C2' } 
+.ps-font-icon-tv:before { content: '\E2C3' } 
+.ps-font-icon-twitch:before { content: '\E2C4' } 
+.ps-font-icon-twitter-square:before { content: '\E2C5' } 
+.ps-font-icon-twitter:before { content: '\E2C6' } 
+.ps-font-icon-umbrella:before { content: '\E2C7' } 
+.ps-font-icon-underline:before { content: '\E2C8' } 
+.ps-font-icon-undo:before { content: '\E2C9' } 
+.ps-font-icon-universal-access:before { content: '\E2CA' } 
+.ps-font-icon-university:before { content: '\E2CB' } 
+.ps-font-icon-unlink:before { content: '\E2CC' } 
+.ps-font-icon-unlock-alt:before { content: '\E2CD' } 
+.ps-font-icon-unlock:before { content: '\E2CE' } 
+.ps-font-icon-unsorted:before { content: '\E2CF' } 
+.ps-font-icon-upload:before { content: '\E2D0' } 
+.ps-font-icon-usb:before { content: '\E2D1' } 
+.ps-font-icon-usd:before { content: '\E2D2' } 
+.ps-font-icon-user-circle-o:before { content: '\E2D3' } 
+.ps-font-icon-user-circle:before { content: '\E2D4' } 
+.ps-font-icon-user-md:before { content: '\E2D5' } 
+.ps-font-icon-user-o:before { content: '\E2D6' } 
+.ps-font-icon-user-plus:before { content: '\E2D7' } 
+.ps-font-icon-user-secret:before { content: '\E2D8' } 
+.ps-font-icon-user-times:before { content: '\E2D9' } 
+.ps-font-icon-user:before { content: '\E2DA' } 
+.ps-font-icon-users:before { content: '\E2DB' } 
+.ps-font-icon-vcard-o:before { content: '\E2DC' } 
+.ps-font-icon-vcard:before { content: '\E2DD' } 
+.ps-font-icon-venus-double:before { content: '\E2DE' } 
+.ps-font-icon-venus-mars:before { content: '\E2DF' } 
+.ps-font-icon-venus:before { content: '\E2E0' } 
+.ps-font-icon-viacoin:before { content: '\E2E1' } 
+.ps-font-icon-viadeo-square:before { content: '\E2E2' } 
+.ps-font-icon-viadeo:before { content: '\E2E3' } 
+.ps-font-icon-video-camera:before { content: '\E2E4' } 
+.ps-font-icon-vimeo-square:before { content: '\E2E5' } 
+.ps-font-icon-vimeo:before { content: '\E2E6' } 
+.ps-font-icon-vine:before { content: '\E2E7' } 
+.ps-font-icon-vk:before { content: '\E2E8' } 
+.ps-font-icon-volume-control-phone:before { content: '\E2E9' } 
+.ps-font-icon-volume-off:before { content: '\E2EA' } 
+.ps-font-icon-volume-down:before { content: '\E2EB' } 
+.ps-font-icon-volume-up:before { content: '\E2EC' } 
+.ps-font-icon-warning:before { content: '\E2ED' } 
+.ps-font-icon-wechat:before { content: '\E2EE' } 
+.ps-font-icon-weibo:before { content: '\E2EF' } 
+.ps-font-icon-weixin:before { content: '\E2F0' } 
+.ps-font-icon-whatsapp:before { content: '\E2F1' } 
+.ps-font-icon-wheelchair-alt:before { content: '\E2F2' } 
+.ps-font-icon-wheelchair:before { content: '\E2F3' } 
+.ps-font-icon-wifi:before { content: '\E2F4' } 
+.ps-font-icon-wikipedia-w:before { content: '\E2F5' } 
+.ps-font-icon-window-close-o:before { content: '\E2F6' } 
+.ps-font-icon-window-close:before { content: '\E2F7' } 
+.ps-font-icon-window-maximize:before { content: '\E2F8' } 
+.ps-font-icon-window-minimize:before { content: '\E2F9' } 
+.ps-font-icon-window-restore:before { content: '\E2FA' } 
+.ps-font-icon-windows:before { content: '\E2FB' } 
+.ps-font-icon-won:before { content: '\E2FC' } 
+.ps-font-icon-wordpress:before { content: '\E2FD' } 
+.ps-font-icon-wpbeginner:before { content: '\E2FE' } 
+.ps-font-icon-wpexplorer:before { content: '\E2FF' } 
+.ps-font-icon-wpforms:before { content: '\E300' } 
+.ps-font-icon-wrench:before { content: '\E301' } 
+.ps-font-icon-xing-square:before { content: '\E302' } 
+.ps-font-icon-xing:before { content: '\E303' } 
+.ps-font-icon-y-combinator-square:before { content: '\E304' } 
+.ps-font-icon-y-combinator:before { content: '\E305' } 
+.ps-font-icon-yahoo:before { content: '\E306' } 
+.ps-font-icon-yc-square:before { content: '\E307' } 
+.ps-font-icon-yc:before { content: '\E308' } 
+.ps-font-icon-yelp:before { content: '\E309' } 
+.ps-font-icon-yen:before { content: '\E30A' } 
+.ps-font-icon-yoast:before { content: '\E30B' } 
+.ps-font-icon-youtube-play:before { content: '\E30C' } 
+.ps-font-icon-youtube-square:before { content: '\E30D' } 
+.ps-font-icon-youtube:before { content: '\E30E' } 
+.ps-font-icon-aiotion:before { content: '\E30F' } 
+.ps-font-icon-aiotion-ap:before { content: '\E310' } 
+.ps-font-icon-kafka:before { content: '\E311' } 
+.ps-font-icon-kafka-broker:before { content: '\E312' } 
+.ps-font-icon-cassandra:before { content: '\E313' } 
+.ps-font-icon-cassandra-node:before { content: '\E314' } 
+.ps-font-icon-iot-gateway:before { content: '\E315' } 
+.ps-font-icon-sensor-group:before { content: '\E316' } 
+.ps-font-icon-env-sensor:before { content: '\E317' } 
+.ps-font-icon-vib-sensor:before { content: '\E318' } 
+.ps-font-icon-electric-sensor:before { content: '\E319' } 
+.ps-font-icon-mfl:before { content: '\E31A' } 
+.ps-font-icon-facilities:before { content: '\E31B' } 
+.ps-font-icon-factory:before { content: '\E31C' } 
+.ps-font-icon-facility:before { content: '\E31D' } 
+.ps-font-icon-crane:before { content: '\E31E' } 
+.ps-font-icon-hoist:before { content: '\E31F' } 
+.ps-font-icon-wirerope:before { content: '\E320' } 
+.ps-font-icon-sheave:before { content: '\E321' } 
+.ps-font-icon-hospital:before { content: '\E322' } 
+.ps-font-icon-hospital-room:before { content: '\E323' } 
+.ps-font-icon-thermoelectric:before { content: '\E324' } 
+.ps-font-icon-cold-pipe-line:before { content: '\E325' } 
+.ps-font-icon-heat-pipe-line:before { content: '\E326' } 
+.ps-font-icon-weather-partly-cloudy:before { content: '\E327' } 
+.ps-font-icon-weather-mainly-cloudy:before { content: '\E328' } 
+.ps-font-icon-weather-cloudy:before { content: '\E329' } 
+.ps-font-icon-temperature:before { content: '\E32A' } 
+.ps-font-icon-humidity:before { content: '\E32B' } 
+.ps-font-icon-wind-dir:before { content: '\E32C' } 
+.ps-font-icon-rain:before { content: '\E32D' } 
+.ps-font-icon-sleet:before { content: '\E32E' } 
+.ps-font-icon-unit-stack-group:before { content: '\E32F' } 
+.ps-font-icon-unit-stack:before { content: '\E330' } 
+.ps-font-icon-pir-sensor:before { content: '\E331' } 
+.ps-font-icon-temp-sensor:before { content: '\E332' } 
+.ps-font-icon-humi-sensor:before { content: '\E333' } 
+.ps-font-icon-lux-sensor:before { content: '\E334' } 
+.ps-font-icon-weather-forecast:before { content: '\E335' } 
+.ps-font-icon-main-transformer:before { content: '\E336' } 
+.ps-font-icon-gis:before { content: '\E337' } 
+.ps-font-icon-weather-sunny:before { content: '\E338' } 
+.ps-font-icon-snow:before { content: '\E339' } 
+.ps-font-icon-add-document:before { content: '\E33A' } 
+.ps-font-icon-add-creation:before { content: '\E33B' } 
+.ps-font-icon-add-next:before { content: '\E33C' } 
+.ps-font-icon-file-excel:before { content: '\E33D' } 
+.ps-font-icon-file-powerpoint:before { content: '\E33E' } 
+.ps-font-icon-file-word:before { content: '\E33F' } 
+.ps-font-icon-file-pdf:before { content: '\E340' } 
+.ps-font-icon-file-jpg:before { content: '\E341' } 
+.ps-font-icon-file-svg:before { content: '\E342' } 
+.ps-font-icon-file-psd:before { content: '\E343' } 
+.ps-font-icon-file-ai:before { content: '\E344' } 
+.ps-font-icon-file-xml:before { content: '\E345' } 
+.ps-font-icon-file-json:before { content: '\E346' } 
+.ps-font-icon-columns-1:before { content: '\E347' } 
+.ps-font-icon-columns-2:before { content: '\E348' } 
+.ps-font-icon-columns-3:before { content: '\E349' } 
+.ps-font-icon-co2:before { content: '\E34A' } 
+.ps-font-icon-electirc-power:before { content: '\E34B' } 
+.ps-font-icon-voltage:before { content: '\E34C' } 
+.ps-font-icon-electirc-current:before { content: '\E34D' } 
+.ps-font-icon-fullscreen:before { content: '\E34E' } 
+.ps-font-icon-fullscreen-exit:before { content: '\E34F' } 
+.ps-font-icon-polygon:before { content: '\E350' } 
+.ps-font-icon-rectangle:before { content: '\E351' } 
+.ps-font-icon-triangle:before { content: '\E352' } 
+.ps-font-icon-draw-line:before { content: '\E353' } 
+.ps-font-icon-purification-plant:before { content: '\E354' } 
+.ps-font-icon-gas-lel:before { content: '\E355' } 
+.ps-font-icon-gas:before { content: '\E356' } 
+.ps-font-icon-volumetric-flow:before { content: '\E357' } 
+.ps-font-icon-mass-flow:before { content: '\E358' } 
+.ps-font-icon-wind-speed:before { content: '\E359' } 
+.ps-font-icon-soil-moisture:before { content: '\E35A' } 
+.ps-font-icon-acidity:before { content: '\E35B' } 
+.ps-font-icon-rain-fall:before { content: '\E35C' } 
+.ps-font-icon-skull:before { content: '\E35D' } 
+.ps-font-icon-rulechain:before { content: '\E35E' } 
+.ps-font-icon-udp-trigger:before { content: '\E35F' } 
+.ps-font-icon-udp-send:before { content: '\E360' } 
+.ps-font-icon-http:before { content: '\E361' } 
+.ps-font-icon-mqtt:before { content: '\E362' } 
+.ps-font-icon-modbus-read:before { content: '\E363' } 
+.ps-font-icon-modbus-write:before { content: '\E364' } 
+.ps-font-icon-monitoring:before { content: '\E365' } 
+.ps-font-icon-ai:before { content: '\E366' } 
+.ps-font-icon-ai-model:before { content: '\E367' } 
+.ps-font-icon-anomaly-detection:before { content: '\E368' } 
+.ps-font-icon-counter-get:before { content: '\E369' } 
+.ps-font-icon-counter-set:before { content: '\E36A' } 
+.ps-font-icon-threshold:before { content: '\E36B' } 
+.ps-font-icon-fine-dust:before { content: '\E36C' } 
+.ps-font-icon-exit:before { content: '\E36D' } 
+.ps-font-icon-aws-iot:before { content: '\E36E' } 
+.ps-font-icon-aws:before { content: '\E36F' } 
+.ps-font-icon-resource:before { content: '\E370' } 
+.ps-font-icon-integration-1:before { content: '\E371' } 
+.ps-font-icon-integration-2:before { content: '\E372' } 
+.ps-font-icon-plus-square-edge:before { content: '\E373' } 
+.ps-font-icon-minus-square-edge:before { content: '\E374' } 
+.ps-font-icon-scatter-chart:before { content: '\E375' } 
+.ps-font-icon-heat-map:before { content: '\E376' } 
+.ps-font-icon-tree-map:before { content: '\E377' } 
+.ps-font-icon-device-create:before { content: '\E378' } 
+.ps-font-icon-device-update:before { content: '\E379' } 
+.ps-font-icon-device-delete:before { content: '\E37A' } 
+.ps-font-icon-device-query:before { content: '\E37B' } 
+.ps-font-icon-bar-chart-1:before { content: '\E37C' } 
+.ps-font-icon-column-bar-1:before { content: '\E37D' } 
+.ps-font-icon-column-bar-2:before { content: '\E37E' } 
+.ps-font-icon-column-bar-3:before { content: '\E37F' } 
+.ps-font-icon-static-group:before { content: '\E380' } 
+.ps-font-icon-smart-group:before { content: '\E381' } 
+.ps-font-icon-sun-os:before { content: '\E382' } 
+.ps-font-icon-hp-ux:before { content: '\E383' } 
+.ps-font-icon-hp-ux-o:before { content: '\E384' } 
+.ps-font-icon-aix:before { content: '\E385' } 
+.ps-font-icon-thunderbolt-1:before { content: '\E386' } 
+.ps-font-icon-thunderbolt-2:before { content: '\E387' } 
+.ps-font-icon-thunderbolt-arrow:before { content: '\E388' } 
+.ps-font-icon-kite:before { content: '\E389' } 
+.ps-font-icon-kite-o:before { content: '\E38A' } 
+.ps-font-icon-fire-1:before { content: '\E38B' } 
+.ps-font-icon-fire-2:before { content: '\E38C' } 
+.ps-font-icon-boat-1:before { content: '\E38D' } 
+.ps-font-icon-boat-2:before { content: '\E38E' } 
+.ps-font-icon-boat-o:before { content: '\E38F' } 
+.ps-font-icon-hp:before { content: '\E390' } 
+.ps-font-icon-agent-1:before { content: '\E391' } 
+.ps-font-icon-agent-device:before { content: '\E392' } 
+.ps-font-icon-agentless-device:before { content: '\E393' } 
+.ps-font-icon-audit-job:before { content: '\E394' } 
+.ps-font-icon-audit-job-o:before { content: '\E395' } 
+.ps-font-icon-batch-job:before { content: '\E396' } 
+.ps-font-icon-batch-job-o:before { content: '\E397' } 
+.ps-font-icon-compliance-job:before { content: '\E398' } 
+.ps-font-icon-compliance-job-o:before { content: '\E399' } 
+.ps-font-icon-business-object:before { content: '\E39A' } 
+.ps-font-icon-compliance:before { content: '\E39B' } 
+.ps-font-icon-configuration-file:before { content: '\E39C' } 
+.ps-font-icon-connected-switch:before { content: '\E39D' } 
+.ps-font-icon-cpu:before { content: '\E39E' } 
+.ps-font-icon-cpu-1:before { content: '\E39F' } 
+.ps-font-icon-device:before { content: '\E3A0' } 
+.ps-font-icon-disk:before { content: '\E3A1' } 
+.ps-font-icon-file-collect:before { content: '\E3A2' } 
+.ps-font-icon-file-deploy-job:before { content: '\E3A3' } 
+.ps-font-icon-file-library:before { content: '\E3A4' } 
+.ps-font-icon-file-system:before { content: '\E3A5' } 
+.ps-font-icon-installed-software:before { content: '\E3A6' } 
+.ps-font-icon-job:before { content: '\E3A7' } 
+.ps-font-icon-library:before { content: '\E3A8' } 
+.ps-font-icon-memory:before { content: '\E3A9' } 
+.ps-font-icon-network-card:before { content: '\E3AA' } 
+.ps-font-icon-network-custom-object:before { content: '\E3AB' } 
+.ps-font-icon-network-custom-objects:before { content: '\E3AC' } 
+.ps-font-icon-network-custom-cli-object:before { content: '\E3AD' } 
+.ps-font-icon-network-custom-cli-objects:before { content: '\E3AE' } 
+.ps-font-icon-network-device:before { content: '\E3AF' } 
+.ps-font-icon-network-interface:before { content: '\E3B0' } 
+.ps-font-icon-network-script-job:before { content: '\E3B1' } 
+.ps-font-icon-network-system-information:before { content: '\E3B2' } 
+.ps-font-icon-operating-system:before { content: '\E3B3' } 
+.ps-font-icon-script-job:before { content: '\E3B4' } 
+.ps-font-icon-script-library:before { content: '\E3B5' } 
+.ps-font-icon-server-device:before { content: '\E3B6' } 
+.ps-font-icon-software-packages:before { content: '\E3B7' } 
+.ps-font-icon-server-device-o:before { content: '\E3B8' } 
+.ps-font-icon-software-package-deploy-job:before { content: '\E3B9' } 
+.ps-font-icon-system-information:before { content: '\E3BA' } 
+.ps-font-icon-system-object:before { content: '\E3BB' } 
+.ps-font-icon-windows-application:before { content: '\E3BC' } 
+.ps-font-icon-windows-service:before { content: '\E3BD' } 
+.ps-font-icon-windows-update:before { content: '\E3BE' } 
+.ps-font-icon-windows-update-job:before { content: '\E3BF' } 
+.ps-font-icon-wheel:before { content: '\E3C0' } 
+.ps-font-icon-view-dashboard:before { content: '\E3C1' } 
+.ps-font-icon-touch:before { content: '\E3C2' } 
+.ps-font-icon-custom-object:before { content: '\E3C3' } 
+.ps-font-icon-custom-objects:before { content: '\E3C4' } 
+.ps-font-icon-check-circle-exclamation-mark:before { content: '\E3C5' } 
+.ps-font-icon-light-bulb-on:before { content: '\E3C6' } 
+.ps-font-icon-light-bulb-off:before { content: '\E3C7' } 
+.ps-font-icon-group-1:before { content: '\E3C8' } 
+.ps-font-icon-fire-3:before { content: '\E3C9' } 
+.ps-font-icon-fire-4:before { content: '\E3CA' } 
+.ps-font-icon-fire-5:before { content: '\E3CB' } 
+.ps-font-icon-smart-group-1:before { content: '\E3CC' } 
+.ps-font-icon-link-1:before { content: '\E3CD' } 
+.ps-font-icon-networkrealservers:before { content: '\E3CE' } 
+.ps-font-icon-filestack:before { content: '\E3CF' } 
+.ps-font-icon-polestarlogo:before { content: '\E3D0' } 
+.ps-font-icon-apmwebpage:before { content: '\E3D1' } 
+.ps-font-icon-win-ok:before { content: '\E3D2' } 
+.ps-font-icon-ami:before { content: '\E3D3' } 
+.ps-font-icon-amis:before { content: '\E3D4' } 
+.ps-font-icon-storageraidgroup:before { content: '\E3D5' } 
+.ps-font-icon-transferdata:before { content: '\E3D6' } 
+.ps-font-icon-filechange:before { content: '\E3D7' } 
+.ps-font-icon-autoscalling:before { content: '\E3D8' } 
+.ps-font-icon-youtube-1:before { content: '\E3D9' } 
+.ps-font-icon-youtube-sign:before { content: '\E3DA' } 
+.ps-font-icon-configuration-check:before { content: '\E3DB' } 
+.ps-font-icon-aws-1:before { content: '\E3DC' } 
+.ps-font-icon-region:before { content: '\E3DD' } 
+.ps-font-icon-file-log:before { content: '\E3DE' } 
+.ps-font-icon-ec2:before { content: '\E3DF' } 
+.ps-font-icon-elasticbs:before { content: '\E3E0' } 
+.ps-font-icon-elasticip:before { content: '\E3E1' } 
+.ps-font-icon-elasticips:before { content: '\E3E2' } 
+.ps-font-icon-awsimages:before { content: '\E3E3' } 
+.ps-font-icon-instanceobj:before { content: '\E3E4' } 
+.ps-font-icon-instancelist:before { content: '\E3E5' } 
+.ps-font-icon-key-1:before { content: '\E3E6' } 
+.ps-font-icon-awsnetworkinterface:before { content: '\E3E7' } 
+.ps-font-icon-awsnetworkinterfaces:before { content: '\E3E8' } 
+.ps-font-icon-networksecurity:before { content: '\E3E9' } 
+.ps-font-icon-firewall-01:before { content: '\E3EA' } 
+.ps-font-icon-securityapproved:before { content: '\E3EB' } 
+.ps-font-icon-awssnapshot:before { content: '\E3EC' } 
+.ps-font-icon-awssnapshots:before { content: '\E3ED' } 
+.ps-font-icon-awsvolumes:before { content: '\E3EE' } 
+.ps-font-icon-udbcache:before { content: '\E3EF' } 
+.ps-font-icon-cache:before { content: '\E3F0' } 
+.ps-font-icon-redolog:before { content: '\E3F1' } 
+.ps-font-icon-sybaseprocesses:before { content: '\E3F2' } 
+.ps-font-icon-unisqlvolume:before { content: '\E3F3' } 
+.ps-font-icon-unisqlvolumes:before { content: '\E3F4' } 
+.ps-font-icon-hrstorages:before { content: '\E3F5' } 
+.ps-font-icon-oracletablespace:before { content: '\E3F6' } 
+.ps-font-icon-oracletablespaces:before { content: '\E3F7' } 
+.ps-font-icon-udblock:before { content: '\E3F8' } 
+.ps-font-icon-win-warning:before { content: '\E3F9' } 
+.ps-font-icon-networkgroupsessions:before { content: '\E3FA' } 
+.ps-font-icon-folder-cir:before { content: '\E3FB' } 
+.ps-font-icon-network-01:before { content: '\E3FC' } 
+.ps-font-icon-udbdirectrw:before { content: '\E3FD' } 
+.ps-font-icon-micropartitioning01:before { content: '\E3FE' } 
+.ps-font-icon-memorygroup:before { content: '\E3FF' } 
+.ps-font-icon-wave:before { content: '\E400' } 
+.ps-font-icon-filegroup:before { content: '\E401' } 
+.ps-font-icon-fms8leak:before { content: '\E402' } 
+.ps-font-icon-fms15voltage:before { content: '\E403' } 
+.ps-font-icon-fms25thermometer:before { content: '\E404' } 
+.ps-font-icon-fms2ups:before { content: '\E405' } 
+.ps-font-icon-fms6ups:before { content: '\E406' } 
+.ps-font-icon-domain:before { content: '\E407' } 
+.ps-font-icon-server-01:before { content: '\E408' } 
+.ps-font-icon-server-02:before { content: '\E409' } 
+.ps-font-icon-server-03:before { content: '\E40A' } 
+.ps-font-icon-server-04:before { content: '\E40B' } 
+.ps-font-icon-server-05:before { content: '\E40C' } 
+.ps-font-icon-laptop06:before { content: '\E40D' } 
+.ps-font-icon-modulesinfo:before { content: '\E40E' } 
+.ps-font-icon-fan-02:before { content: '\E40F' } 
+.ps-font-icon-fwsession:before { content: '\E410' } 
+.ps-font-icon-networkslb:before { content: '\E411' } 
+.ps-font-icon-networkslbs:before { content: '\E412' } 
+.ps-font-icon-temperature-1:before { content: '\E413' } 
+.ps-font-icon-temperaturegroup:before { content: '\E414' } 
+.ps-font-icon-port:before { content: '\E415' } 
+.ps-font-icon-network-16:before { content: '\E416' } 
+.ps-font-icon-tcpsession:before { content: '\E417' } 
+.ps-font-icon-networknode:before { content: '\E418' } 
+.ps-font-icon-networknode01:before { content: '\E419' } 
+.ps-font-icon-jobjob:before { content: '\E41A' } 
+.ps-font-icon-jobgroup:before { content: '\E41B' } 
+.ps-font-icon-mssqlbuffercache:before { content: '\E41C' } 
+.ps-font-icon-voicegateway:before { content: '\E41D' } 
+.ps-font-icon-network-04:before { content: '\E41E' } 
+.ps-font-icon-serverswap:before { content: '\E41F' } 
+.ps-font-icon-flowchart-02:before { content: '\E420' } 
+.ps-font-icon-bufferpool:before { content: '\E421' } 
+.ps-font-icon-logfile02:before { content: '\E422' } 
+.ps-font-icon-cpugroup:before { content: '\E423' } 
+.ps-font-icon-network-memory:before { content: '\E424' } 
+.ps-font-icon-netstatmonitor01:before { content: '\E425' } 
+.ps-font-icon-netstat02:before { content: '\E426' } 
+.ps-font-icon-pingmonitor:before { content: '\E427' } 
+.ps-font-icon-win-monitoring:before { content: '\E428' } 
+.ps-font-icon-mailgroup:before { content: '\E429' } 
+.ps-font-icon-http-1:before { content: '\E42A' } 
+.ps-font-icon-windowservicemonitor:before { content: '\E42B' } 
+.ps-font-icon-performancecounters:before { content: '\E42C' } 
+.ps-font-icon-storagegroup:before { content: '\E42D' } 
+.ps-font-icon-piechart-10:before { content: '\E42E' } 
+.ps-font-icon-network-share:before { content: '\E42F' } 
+.ps-font-icon-income:before { content: '\E430' } 
+.ps-font-icon-server-08:before { content: '\E431' } 
+.ps-font-icon-storage-workflow:before { content: '\E432' } 
+.ps-font-icon-disk-01:before { content: '\E433' } 
+.ps-font-icon-disk-02:before { content: '\E434' } 
+.ps-font-icon-building-03:before { content: '\E435' } 
+.ps-font-icon-networkgroup:before { content: '\E436' } 
+.ps-font-icon-cloud-alt-glyph:before { content: '\E437' } 
+.ps-font-icon-vmware:before { content: '\E438' } 
+.ps-font-icon-webspherewebspheresystem:before { content: '\E439' } 
+.ps-font-icon-waswassystem:before { content: '\E43A' } 
+.ps-font-icon-shufflearrow:before { content: '\E43B' } 
+.ps-font-icon-circle-blank:before { content: '\E43C' } 
+.ps-font-icon-time:before { content: '\E43D' } 
+.ps-font-icon-hdd:before { content: '\E43E' } 
+.ps-font-icon-cpu01:before { content: '\E43F' } 
+.ps-font-icon-location:before { content: '\E440' } 
+.ps-font-icon-ar:before { content: '\E441' } 
+.ps-font-icon-gltf:before { content: '\E442' } 
+.ps-font-icon-file-read:before { content: '\E443' } 
+.ps-font-icon-file-write:before { content: '\E444' } 
+.ps-font-icon-file-csv:before { content: '\E445' } 
+.ps-font-icon-storage-read:before { content: '\E446' } 
+.ps-font-icon-storage-write:before { content: '\E447' } 
+.ps-font-icon-sql:before { content: '\E448' } 
+.ps-font-icon-sigma:before { content: '\E449' } 
+.ps-font-icon-license:before { content: '\E44A' } 
+.ps-font-icon-windowslogo:before { content: '\E44B' } 
+.ps-font-icon-linux-circle:before { content: '\E44C' } 
+.ps-font-icon-wirerope-broken:before { content: '\E44D' } 
+.ps-font-icon-wirerope-corruption:before { content: '\E44E' } 
+.ps-font-icon-wirerope-abrasion:before { content: '\E44F' } 
+.ps-font-icon-glob:before { content: '\E450' } 
+.ps-font-icon-directconnectgateways:before { content: '\E451' } 
+.ps-font-icon-directconnectgateway:before { content: '\E452' } 
+.ps-font-icon-awsconfig:before { content: '\E453' } 
+.ps-font-icon-apigateways:before { content: '\E454' } 
+.ps-font-icon-directconnect:before { content: '\E455' } 
+.ps-font-icon-ec2-02:before { content: '\E456' } 
+.ps-font-icon-rds:before { content: '\E457' } 
+.ps-font-icon-s3:before { content: '\E458' } 
+.ps-font-icon-vpcs:before { content: '\E459' } 
+.ps-font-icon-efses:before { content: '\E45A' } 
+.ps-font-icon-lambda:before { content: '\E45B' } 
+.ps-font-icon-apigateway:before { content: '\E45C' } 
+.ps-font-icon-connections:before { content: '\E45D' } 
+.ps-font-icon-connection:before { content: '\E45E' } 
+.ps-font-icon-lag:before { content: '\E45F' } 
+.ps-font-icon-ebs:before { content: '\E460' } 
+.ps-font-icon-autoscalinggroups:before { content: '\E461' } 
+.ps-font-icon-elb:before { content: '\E462' } 
+.ps-font-icon-autoscaling-02:before { content: '\E463' } 
+.ps-font-icon-awssnapshots-02:before { content: '\E464' } 
+.ps-font-icon-awsvolumes-02:before { content: '\E465' } 
+.ps-font-icon-awssnapshot-02:before { content: '\E466' } 
+.ps-font-icon-instanceobj-02:before { content: '\E467' } 
+.ps-font-icon-awsvolume-02:before { content: '\E468' } 
+.ps-font-icon-elb-classic:before { content: '\E469' } 
+.ps-font-icon-keypairs:before { content: '\E46A' } 
+.ps-font-icon-efs:before { content: '\E46B' } 
+.ps-font-icon-lambdafunction:before { content: '\E46C' } 
+.ps-font-icon-bucket:before { content: '\E46D' } 
+.ps-font-icon-vpc:before { content: '\E46E' } 
+.ps-font-icon-vmportgroup:before { content: '\E46F' } 
+.ps-font-icon-emergencylight:before { content: '\E470' } 
+.ps-font-icon-kubernetes-k8s:before { content: '\E471' } 
+.ps-font-icon-cluster:before { content: '\E472' } 
+.ps-font-icon-cluster-roles:before { content: '\E473' } 
+.ps-font-icon-cluster-role:before { content: '\E474' } 
+.ps-font-icon-container-images:before { content: '\E475' } 
+.ps-font-icon-container-image:before { content: '\E476' } 
+.ps-font-icon-namespaces:before { content: '\E477' } 
+.ps-font-icon-namespace:before { content: '\E478' } 
+.ps-font-icon-nodes:before { content: '\E479' } 
+.ps-font-icon-node:before { content: '\E47A' } 
+.ps-font-icon-persistent-volumes:before { content: '\E47B' } 
+.ps-font-icon-persistent-volume:before { content: '\E47C' } 
+.ps-font-icon-storage-classes:before { content: '\E47D' } 
+.ps-font-icon-storage-class:before { content: '\E47E' } 
+.ps-font-icon-config-maps:before { content: '\E47F' } 
+.ps-font-icon-config-map:before { content: '\E480' } 
+.ps-font-icon-persistent-volume-claims:before { content: '\E481' } 
+.ps-font-icon-persistent-volume-claim:before { content: '\E482' } 
+.ps-font-icon-secrets:before { content: '\E483' } 
+.ps-font-icon-secret:before { content: '\E484' } 
+.ps-font-icon-endpoints:before { content: '\E485' } 
+.ps-font-icon-endpoint:before { content: '\E486' } 
+.ps-font-icon-ingresses:before { content: '\E487' } 
+.ps-font-icon-ingress:before { content: '\E488' } 
+.ps-font-icon-services:before { content: '\E489' } 
+.ps-font-icon-service:before { content: '\E48A' } 
+.ps-font-icon-containers:before { content: '\E48B' } 
+.ps-font-icon-container:before { content: '\E48C' } 
+.ps-font-icon-container-cronjobs:before { content: '\E48D' } 
+.ps-font-icon-container-cronjob:before { content: '\E48E' } 
+.ps-font-icon-daemon-sets:before { content: '\E48F' } 
+.ps-font-icon-daemon-set:before { content: '\E490' } 
+.ps-font-icon-deployments:before { content: '\E491' } 
+.ps-font-icon-deployment:before { content: '\E492' } 
+.ps-font-icon-horizontal-pod-autoscalers:before { content: '\E493' } 
+.ps-font-icon-horizontal-pod-autoscaler:before { content: '\E494' } 
+.ps-font-icon-container-job:before { content: '\E495' } 
+.ps-font-icon-container-jobs:before { content: '\E496' } 
+.ps-font-icon-pods:before { content: '\E497' } 
+.ps-font-icon-pod:before { content: '\E498' } 
+.ps-font-icon-replica-sets:before { content: '\E499' } 
+.ps-font-icon-replica-set:before { content: '\E49A' } 
+.ps-font-icon-replication-controllers:before { content: '\E49B' } 
+.ps-font-icon-replication-controller:before { content: '\E49C' } 
+.ps-font-icon-stateful-sets:before { content: '\E49D' } 
+.ps-font-icon-stateful-set:before { content: '\E49E' } 
+.ps-font-icon-amazon-eks:before { content: '\E49F' } 
+.ps-font-icon-pivotal-pks:before { content: '\E4A0' } 
+.ps-font-icon-google-gke:before { content: '\E4A1' } 
+.ps-font-icon-azure-aks:before { content: '\E4A2' } 
+.ps-font-icon-redhat-openshift:before { content: '\E4A3' } 
+.ps-font-icon-file-explorer:before { content: '\E4A4' } 
+.ps-font-icon-registry:before { content: '\E4A5' } 
+.ps-font-icon-registry-value:before { content: '\E4A6' } 
+.ps-font-icon-route:before { content: '\E4A7' } 
+.ps-font-icon-routes:before { content: '\E4A8' } 
+.ps-font-icon-resource-quota:before { content: '\E4A9' } 
+.ps-font-icon-resource-quotas:before { content: '\E4AA' } 
+.ps-font-icon-firmware:before { content: '\E4AB' } 
+.ps-font-icon-gateway-group:before { content: '\E4AC' } 
+.ps-font-icon-cloudfront:before { content: '\E4AD' } 
+.ps-font-icon-cloudfront-web:before { content: '\E4AE' } 
+.ps-font-icon-cloudfront-rtmp:before { content: '\E4AF' } 
+.ps-font-icon-route53:before { content: '\E4B0' } 
+.ps-font-icon-route53-domains:before { content: '\E4B1' } 
+.ps-font-icon-route53-domain:before { content: '\E4B2' } 
+.ps-font-icon-route53-healthchecks:before { content: '\E4B3' } 
+.ps-font-icon-route53-healthcheck:before { content: '\E4B4' } 
+.ps-font-icon-route53-hostedzones:before { content: '\E4B5' } 
+.ps-font-icon-route53-hostedzone:before { content: '\E4B6' } 
+.ps-font-icon-dynamodb:before { content: '\E4B7' } 
+.ps-font-icon-dynamodb-table:before { content: '\E4B8' } 
+.ps-font-icon-dynamodb-indexes:before { content: '\E4B9' } 
+.ps-font-icon-dynamodb-index:before { content: '\E4BA' } 
+.ps-font-icon-solaris:before { content: '\E4BB' } 
+.ps-font-icon-hplogo:before { content: '\E4BC' } 
+.ps-font-icon-error-round:before { content: '\E4BD' } 
+.ps-font-icon-error-square:before { content: '\E4BE' } 
+.ps-font-icon-more:before { content: '\E4BF' } 
+.ps-font-icon-sap:before { content: '\E4C0' } 
+.ps-font-icon-glyph1217:before { content: '\E4C1' } 
