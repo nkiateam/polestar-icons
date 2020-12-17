@@ -41,7 +41,7 @@ export default ({
   /* margin-left: .2em; */
  
   /* you can be more comfortable with increased icons size */
-  font-size: 110%;
+  /* font-size: 110%; */
  
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
