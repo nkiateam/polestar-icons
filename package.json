@@ -90,7 +90,7 @@
     "postcss-preset-env": "^6.7.0",
     "postcss-safe-parser": "^4.0.2",
     "react": "^16.13.1",
-    "react-dev-utils": "^9.1.0",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.13.1",
     "react-hot-loader": "^4.12.21",
     "react-styleguidist": "^10.2.1",
