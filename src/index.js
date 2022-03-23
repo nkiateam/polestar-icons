@@ -137,7 +137,7 @@ class Icon extends React.Component {
         animationDuration: 15,
         innerAnimationType: 'always',
         innerAnimationDuration: 15,
-        onClick: () => {},
+        onClick: () => { },
     };
 
     // constructor(props) {
@@ -178,8 +178,7 @@ class Icon extends React.Component {
             animation,
             animationType,
         );
-        const iconClassName = `polestar-icon ${prefix}-${name} ${iconSize} ${className ||
-            ''} ${stackRatioClass} ${animationClassName}`;
+        const iconClassName = `polestar-icon ${prefix}-${name} ${iconSize} ${className || ''} ${stackRatioClass} ${animationClassName}`;
         const iconStyle = {
             ...style,
             color,
@@ -255,9 +254,9 @@ class Icon extends React.Component {
                         className,
                         {
                             'ps-svg-size':
-                                typeof size !== 'undefined' ||
-                                (typeof this.props.width === 'undefined' &&
-                                    typeof this.props.height === 'undefined'),
+                                typeof size !== 'undefined'
+                                || (typeof this.props.width === 'undefined'
+                                    && typeof this.props.height === 'undefined'),
                         },
                         { [`ps-svg-size-${size}x`]: typeof size === 'number' },
                         { [`ps-svg-size-${size}`]: typeof size === 'string' },
