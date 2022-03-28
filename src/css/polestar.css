@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'polestar';
-  src: url('../fonts/polestar.eot?1648021743');
-  src: url('../fonts/polestar.eot?1648021743#iefix') format('embedded-opentype'),
-       url('../fonts/polestar.woff2?1648021743') format('woff2'),
-       url('../fonts/polestar.woff?1648021743') format('woff'),
-       url('../fonts/polestar.ttf?1648021743') format('truetype'),
-       url('../fonts/polestar.svg?1648021743#fontello') format('svg');
+  src: url('../fonts/polestar.eot?1648434883');
+  src: url('../fonts/polestar.eot?1648434883#iefix') format('embedded-opentype'),
+       url('../fonts/polestar.woff2?1648434883') format('woff2'),
+       url('../fonts/polestar.woff?1648434883') format('woff'),
+       url('../fonts/polestar.ttf?1648434883') format('truetype'),
+       url('../fonts/polestar.svg?1648434883#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1234,7 +1234,7 @@
 .ps-font-icon-google-gke:before { content: '\E4A1' } 
 .ps-font-icon-azure-aks:before { content: '\E4A2' } 
 .ps-font-icon-redhat-openshift:before { content: '\E4A3' } 
-.ps-font-icon-file-explorer:before { content: '\E4A4' } 
+.ps-font-icon-NameMe.1233:before { content: '\E4A4' } 
 .ps-font-icon-registry:before { content: '\E4A5' } 
 .ps-font-icon-registry-value:before { content: '\E4A6' } 
 .ps-font-icon-route:before { content: '\E4A7' } 
@@ -1268,19 +1268,29 @@
 .ps-font-icon-arrest-hook:before { content: '\E4C3' } 
 .ps-font-icon-street-lamp:before { content: '\E4C4' } 
 .ps-font-icon-bar-chart-2:before { content: '\E4C5' } 
-.ps-font-icon-building-1:before { content: '\E4C6' } 
-.ps-font-icon-building-2:before { content: '\E4C7' } 
-.ps-font-icon-certificate-o:before { content: '\E4C8' } 
-.ps-font-icon-clipboard-text-o:before { content: '\E4C9' } 
-.ps-font-icon-dictionary:before { content: '\E4CA' } 
-.ps-font-icon-edit-o:before { content: '\E4CB' } 
-.ps-font-icon-hard-disk:before { content: '\E4CC' } 
-.ps-font-icon-layer-o:before { content: '\E4CD' } 
-.ps-font-icon-layout-o:before { content: '\E4CE' } 
-.ps-font-icon-popup-o:before { content: '\E4CF' } 
-.ps-font-icon-rounded-close:before { content: '\E4D0' } 
-.ps-font-icon-rounded-folder-o:before { content: '\E4D1' } 
-.ps-font-icon-rounded-star-o:before { content: '\E4D2' } 
-.ps-font-icon-rounded-star:before { content: '\E4D3' } 
-.ps-font-icon-settings-o:before { content: '\E4D4' } 
-.ps-font-icon-task-list-o:before { content: '\E4D5' } 
+.ps-font-icon-book-formula:before { content: '\E4C6' } 
+.ps-font-icon-building-1:before { content: '\E4C7' } 
+.ps-font-icon-building-2:before { content: '\E4C8' } 
+.ps-font-icon-certificate-o:before { content: '\E4C9' } 
+.ps-font-icon-clipboard-text-o:before { content: '\E4CA' } 
+.ps-font-icon-comment-check:before { content: '\E4CB' } 
+.ps-font-icon-database-o:before { content: '\E4CC' } 
+.ps-font-icon-desktop-multiple:before { content: '\E4CD' } 
+.ps-font-icon-dictionary:before { content: '\E4CE' } 
+.ps-font-icon-edit-o:before { content: '\E4CF' } 
+.ps-font-icon-file-search-o:before { content: '\E4D0' } 
+.ps-font-icon-hard-disk:before { content: '\E4D1' } 
+.ps-font-icon-layer-o:before { content: '\E4D2' } 
+.ps-font-icon-layout-o:before { content: '\E4D3' } 
+.ps-font-icon-logout-o:before { content: '\E4D4' } 
+.ps-font-icon-popup:before { content: '\E4D5' } 
+.ps-font-icon-rounded-close:before { content: '\E4D6' } 
+.ps-font-icon-rounded-folder-open:before { content: '\E4D7' } 
+.ps-font-icon-rounded-folder:before { content: '\E4D8' } 
+.ps-font-icon-rounded-star-o:before { content: '\E4D9' } 
+.ps-font-icon-rounded-star:before { content: '\E4DA' } 
+.ps-font-icon-settings-o:before { content: '\E4DB' } 
+.ps-font-icon-task-list:before { content: '\E4DC' } 
+.ps-font-icon-task-list-add:before { content: '\E4DD' } 
+.ps-font-icon-task-list-error:before { content: '\E4DE' } 
+.ps-font-icon-task-list-time:before { content: '\E4DF' } 
