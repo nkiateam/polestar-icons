@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 const SvgLinux = (props) => (
     <svg
         id="linux_svg__linux"
@@ -11,6 +10,7 @@ const SvgLinux = (props) => (
             enableBackground: 'new 0 0 112 136',
         }}
         xmlSpace="preserve"
+        role="img"
         {...props}
     >
         <style>
@@ -40,5 +40,4 @@ const SvgLinux = (props) => (
         />
     </svg>
 );
-
 export default SvgLinux;

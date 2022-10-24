@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 const SvgAix = (props) => (
     <svg
         id="aix_svg__aix"
@@ -11,6 +10,7 @@ const SvgAix = (props) => (
             enableBackground: 'new 0 0 136 136',
         }}
         xmlSpace="preserve"
+        role="img"
         {...props}
     >
         <style>{'.aix_svg__st2{fill:#fff}'}</style>
@@ -32,5 +32,4 @@ const SvgAix = (props) => (
         />
     </svg>
 );
-
 export default SvgAix;

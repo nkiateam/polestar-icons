@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 const SvgWindowServiceMonitor = (props) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -8,6 +7,7 @@ const SvgWindowServiceMonitor = (props) => (
             enableBackground: 'new 0 0 32 32',
         }}
         xmlSpace="preserve"
+        role="img"
         {...props}
     >
         <switch>
@@ -17,5 +17,4 @@ const SvgWindowServiceMonitor = (props) => (
         </switch>
     </svg>
 );
-
 export default SvgWindowServiceMonitor;

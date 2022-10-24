@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 const SvgNetworkSwitch = (props) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -9,6 +8,7 @@ const SvgNetworkSwitch = (props) => (
             enableBackground: 'new 0 0 42.283 33.96',
         }}
         xmlSpace="preserve"
+        role="img"
         {...props}
     >
         <linearGradient
@@ -433,5 +433,4 @@ const SvgNetworkSwitch = (props) => (
         />
     </svg>
 );
-
 export default SvgNetworkSwitch;

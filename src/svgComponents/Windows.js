@@ -1,7 +1,11 @@
 import * as React from 'react';
-
 const SvgWindows = (props) => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" {...props}>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+        role="img"
+        {...props}
+    >
         <path
             style={{
                 fill: '#7dc800',
@@ -28,5 +32,4 @@ const SvgWindows = (props) => (
         />
     </svg>
 );
-
 export default SvgWindows;

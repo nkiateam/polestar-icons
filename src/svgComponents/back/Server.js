@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 const SvgServer = (props) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -9,6 +8,7 @@ const SvgServer = (props) => (
             enableBackground: 'new 0 0 32.019 51.593',
         }}
         xmlSpace="preserve"
+        role="img"
         {...props}
     >
         <linearGradient
@@ -1097,5 +1097,4 @@ const SvgServer = (props) => (
         />
     </svg>
 );
-
 export default SvgServer;

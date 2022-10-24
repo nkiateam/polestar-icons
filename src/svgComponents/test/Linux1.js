@@ -1,11 +1,11 @@
 import * as React from 'react';
-
 const SvgLinux1 = (props) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width={50}
         height={50}
         xmlSpace="preserve"
+        role="img"
         {...props}
     >
         <g fillRule="evenodd" clipRule="evenodd">
@@ -6870,5 +6870,4 @@ const SvgLinux1 = (props) => (
         </g>
     </svg>
 );
-
 export default SvgLinux1;

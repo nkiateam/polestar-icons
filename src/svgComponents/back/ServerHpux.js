@@ -1,11 +1,11 @@
 import * as React from 'react';
-
 const SvgServerHpux = (props) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width={100}
         height={100}
         xmlSpace="preserve"
+        role="img"
         {...props}
     >
         <g fill="#313333">
@@ -14,5 +14,4 @@ const SvgServerHpux = (props) => (
         </g>
     </svg>
 );
-
 export default SvgServerHpux;

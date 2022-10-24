@@ -1,11 +1,11 @@
 import * as React from 'react';
-
 const SvgServerLinux = (props) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width={100}
         height={100}
         xmlSpace="preserve"
+        role="img"
         {...props}
     >
         <path
@@ -599,5 +599,4 @@ const SvgServerLinux = (props) => (
         />
     </svg>
 );
-
 export default SvgServerLinux;

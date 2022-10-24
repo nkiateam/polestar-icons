@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 const SvgLinuxSizeFix = (props) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -9,6 +8,7 @@ const SvgLinuxSizeFix = (props) => (
             enableBackground: 'new 0 0 23.104 27.153',
         }}
         xmlSpace="preserve"
+        role="img"
         {...props}
     >
         <path
@@ -123,5 +123,4 @@ const SvgLinuxSizeFix = (props) => (
         />
     </svg>
 );
-
 export default SvgLinuxSizeFix;

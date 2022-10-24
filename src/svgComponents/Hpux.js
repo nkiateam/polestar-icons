@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 const SvgHpux = (props) => (
     <svg
         id="hpux_svg__hpux"
@@ -11,6 +10,7 @@ const SvgHpux = (props) => (
             enableBackground: 'new 0 0 222 140',
         }}
         xmlSpace="preserve"
+        role="img"
         {...props}
     >
         <style>
@@ -30,5 +30,4 @@ const SvgHpux = (props) => (
         />
     </svg>
 );
-
 export default SvgHpux;
