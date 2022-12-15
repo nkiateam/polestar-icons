@@ -5,7 +5,6 @@ const SvgServerLinux = (props) => (
         width={100}
         height={100}
         xmlSpace="preserve"
-        role="img"
         {...props}
     >
         <path

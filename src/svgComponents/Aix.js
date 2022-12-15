@@ -10,7 +10,6 @@ const SvgAix = (props) => (
             enableBackground: 'new 0 0 136 136',
         }}
         xmlSpace="preserve"
-        role="img"
         {...props}
     >
         <style>{'.aix_svg__st2{fill:#fff}'}</style>

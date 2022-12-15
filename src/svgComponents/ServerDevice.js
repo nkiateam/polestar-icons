@@ -7,7 +7,6 @@ const SvgServerDevice = (props) => (
             enableBackground: 'new 0 0 50 50',
         }}
         xmlSpace="preserve"
-        role="img"
         {...props}
     >
         <linearGradient

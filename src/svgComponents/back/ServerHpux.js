@@ -5,7 +5,6 @@ const SvgServerHpux = (props) => (
         width={100}
         height={100}
         xmlSpace="preserve"
-        role="img"
         {...props}
     >
         <g fill="#313333">

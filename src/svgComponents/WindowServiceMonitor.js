@@ -7,7 +7,6 @@ const SvgWindowServiceMonitor = (props) => (
             enableBackground: 'new 0 0 32 32',
         }}
         xmlSpace="preserve"
-        role="img"
         {...props}
     >
         <switch>

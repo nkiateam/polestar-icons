@@ -8,7 +8,6 @@ const SvgNetworkSwitch = (props) => (
             enableBackground: 'new 0 0 42.283 33.96',
         }}
         xmlSpace="preserve"
-        role="img"
         {...props}
     >
         <linearGradient

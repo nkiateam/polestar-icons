@@ -8,7 +8,6 @@ const SvgLinuxSizeFix = (props) => (
             enableBackground: 'new 0 0 23.104 27.153',
         }}
         xmlSpace="preserve"
-        role="img"
         {...props}
     >
         <path

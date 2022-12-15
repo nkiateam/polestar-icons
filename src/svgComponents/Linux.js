@@ -10,7 +10,6 @@ const SvgLinux = (props) => (
             enableBackground: 'new 0 0 112 136',
         }}
         xmlSpace="preserve"
-        role="img"
         {...props}
     >
         <style>

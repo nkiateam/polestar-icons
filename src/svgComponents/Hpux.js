@@ -10,7 +10,6 @@ const SvgHpux = (props) => (
             enableBackground: 'new 0 0 222 140',
         }}
         xmlSpace="preserve"
-        role="img"
         {...props}
     >
         <style>

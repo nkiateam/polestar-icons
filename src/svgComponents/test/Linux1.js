@@ -5,7 +5,6 @@ const SvgLinux1 = (props) => (
         width={50}
         height={50}
         xmlSpace="preserve"
-        role="img"
         {...props}
     >
         <g fillRule="evenodd" clipRule="evenodd">
